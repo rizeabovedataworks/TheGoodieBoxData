@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TheGoodieBox" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/gingerbread_brown</item>
+        <item name="colorSecondary">@color/candy_cane_red</item>
+        <item name="android:windowBackground">@color/frosting_cream</item>
+        <item name="colorSurface">@color/frosting_cream</item>
+        <item name="android:textColorPrimary">@color/cocoa_shadow</item>
+    </style>
+
+    <style name="Theme.TheGoodieBox" parent="Base.Theme.TheGoodieBox" />
+</resources>

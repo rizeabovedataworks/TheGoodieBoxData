@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewHowToUse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frosting_cream"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".HowToUseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 How to Use The Goodie Box"
+            android:textColor="@color/gingerbread_brown"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Your quick guide to browsing, searching, saving favorites, adding, editing, and managing recipes."
+            android:textColor="#5D4037"
+            android:textSize="14sp" />
+
+        <!-- Step 1: Home Page & Index Cards -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📜 1. Browsing &amp; Vintage Index Cards"
+                    android:textColor="@color/gingerbread_brown"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• Browse Categories: Tap any color-coded category chip at the top (Nuts &amp; Snacks, Cookies, Candies, Fudge, Bars, Bread, Frostings, Main Dishes, or ★ Favorites) to filter your collection.\n\n• 3x5 Recipe Index Cards: Each recipe is presented on an authentic handwritten 3x5 index card.\n\n• Opening a Recipe: Tap anywhere on a card or tap 'View Recipe →' to view full ingredients, step-by-step directions, photos, and family stories."
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Step 2: Search & Favorites -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔍 2. Search &amp; Saving ★ Favorites"
+                    android:textColor="@color/gingerbread_brown"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• Search Recipes: Type any recipe title, ingredient, or keyword into the top search bar to filter recipes in real-time.\n\n• Saving ★ Favorites: Tap the crimson star icon on the bottom right of any index card to favorite it. Tap the '★ Favorites' chip on the far left to view all your saved favorite recipes!"
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Step 3: Memories from Mom's Kitchen -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="❤️ 3. Memories from Mom's Kitchen"
+                    android:textColor="@color/gingerbread_brown"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• Reading Family Stories: Scroll to the bottom of select recipes (like Mom's Best Classic Peanut Brittle or Mom's Chocolate Chip Cookies) to read heartwarming stories and memories from Mom's kitchen."
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Step 4: Adding, Editing & Deleting Recipes (Full CRUD) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✏️ 4. Adding, Editing &amp; Deleting Recipes"
+                    android:textColor="@color/gingerbread_brown"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• Adding Custom Recipes: Open the side drawer menu (tap ☰ at top left) and select '➕ Add New Recipe'. Enter your recipe title, category, description, prep/cook times, ingredients, directions, photo, and family memories!\n\n• Editing Recipes: Open any recipe detail screen and tap the ✏️ Edit icon in the top header action bar. Update any fields, ingredients, or photos and tap 'Update Recipe' to save.\n\n• Deleting Recipes: Open any recipe detail screen and tap the 🗑️ Delete icon in the top header action bar. Confirm deletion to remove it from your cookbook."
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Step 5: Tools & Guides -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💡 5. Kitchen Tools &amp; Sync"
+                    android:textColor="@color/gingerbread_brown"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• 💡 Tips &amp; Tricks: Universal baking secrets, egg/dairy swaps, and cookie freshness hacks.\n\n• 📏 Measurement Conversions: Convert cups to tablespoons, grams, and °F to °C.\n\n• 🔄 Sync OTA Recipes: Fetch newly updated recipes from the cloud with one tap."
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

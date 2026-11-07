@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorites"
+            android:title="★ Favorites" />
+        <item
+            android:id="@+id/nav_nuts"
+            android:title="Nuts &amp; Snacks" />
+        <item
+            android:id="@+id/nav_cookies"
+            android:title="Cookies" />
+        <item
+            android:id="@+id/nav_candies"
+            android:title="Candies" />
+        <item
+            android:id="@+id/nav_fudge"
+            android:title="Fudge" />
+        <item
+            android:id="@+id/nav_bars"
+            android:title="Bars" />
+        <item
+            android:id="@+id/nav_bread"
+            android:title="Bread" />
+        <item
+            android:id="@+id/nav_frostings"
+            android:title="Frostings" />
+        <item
+            android:id="@+id/nav_main"
+            android:title="Main Dishes" />
+    </group>
+
+    <item android:title="Recipe Management">
+        <menu>
+            <item
+                android:id="@+id/nav_add_recipe"
+                android:title="➕ Add New Recipe" />
+        </menu>
+    </item>
+
+    <item android:title="Tools &amp; Guides">
+        <menu>
+            <item
+                android:id="@+id/nav_how_to_use"
+                android:title="📖 How to Use This App" />
+            <item
+                android:id="@+id/nav_tips"
+                android:title="💡 Tips &amp; Tricks" />
+            <item
+                android:id="@+id/nav_conversions"
+                android:title="📏 Measurement Conversions" />
+            <item
+                android:id="@+id/nav_sync"
+                android:title="🔄 Sync OTA Recipes" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="ℹ️ About &amp; Legal" />
+        </menu>
+    </item>
+</menu>

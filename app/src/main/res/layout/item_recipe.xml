@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="2dp"
+    android:layout_marginBottom="18dp">
+
+    <!-- Card Background Image with Transparent Edges - Maintains Exact Aspect Ratio -->
+    <ImageView
+        android:id="@+id/ivCardBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="Index Card Background"
+        android:scaleType="fitXY"
+        android:src="@drawable/indexcard_bg" />
+
+    <!-- Content Overlay aligned over the 3x5 Index Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingTop="26dp"
+        android:paddingBottom="22dp">
+
+        <!-- Recipe Title in Prominent Vintage Script -->
+        <TextView
+            android:id="@+id/tvRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="cursive"
+            android:letterSpacing="0.01"
+            android:maxLines="2"
+            android:textColor="#2B1B10"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Classic Layered Peppermint Bark" />
+
+        <!-- Clean, Spacious Body Description -->
+        <TextView
+            android:id="@+id/tvRecipeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="3"
+            android:textColor="#4A3425"
+            android:textSize="15sp"
+            tools:text="Rich double-layered dark and white chocolate bark topped with crushed peppermint candy canes." />
+
+        <!-- Bottom Index Card Actions -->
+        <RelativeLayout
+            android:id="@+id/bottomRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvViewRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/ivFavorite"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/view_recipe"
+                android:textColor="#8A5832"
+                android:textSize="14.5sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Favorite Star"
+                android:padding="2dp"
+                android:src="@drawable/ic_star_outline" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

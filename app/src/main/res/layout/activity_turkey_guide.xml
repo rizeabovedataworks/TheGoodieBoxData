@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TurkeyGuideActivity">
+
+    <!-- Top Action Bar Header with Back Navigation -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarTurkeyGuide"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/thegoodiebox_title_bg"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewTurkeyGuide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/frosting_cream"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🦃 How to Cook a Turkey Master Guide"
+                android:textColor="@color/gingerbread_brown"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Complete holiday guide: safe thawing, traditional roasting, spatchcocking, temperature targets, and storage safety."
+                android:textColor="#5D4037"
+                android:textSize="14sp" />
+
+            <!-- Card 1: Safe Thawing & Defrosting -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="❄️ 1. Safe Thawing &amp; Defrosting Guide"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="⚠️ NEVER thaw a frozen turkey at room temperature on the kitchen counter! Food safety requires keeping the meat below 40°F.\n\n• Refrigerator Thawing (Recommended):\n  Allow 24 hours for every 4 to 5 lbs of turkey in a 40°F fridge.\n  - 12 lb turkey = 3 full days in fridge\n  - 16 lb turkey = 4 full days in fridge\n\n• Cold Water Thawing (Fast Method):\n  Submerge wrapped turkey in cold tap water, changing water every 30 minutes. Allow 30 minutes per pound (a 12 lb turkey takes ~6 hours)."
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Dry Brining Secret (24 Hours Ahead) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🧂 2. The 24-Hour Dry Brining Secret"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="Dry brining is the #1 secret to deeply seasoned, juicy turkey meat with crackling-crispy skin!\n\n• How It Works:\n  24 hours before roasting, coat the bird inside and out with coarse kosher salt (approx. 1/2 tsp kosher salt per pound of turkey). Place uncovered on a wire rack on a baking sheet in the fridge.\n\n• Why It Works:\n  The salt draws moisture out of the turkey skin. The salt dissolves in the skin juices and is then re-absorbed deep into the muscle meat to season and tenderize it throughout. Meanwhile, the open air in the fridge dries out the skin so it crackles into ultra-crispy skin when roasted!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: How to Properly Spatchcock a Turkey -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="✂️ 2. How to Properly Spatchcock a Turkey"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="Spatchcocking (butterflying) flattens the bird so the dark thigh meat and white breast meat cook evenly at high heat in half the time!\n\n• Step 1: Remove Backbone: Place turkey breast-side down. Using heavy-duty poultry shears, cut along both sides of the backbone to remove it completely.\n\n• Step 2: Flatten Breastbone: Flip turkey breast-side up. Press down firmly on the center breastbone with your palms until you hear a crack and turkey lies flat.\n\n• Step 3: Butter Under Skin: Gently loosen skin over the breast and thighs with your fingers. Rub 1/4 cup softened butter directly onto the meat under the skin.\n\n• Step 4: Lubricate &amp; Season Outside: Coat the outside skin generously with olive oil so spices cling evenly. Sprinkle salt, pepper, garlic powder, onion powder, and fresh herbs all over.\n\n• Step 5: Carrots &amp; Garlic Pan Base: Add 1/2 cup chopped carrots and 2-3 minced garlic cloves to the bottom of the roasting pan under the turkey rack. As fat drippings hit the pan during roasting, it creates an unforgettably rich gravy!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: Roasting Schedules & Target Temps -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🌡️ 3. Roasting Times &amp; Internal Temperature"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Traditional Unstuffed Roast (325°F):\n  - 10 to 12 lbs: 2.5 to 3 hours\n  - 12 to 14 lbs: 3 to 3.5 hours\n  - 14 to 18 lbs: 3.5 to 4.25 hours\n  - 18 to 22 lbs: 4.25 to 5 hours\n\n• Spatchcock Roast (425°F High Heat):\n  - 12 to 14 lbs: 70 to 80 minutes!\n\n🎯 155°F Pull Temp &amp; Carryover Cooking Secret:\n  Pull the turkey out of the oven when an instant-read thermometer inserted into thickest part of the breast reaches 155°F (68°C)!\n  During the 15-20 minute resting period under foil, carryover heat gently raises the internal temperature to the safe 165°F target. Pulling at 155°F locks in moisture, whereas waiting in the oven until 165°F will cause the meat to shoot up to 175°F and dry out!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4: Resting, Carving & Storage Safety -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🍗 4. Resting, Carving &amp; Leftovers Safety"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Essential Resting: Tent turkey loosely with foil and let rest 20 to 30 minutes before carving so natural juices redistribute into the meat.\n\n• Storage Safety: Carve leftover meat off the carcass and refrigerate in shallow, airtight containers within 2 hours of cooking.\n\n• Safe Reheating: Leftover turkey keeps in fridge for 3 to 4 days or in freezer for up to 3 months. Always reheat leftovers to 165°F."
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConversionsActivity">
+
+    <!-- Top Action Bar Header with Back Navigation -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarConversions"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/thegoodiebox_title_bg"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewConversions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/frosting_cream"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kitchen Measurement Conversions"
+                android:textColor="@color/gingerbread_brown"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Interactive unit converter and quick-reference kitchen cheat sheets."
+                android:textColor="#5D4037"
+                android:textSize="14sp" />
+
+            <!-- Converter Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amount to Convert"
+                        android:textColor="@color/cocoa_shadow"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etConvertAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/search_bar_bg"
+                        android:hint="e.g. 1"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="12dp"
+                        android:text="1"
+                        android:textColor="@color/cocoa_shadow"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="From Unit"
+                        android:textColor="@color/cocoa_shadow"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerFromUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="To Unit"
+                        android:textColor="@color/cocoa_shadow"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerToUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="16dp"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Result"
+                        android:textColor="@color/cocoa_shadow"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvConvertResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="#FFF5EA"
+                        android:padding="12dp"
+                        android:textColor="@color/candy_cane_red"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="1 lb = 0.4536 kg" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Quick View Volume Cheat Sheet Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🥛 Quick View Volume Conversions"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• 1 Gallon = 4 Quarts = 8 Pints = 16 Cups = 128 fl oz\n• 1 Quart = 2 Pints = 4 Cups = 32 fl oz\n• 1 Pint = 2 Cups = 16 fl oz\n• 1 Cup = 16 Tablespoons = 48 Teaspoons = 8 fl oz\n• 3/4 Cup = 12 Tablespoons = 36 Teaspoons = 6 fl oz\n• 2/3 Cup = 10 Tbsp + 2 tsp = 5.3 fl oz\n• 1/2 Cup = 8 Tablespoons = 24 Teaspoons = 4 fl oz\n• 1/3 Cup = 5 Tbsp + 1 tsp = 2.7 fl oz\n• 1/4 Cup = 4 Tablespoons = 12 Teaspoons = 2 fl oz\n• 1 Tablespoon (tbsp) = 3 Teaspoons (tsp) = 1/2 fl oz"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Quick View Weight Cheat Sheet Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⚖️ Quick View Weight &amp; Butter Conversions"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• 1 Pound (lb) = 16 Ounces (oz) = 453.6 Grams (g)\n• 1/2 Pound = 8 Ounces = 226.8 Grams\n• 1/4 Pound = 4 Ounces = 113.4 Grams\n• 1 Ounce (oz) = 28.35 Grams (g)\n• 1 Kilogram (kg) = 2.205 Pounds = 1000 Grams\n• 1 Stick Butter = 8 tbsp = 1/2 cup = 4 oz = 113.4g\n• 2 Sticks Butter (1/2 lb) = 16 tbsp = 1 cup = 8 oz = 226.8g"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Temperature Reference Table Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🌡️ Quick Oven Temp Reference"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Slow / Low: 300°F (150°C)\n• Moderate / Standard: 350°F (175°C)\n• Moderately Hot: 375°F (190°C)\n• Hot / Roasting: 400°F (200°C)\n• Very Hot / High-Heat Roast: 425°F (220°C)"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:title="📁 All Recipes" />
+        <item
+            android:id="@+id/nav_nuts"
+            android:title="🟨 Nuts and Snacks" />
+        <item
+            android:id="@+id/nav_cookies"
+            android:title="🟪 Cookies" />
+        <item
+            android:id="@+id/nav_candies"
+            android:title="🟧 Candies" />
+        <item
+            android:id="@+id/nav_fudge"
+            android:title="🟫 Fudge" />
+        <item
+            android:id="@+id/nav_bread"
+            android:title="🟦 Bread" />
+        <item
+            android:id="@+id/nav_frostings"
+            android:title="🟩 Frostings" />
+        <item
+            android:id="@+id/nav_main"
+            android:title="🟥 Main Dishes" />
+    </group>
+
+    <item android:title="Tools &amp; Guide">
+        <menu>
+            <item
+                android:id="@+id/nav_tips"
+                android:title="💡 Tips &amp; Tricks" />
+            <item
+                android:id="@+id/nav_sync"
+                android:title="🔄 Sync OTA Recipes" />
+        </menu>
+    </item>
+</menu>

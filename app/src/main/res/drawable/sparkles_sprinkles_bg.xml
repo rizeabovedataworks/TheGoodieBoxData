@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="800dp"
+    android:viewportWidth="400"
+    android:viewportHeight="800">
+
+    <!-- Delicate 4-Point Sparkle Stars (Soft Warm Gold) -->
+    <path
+        android:fillColor="#22D89F4A"
+        android:pathData="M50,80 L52,86 L58,88 L52,90 L50,96 L48,90 L42,88 L48,86 Z" />
+    <path
+        android:fillColor="#22D89F4A"
+        android:pathData="M340,140 L342,146 L348,148 L342,150 L340,156 L338,150 L332,148 L338,146 Z" />
+    <path
+        android:fillColor="#22D89F4A"
+        android:pathData="M80,320 L82,326 L88,328 L82,330 L80,336 L78,330 L72,328 L78,326 Z" />
+    <path
+        android:fillColor="#22D89F4A"
+        android:pathData="M320,480 L322,486 L328,488 L322,490 L320,496 L318,490 L312,488 L318,486 Z" />
+    <path
+        android:fillColor="#22D89F4A"
+        android:pathData="M60,650 L62,656 L68,658 L62,660 L60,666 L58,660 L52,658 L58,656 Z" />
+
+    <!-- Cute Pastel Bakery Sprinkles (Pills) -->
+    <path
+        android:fillColor="#20C23B22"
+        android:pathData="M120,50 L132,58 C133,59 133,61 132,62 C131,63 129,63 128,62 L116,54 C115,53 115,51 116,50 C117,49 119,49 120,50 Z" />
+    <path
+        android:fillColor="#20C23B22"
+        android:pathData="M280,240 L292,248 C293,249 293,251 292,252 C291,253 289,253 288,252 L276,244 C275,243 275,241 276,240 C277,239 279,239 280,240 Z" />
+    <path
+        android:fillColor="#20C23B22"
+        android:pathData="M140,520 L152,528 C153,529 153,531 152,532 C151,533 149,533 148,532 L136,524 C135,523 135,521 136,520 C137,519 139,519 140,520 Z" />
+
+    <path
+        android:fillColor="#203E5A40"
+        android:pathData="M290,90 L280,102 C279,103 277,103 276,102 C275,101 275,99 276,98 L286,86 C287,85 289,85 290,86 C291,87 291,89 290,90 Z" />
+    <path
+        android:fillColor="#203E5A40"
+        android:pathData="M90,400 L80,412 C79,413 77,413 76,412 C75,411 75,409 76,408 L86,396 C87,395 89,395 90,396 C91,397 91,399 90,400 Z" />
+    <path
+        android:fillColor="#203E5A40"
+        android:pathData="M310,710 L300,722 C299,723 297,723 296,722 C295,721 295,719 296,718 L306,706 C307,705 309,705 310,706 C311,707 311,709 310,710 Z" />
+
+    <path
+        android:fillColor="#25E2B97F"
+        android:pathData="M180,200 L195,200 C196,200 197,201 197,202 C197,203 196,204 195,204 L180,204 C179,204 178,203 178,202 C178,201 179,200 180,200 Z" />
+    <path
+        android:fillColor="#25E2B97F"
+        android:pathData="M220,590 L235,590 C236,590 237,591 237,592 C237,593 236,594 235,594 L220,594 C219,594 218,593 218,592 C218,591 219,590 220,590 Z" />
+
+    <!-- Little Sugar Dust Specks -->
+    <path
+        android:fillColor="#25A35C2A"
+        android:pathData="M220,40m-3,0a3,3 0 1,1 6,0a3,3 0 1,1 -6,0 M150,170m-2.5,0a2.5,2.5 0 1,1 5,0a2.5,2.5 0 1,1 -5,0 M360,300m-3,0a3,3 0 1,1 6,0a3,3 0 1,1 -6,0 M110,460m-2.5,0a2.5,2.5 0 1,1 5,0a2.5,2.5 0 1,1 -5,0 M250,680m-3,0a3,3 0 1,1 6,0a3,3 0 1,1 -6,0 M180,750m-2.5,0a2.5,2.5 0 1,1 5,0a2.5,2.5 0 1,1 -5,0" />
+
+</vector>

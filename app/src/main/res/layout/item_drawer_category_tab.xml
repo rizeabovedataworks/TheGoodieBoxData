@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="36dp"
+    android:layout_gravity="start"
+    android:layout_marginStart="8dp"
+    android:layout_marginVertical="2dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Tab Background Image -->
+    <ImageView
+        android:id="@+id/ivDrawerTabBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Drawer Category Tab"
+        android:scaleType="fitXY"
+        android:src="@drawable/index_tab_image" />
+
+    <!-- Category Label Centered inside Compact Tab -->
+    <TextView
+        android:id="@+id/tvDrawerTabLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:textColor="#2A1A0E"
+        android:textSize="13.5sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

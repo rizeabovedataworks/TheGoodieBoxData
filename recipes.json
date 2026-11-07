@@ -1,0 +1,877 @@
+{
+  "version": 27,
+  "recipes": [
+    {
+      "id": "1",
+      "title": "The Classic Crunchy Coated Spiced Nuts",
+      "description": "The method used for holiday market nuts with a crackly, crunchy shell.",
+      "category": "Nuts and Snacks",
+      "prepTime": "15 mins",
+      "cookTime": "40 mins",
+      "ingredients": [
+        "1 lb raw pecan halves or whole almonds",
+        "1 egg white",
+        "1 tbsp water",
+        "1 cup granulated sugar",
+        "1 tsp ground cinnamon",
+        "1 tsp kosher salt"
+      ],
+      "instructions": [
+        "Preheat oven to 250°F (120°C) and line a rimmed baking sheet with parchment paper.",
+        "In a large bowl, whisk egg white and water together until light and foamy.",
+        "Add nuts to the egg white mixture and toss until thoroughly coated.",
+        "In a separate small bowl, whisk together sugar, cinnamon, and salt.",
+        "Pour sugar mixture over coated nuts and toss vigorously until sugar coats every nut evenly.",
+        "Spread nuts in a single layer across prepared baking sheet.",
+        "Bake for 1 hour, stirring thoroughly every 15 minutes to prevent burning.",
+        "Cool completely on baking sheet before serving or storing."
+      ],
+      "handlingInstructions": "Store in an airtight glass jar or tin at room temperature for up to 3 weeks.",
+      "modifications": "Add 1/4 tsp cayenne pepper for a subtle sweet-and-spicy kick."
+    },
+    {
+      "id": "2",
+      "title": "Spicy Sweet Party Pecans",
+      "description": "Bold party nuts with a sweet maple cayenne glaze.",
+      "category": "Nuts and Snacks",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "ingredients": [
+        "3 cups raw pecan halves",
+        "3 tbsp pure maple syrup",
+        "2 tbsp brown sugar",
+        "1/2 tsp cayenne pepper",
+        "1 tsp smoked paprika",
+        "1 tsp sea salt"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C) and line baking sheet with parchment.",
+        "Whisk maple syrup, brown sugar, cayenne, paprika, and salt in a bowl.",
+        "Add pecans and toss to coat evenly.",
+        "Spread on baking sheet in a single layer.",
+        "Bake 20 to 25 minutes, stirring once halfway through.",
+        "Cool completely on parchment to allow glaze to set crisp."
+      ],
+      "handlingInstructions": "Keep in a cool, dry place in a sealed container.",
+      "modifications": "Replace cayenne with black pepper for milder warmth."
+    },
+    {
+      "id": "3",
+      "title": "Sweet & Savory Rosemary Roasted Almonds",
+      "description": "Fragrant roasted almonds tossed with fresh rosemary, sea salt, and honey.",
+      "category": "Nuts and Snacks",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "ingredients": [
+        "3 cups raw whole almonds",
+        "2 tbsp olive oil",
+        "2 tbsp honey",
+        "2 tbsp finely chopped fresh rosemary",
+        "1 1/2 tsp flaky sea salt"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C).",
+        "Toss almonds with olive oil and honey until coated.",
+        "Spread on baking sheet and roast for 15 minutes, stirring once.",
+        "Remove from oven, immediately toss with fresh rosemary and sea salt.",
+        "Cool completely before serving."
+      ],
+      "handlingInstructions": "Best enjoyed within 2 weeks of roasting.",
+      "modifications": "Add 1/2 tsp black pepper for extra savory depth."
+    },
+    {
+      "id": "4",
+      "title": "Mom's Soft & Chewy Molasses Spice Cookies",
+      "description": "Deeply spiced, crinkly molasses cookies with rich dark brown sugar.",
+      "category": "Cookies",
+      "prepTime": "20 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "2 1/4 cups all-purpose flour",
+        "2 tsp baking soda",
+        "1 1/2 tsp ground cinnamon",
+        "1 tsp ground ginger",
+        "1/2 tsp ground cloves",
+        "1/4 tsp salt",
+        "3/4 cup unsalted butter, softened",
+        "1 cup dark brown sugar, packed",
+        "1 large egg",
+        "1/2 cup dark molasses",
+        "1/3 cup granulated sugar (for rolling)"
+      ],
+      "instructions": [
+        "Whisk flour, baking soda, cinnamon, ginger, cloves, and salt together in a bowl.",
+        "In a stand mixer, beat softened butter and brown sugar until fluffy (approx. 2 mins).",
+        "Beat in egg and molasses until smooth.",
+        "Gradually add dry ingredients on low speed until dough forms.",
+        "Chill dough in refrigerator for 1 hour.",
+        "Preheat oven to 375°F (190°C) and line baking sheets with parchment paper.",
+        "Roll dough into 1-inch balls and roll generously in granulated sugar.",
+        "Place 2 inches apart on baking sheets.",
+        "Bake 8 to 10 minutes until edges are set and tops are crinkled. Cool 5 mins on pan."
+      ],
+      "handlingInstructions": "Store in an airtight container with a slice of bread to keep soft for weeks.",
+      "modifications": "Add 1/2 cup finely chopped candied ginger for extra zing."
+    },
+    {
+      "id": "5",
+      "title": "Classic Melt-in-Your-Mouth Butter Shortbread",
+      "description": "Traditional 3-ingredient Scottish butter shortbread fingers.",
+      "category": "Cookies",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "ingredients": [
+        "1 cup (2 sticks) unsalted butter, softened",
+        "1/2 cup powdered sugar",
+        "2 cups all-purpose flour",
+        "1/2 tsp vanilla extract",
+        "1/4 tsp salt"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C).",
+        "Beat softened butter and powdered sugar until creamy.",
+        "Add vanilla and salt, then gradually mix in flour until soft dough forms.",
+        "Press dough evenly into an 8x8 inch baking dish.",
+        "Prick all over with a fork and score into rectangular fingers.",
+        "Bake for 30 to 35 minutes until pale golden.",
+        "Cut along score lines while warm, then cool completely in pan."
+      ],
+      "handlingInstructions": "Store in a cookie tin at room temperature.",
+      "modifications": "Dip half of each cooled finger in melted dark chocolate."
+    },
+    {
+      "id": "6",
+      "title": "Cinnamon Sugar Snickerdoodles",
+      "description": "Classic pillow-soft snickerdoodles with a crackly cinnamon-sugar crust.",
+      "category": "Cookies",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "2 3/4 cups all-purpose flour",
+        "2 tsp cream of tartar",
+        "1 tsp baking soda",
+        "1/2 tsp salt",
+        "1 cup unsalted butter, softened",
+        "1 1/2 cups granulated sugar",
+        "2 large eggs",
+        "3 tbsp granulated sugar + 1 tbsp cinnamon (for rolling)"
+      ],
+      "instructions": [
+        "Whisk flour, cream of tartar, baking soda, and salt.",
+        "Beat butter and 1 1/2 cups sugar until light and fluffy.",
+        "Add eggs one at a time, beating well after each.",
+        "Mix in dry ingredients until combined.",
+        "Roll dough into 1.25-inch balls and roll in cinnamon-sugar mixture.",
+        "Place 2 inches apart on parchment-lined baking sheets.",
+        "Bake at 375°F (190°C) for 8 to 10 minutes. Do not overbake!"
+      ],
+      "handlingInstructions": "Store in an airtight container for up to 7 days.",
+      "modifications": "Add 1/2 tsp nutmeg to the cinnamon sugar coating."
+    },
+    {
+      "id": "7",
+      "title": "Classic Rich Chocolate Fudge",
+      "description": "Smooth, decadent homemade chocolate fudge topped with flaky sea salt.",
+      "category": "Fudge",
+      "prepTime": "15 mins",
+      "cookTime": "5 mins",
+      "ingredients": [
+        "3 cups semi-sweet chocolate chips",
+        "1 can (14 oz) sweetened condensed milk",
+        "1/4 cup unsalted butter",
+        "1 tsp pure vanilla extract",
+        "1/4 tsp salt",
+        "Flaky sea salt (optional garnish)"
+      ],
+      "instructions": [
+        "Line an 8x8 inch pan with parchment paper, leaving overhang edges.",
+        "In a saucepan over medium-low heat, combine chocolate chips, condensed milk, and butter.",
+        "Stir constantly until completely melted and smooth.",
+        "Remove from heat, stir in vanilla and salt.",
+        "Pour into prepared pan and smooth top with spatula.",
+        "Sprinkle with flaky sea salt if desired.",
+        "Refrigerate for 2 hours until firm, then cut into square pieces."
+      ],
+      "handlingInstructions": "Keep refrigerated in an airtight container for up to 3 weeks.",
+      "modifications": "Fold in 1 cup chopped walnuts or pecans before pouring into pan."
+    },
+    {
+      "id": "8",
+      "title": "Creamy Peanut Butter Fudge",
+      "description": "Melt-in-your-mouth 4-ingredient peanut butter fudge.",
+      "category": "Fudge",
+      "prepTime": "10 mins",
+      "cookTime": "5 mins",
+      "ingredients": [
+        "1 cup (2 sticks) unsalted butter",
+        "1 cup creamy peanut butter",
+        "1 tsp vanilla extract",
+        "3 1/2 cups powdered sugar"
+      ],
+      "instructions": [
+        "Line an 8x8 inch baking dish with foil or parchment.",
+        "Melt butter and peanut butter together in a saucepan over medium heat, stirring until smooth.",
+        "Remove from heat, stir in vanilla.",
+        "Gradually stir in powdered sugar until smooth and thick.",
+        "Spread evenly into prepared dish.",
+        "Chill in refrigerator for at least 1 hour until set.",
+        "Slice into squares and serve."
+      ],
+      "handlingInstructions": "Store in refrigerator in a covered container.",
+      "modifications": "Drizzle melted dark chocolate over the top before chilling."
+    },
+    {
+      "id": "9",
+      "title": "Old-Fashioned Maple Walnut Fudge",
+      "description": "Rich maple fudge studded with crunchy toasted walnuts.",
+      "category": "Fudge",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "2 cups white chocolate chips",
+        "1 can (14 oz) sweetened condensed milk",
+        "1/4 cup butter",
+        "1 tsp pure maple extract",
+        "1 cup chopped toasted walnuts"
+      ],
+      "instructions": [
+        "Line an 8x8 inch dish with parchment paper.",
+        "Combine white chocolate chips, condensed milk, and butter in saucepan over low heat.",
+        "Stir continuously until melted and velvety smooth.",
+        "Stir in maple extract and toasted walnuts.",
+        "Spread into prepared pan.",
+        "Chill until firm (approx. 2 hours) and slice into squares."
+      ],
+      "handlingInstructions": "Store refrigerated in an airtight container for up to 2 weeks.",
+      "modifications": "Substitute pecans for walnuts."
+    },
+    {
+      "id": "10",
+      "title": "Classic Chewy Pecan Pralines",
+      "description": "Authentic Southern brown sugar pecan pralines.",
+      "category": "Candies",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "ingredients": [
+        "1 1/2 cups granulated sugar",
+        "1 1/2 cups brown sugar, packed",
+        "1/2 cup heavy cream",
+        "1/2 cup whole milk",
+        "4 tbsp unsalted butter",
+        "2 cups pecan halves",
+        "1 tsp vanilla extract"
+      ],
+      "instructions": [
+        "Line two large baking sheets with parchment paper.",
+        "In a heavy saucepan, combine sugars, heavy cream, milk, and butter.",
+        "Cook over medium heat, stirring until sugar dissolves.",
+        "Bring to a boil until candy thermometer reaches 238°F (soft-ball stage).",
+        "Remove from heat, stir in pecans and vanilla.",
+        "Beat vigorously with a wooden spoon for 2-3 minutes until mixture thickens and loses shine.",
+        "Quickly drop by spoonfuls onto parchment paper.",
+        "Allow pralines to cool and harden completely."
+      ],
+      "handlingInstructions": "Store individually wrapped or layered with wax paper in airtight tin.",
+      "modifications": "Add 1/4 tsp cinnamon for warm spiced flavor."
+    },
+    {
+      "id": "11",
+      "title": "Old-Fashioned Peppermint Bark",
+      "description": "Layered dark and white chocolate topped with crushed peppermint candy canes.",
+      "category": "Candies",
+      "prepTime": "20 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "12 oz dark chocolate, chopped",
+        "12 oz white chocolate, chopped",
+        "1/2 tsp peppermint extract, divided",
+        "1 cup crushed candy canes or peppermint candies"
+      ],
+      "instructions": [
+        "Line a 9x13 baking sheet with parchment paper.",
+        "Melt dark chocolate in heatproof bowl over simmering water; stir in 1/4 tsp peppermint extract.",
+        "Pour dark chocolate onto parchment and spread into even rectangle. Chill 20 mins.",
+        "Melt white chocolate; stir in remaining 1/4 tsp peppermint extract.",
+        "Pour white chocolate gently over chilled dark layer; spread carefully.",
+        "Immediately sprinkle crushed candy canes evenly over white chocolate, pressing gently.",
+        "Chill 30 mins until solid, then break into rustic bark pieces."
+      ],
+      "handlingInstructions": "Store in a cool place or airtight tin for up to 3 weeks.",
+      "modifications": "Use milk chocolate in place of dark chocolate."
+    },
+    {
+      "id": "12",
+      "title": "Easy Salted Caramel Turtles",
+      "description": "Toasted pecan clusters draped in rich caramel and topped with chocolate.",
+      "category": "Candies",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "2 cups toasted pecan halves",
+        "11 oz unwrapped soft caramel candies",
+        "2 tbsp heavy cream",
+        "1 1/2 cups semi-sweet chocolate chips",
+        "Flaky sea salt"
+      ],
+      "instructions": [
+        "Line baking sheet with parchment.",
+        "Arrange pecans in small clusters of 3-4 halves on parchment.",
+        "Melt caramels with heavy cream in saucepan over low heat until smooth.",
+        "Spoon 1 tablespoon melted caramel over each pecan cluster.",
+        "Melt chocolate chips and dollop chocolate over caramel.",
+        "Sprinkle with flaky sea salt.",
+        "Let set at room temperature or chill 15 minutes."
+      ],
+      "handlingInstructions": "Keep in airtight container separated by wax paper.",
+      "modifications": "Substitute cashews or walnuts for pecans."
+    },
+    {
+      "id": "13",
+      "title": "Mom's Chewy Chocolate Chip Pecan Bars",
+      "description": "Rich, brown-sugar blondie bars studded with chocolate chips and toasted pecans.",
+      "category": "Bars",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "ingredients": [
+        "2 1/8 cups all-purpose flour",
+        "1/2 tsp baking soda",
+        "12 tbsp (1 1/2 sticks) unsalted butter, melted and cooled",
+        "1 cup dark brown sugar, packed",
+        "1/2 cup granulated sugar",
+        "1 large egg + 1 egg yolk",
+        "1 tbsp vanilla extract",
+        "1 cup semi-sweet chocolate chips",
+        "1 cup chopped toasted pecans"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C). Line 9x13 inch pan with foil and spray with nonstick cooking spray.",
+        "Whisk flour and baking soda together in a bowl.",
+        "In a separate bowl, whisk melted butter, brown sugar, and granulated sugar until smooth.",
+        "Whisk in egg, egg yolk, and vanilla.",
+        "Fold in dry ingredients with spatula until just combined.",
+        "Fold in chocolate chips and pecans.",
+        "Press batter evenly into prepared pan.",
+        "Bake for 22 to 25 minutes until golden brown and center is set. Cool completely before cutting."
+      ],
+      "handlingInstructions": "Store in airtight container at room temperature for up to 5 days.",
+      "modifications": "Add 1/2 cup butterscotch chips for additional richness."
+    },
+    {
+      "id": "14",
+      "title": "Classic Layered Seven-Layer Bars",
+      "description": "Layered graham cracker, coconut, chocolate, butterscotch, and pecan Magic Bars.",
+      "category": "Bars",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "ingredients": [
+        "1/2 cup unsalted butter, melted",
+        "1 1/2 cups graham cracker crumbs",
+        "1 cup semi-sweet chocolate chips",
+        "1 cup butterscotch chips",
+        "1 cup sweetened shredded coconut",
+        "1 cup chopped pecans or walnuts",
+        "1 can (14 oz) sweetened condensed milk"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C).",
+        "Pour melted butter into 9x13 inch baking dish; sprinkle graham cracker crumbs evenly over butter and press firm.",
+        "Layer chocolate chips, butterscotch chips, coconut, and pecans evenly over crust.",
+        "Pour sweetened condensed milk evenly over all layers.",
+        "Bake for 25 minutes until edges are golden brown.",
+        "Cool completely in pan before cutting into squares."
+      ],
+      "handlingInstructions": "Store at room temperature or in fridge for extra chewiest texture.",
+      "modifications": "Substitute white chocolate chips for butterscotch."
+    },
+    {
+      "id": "15",
+      "title": "Decadent Fudge Brownies",
+      "description": "Ultra-fudgy brownies with a shiny crinkle top and dense cocoa center.",
+      "category": "Bars",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "ingredients": [
+        "1 cup (2 sticks) unsalted butter, melted",
+        "1 cup granulated sugar",
+        "1 cup dark brown sugar",
+        "4 large eggs, room temperature",
+        "1 tbsp vanilla extract",
+        "1 cup all-purpose flour",
+        "1 cup unsweetened Dutch cocoa powder",
+        "1 tsp salt",
+        "1 cup chocolate chunks"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C). Line 9x13 inch pan with parchment paper.",
+        "Whisk melted butter, granulated sugar, and brown sugar vigorously in a large bowl.",
+        "Add eggs one at a time, whisking for 1 full minute until glossy and pale.",
+        "Whisk in vanilla extract.",
+        "Sift in flour, cocoa powder, and salt. Fold gently with spatula.",
+        "Fold in chocolate chunks.",
+        "Pour into prepared pan and smooth top.",
+        "Bake 28 to 32 minutes until toothpick inserted in center comes out with moist crumbs."
+      ],
+      "handlingInstructions": "Keep in airtight container at room temperature.",
+      "modifications": "Swirl 1/2 cup warm peanut butter into top of batter before baking."
+    },
+    {
+      "id": "16",
+      "title": "Festive Cranberry Orange Quick Bread",
+      "description": "Moist quick bread packed with tart cranberries and fresh orange zest.",
+      "category": "Bread",
+      "prepTime": "20 mins",
+      "cookTime": "55 mins",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1 cup granulated sugar",
+        "1 1/2 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1 tsp salt",
+        "1 tbsp fresh orange zest",
+        "3/4 cup fresh orange juice",
+        "1/4 cup unsalted butter, melted",
+        "1 large egg, beaten",
+        "1 1/2 cups fresh cranberries, coarsely chopped",
+        "1/2 cup chopped walnuts (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease a 9x5 inch loaf pan.",
+        "In a large bowl, whisk flour, sugar, baking powder, baking soda, salt, and orange zest.",
+        "In a liquid measuring cup, combine orange juice, melted butter, and egg.",
+        "Pour liquid ingredients into dry ingredients and stir gently just until combined.",
+        "Fold in chopped cranberries and walnuts.",
+        "Spoon batter into prepared loaf pan.",
+        "Bake for 55 to 60 minutes until toothpick inserted in center comes out clean.",
+        "Cool 10 mins in pan, then transfer to wire rack."
+      ],
+      "handlingInstructions": "Wrap tightly in foil; tastes even better the second day!",
+      "modifications": "Drizzle with orange juice and powdered sugar glaze once cooled."
+    },
+    {
+      "id": "17",
+      "title": "Cinnamon Swirl Pumpkin Bread",
+      "description": "Moist pumpkin spice loaf with a cinnamon-sugar swirl inside.",
+      "category": "Bread",
+      "prepTime": "15 mins",
+      "cookTime": "60 mins",
+      "ingredients": [
+        "1 3/4 cups all-purpose flour",
+        "1 tsp baking soda",
+        "1/2 tsp salt",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground nutmeg",
+        "1/4 tsp ground cloves",
+        "1 cup pumpkin puree",
+        "1/2 cup vegetable oil",
+        "1 cup granulated sugar",
+        "2 large eggs",
+        "3 tbsp sugar + 1 tbsp cinnamon (for swirl)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease 9x5 loaf pan.",
+        "Whisk flour, baking soda, salt, cinnamon, nutmeg, and cloves.",
+        "In another bowl, whisk pumpkin, oil, 1 cup sugar, and eggs until smooth.",
+        "Mix wet and dry ingredients together until just incorporated.",
+        "Pour half batter into loaf pan, sprinkle with 2 tbsp cinnamon sugar, pour remaining batter, and top with rest of cinnamon sugar.",
+        "Swirl gently with a butter knife.",
+        "Bake 55 to 65 minutes until toothpick comes out clean."
+      ],
+      "handlingInstructions": "Store at room temperature wrapped tightly in plastic wrap.",
+      "modifications": "Add 1/2 cup dark chocolate chips or pecans to batter."
+    },
+    {
+      "id": "18",
+      "title": "Mom's Best Classic Chocolate Chip Cookies",
+      "description": "Golden, buttery chocolate chip cookies with crisp edges and soft chewy centers.",
+      "category": "Cookies",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "2 1/4 cups all-purpose flour",
+        "1 tsp baking soda",
+        "1 tsp salt",
+        "1 cup (2 sticks) unsalted butter, softened",
+        "3/4 cup granulated sugar",
+        "3/4 cup packed dark brown sugar",
+        "1 tsp vanilla extract",
+        "2 large eggs",
+        "2 cups semi-sweet chocolate morsels",
+        "1 cup chopped pecans or walnuts (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C). Line baking sheets with parchment paper.",
+        "Combine flour, baking soda, and salt in small bowl.",
+        "Beat butter, granulated sugar, dark brown sugar, and vanilla in large mixer bowl until creamy.",
+        "Add eggs, one at a time, beating well after each addition.",
+        "Gradually beat in flour mixture.",
+        "Stir in chocolate morsels and nuts.",
+        "Drop by rounded tablespoon onto ungreased baking sheets.",
+        "Bake for 9 to 11 minutes until golden brown. Cool on baking sheets for 2 minutes."
+      ],
+      "handlingInstructions": "Store in an airtight container with a slice of bread to keep soft.",
+      "modifications": "Use half semi-sweet and half dark chocolate chunks for extra cocoa flavor.",
+      "memories": "Mom's warm chocolate chip cookies straight out of the oven were the legendary after-school treat. The whole kitchen would smell like sweet butter and toasted chocolate!"
+    },
+    {
+      "id": "19",
+      "title": "Old-Fashioned Gingerbread Cake",
+      "description": "Warmly spiced dark molasses gingerbread cake.",
+      "category": "Bread",
+      "prepTime": "20 mins",
+      "cookTime": "35 mins",
+      "ingredients": [
+        "2 1/2 cups all-purpose flour",
+        "1 1/2 tsp baking soda",
+        "1 tbsp ground ginger",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground cloves",
+        "1/2 tsp salt",
+        "1/2 cup unsalted butter, softened",
+        "1/2 cup dark brown sugar",
+        "1 large egg",
+        "1 cup dark molasses",
+        "1 cup boiling water"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease 9x9 baking pan.",
+        "Whisk flour, baking soda, ginger, cinnamon, cloves, and salt.",
+        "Beat butter and brown sugar until fluffy.",
+        "Add egg and molasses, mixing well.",
+        "Add dry ingredients alternately with boiling water, stirring until smooth.",
+        "Pour into pan and bake 35 to 40 minutes.",
+        "Serve warm with whipped cream or lemon sauce."
+      ],
+      "handlingInstructions": "Store covered at room temperature.",
+      "modifications": "Dust top with powdered sugar before serving."
+    },
+    {
+      "id": "20",
+      "title": "Classic Fluffy Vanilla Buttercream",
+      "description": "Whipped, bakery-style vanilla buttercream frosting.",
+      "category": "Frostings",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "ingredients": [
+        "1 cup (2 sticks) unsalted butter, softened",
+        "4 cups powdered sugar, sifted",
+        "3 tbsp heavy whipping cream",
+        "2 tsp pure vanilla extract",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Beat softened butter in stand mixer for 3 full minutes until pale and creamy.",
+        "Gradually add powdered sugar 1 cup at a time on low speed.",
+        "Add heavy cream, vanilla, and salt.",
+        "Whip on high speed for 3 minutes until light, fluffy, and spreadable."
+      ],
+      "handlingInstructions": "Refrigerate in airtight container up to 2 weeks.",
+      "modifications": "Add 2 tbsp cocoa powder for chocolate buttercream."
+    },
+    {
+      "id": "21",
+      "title": "Rich Cream Cheese Frosting",
+      "description": "Tangy cream cheese frosting perfect for pumpkin bread and gingerbread.",
+      "category": "Frostings",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "ingredients": [
+        "8 oz cream cheese, softened",
+        "1/2 cup unsalted butter, softened",
+        "3 cups powdered sugar, sifted",
+        "1 tsp vanilla extract",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Beat cream cheese and butter together until smooth and free of lumps.",
+        "Add vanilla and salt.",
+        "Gradually beat in powdered sugar until creamy and smooth.",
+        "Chill 15 minutes before piping or spreading."
+      ],
+      "handlingInstructions": "Keep refrigerated; bring to room temp 10 mins before piping.",
+      "modifications": "Add 1/2 tsp cinnamon for spiced cream cheese frosting."
+    },
+    {
+      "id": "22",
+      "title": "Mom's Savory Glazed Meatloaf",
+      "description": "Classic comforting beef meatloaf topped with a sweet and tangy ketchup glaze.",
+      "category": "Main Dishes",
+      "prepTime": "20 mins",
+      "cookTime": "1 hour",
+      "ingredients": [
+        "2 lbs ground beef (80/20)",
+        "1 cup Ritz cracker crumbs or breadcrumbs",
+        "1/2 cup milk",
+        "1 small yellow onion, finely diced",
+        "2 large eggs, beaten",
+        "2 cloves garlic, minced",
+        "1 tbsp Worcestershire sauce",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "Glaze: 1/2 cup ketchup, 2 tbsp brown sugar, 1 tbsp yellow mustard"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C) and line a rimmed baking sheet with foil.",
+        "Soak cracker crumbs in milk in a large bowl for 5 minutes.",
+        "Add ground beef, diced onion, eggs, garlic, Worcestershire, salt, and pepper. Mix gently with hands until combined (do not overwork).",
+        "Shape meat mixture into a 9x5 inch loaf on prepared baking sheet.",
+        "Whisk glaze ingredients together in a small bowl and brush half over top of meatloaf.",
+        "Bake for 45 minutes, brush remaining glaze over top, and bake another 15 minutes until internal temp reaches 160°F.",
+        "Rest 10 minutes before slicing."
+      ],
+      "handlingInstructions": "Refrigerate leftovers within 2 hours; great for cold meatloaf sandwiches!",
+      "modifications": "Top with 3 slices of uncooked bacon before applying glaze."
+    },
+    {
+      "id": "23",
+      "title": "Mom's Best Classic Peanut Brittle",
+      "description": "Crisp, airy homemade peanut brittle made with raw peanuts, butter, and baking soda.",
+      "category": "Candies",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "ingredients": [
+        "2 cups granulated sugar",
+        "1 cup light corn syrup",
+        "1/2 cup water",
+        "1 cup (2 sticks) unsalted butter",
+        "2 cups raw unroasted peanuts",
+        "1 tsp baking soda",
+        "1 tsp pure vanilla extract",
+        "1/2 tsp salt"
+      ],
+      "instructions": [
+        "Butter two large rimmed baking sheets generously.",
+        "In a heavy 3-quart saucepan, combine sugar, corn syrup, and water over medium heat.",
+        "Stir until sugar dissolves and mixture comes to a boil.",
+        "Stir in butter and raw peanuts. Attach candy thermometer.",
+        "Cook, stirring frequently, until thermometer reaches 300°F (hard-crack stage).",
+        "Remove from heat immediately; stir in baking soda, vanilla, and salt (mixture will foam up).",
+        "Quickly pour and spread mixture thinly onto prepared baking sheets.",
+        "Set baking sheet outside in the cold garage (or in fridge) until set and firm, then break into pieces."
+      ],
+      "handlingInstructions": "⚠️ SEIZING HAZARD WARNING: NEVER use water-based liquid food coloring or water near hot sugar candy. Store brittle in an airtight container with wax paper between layers.",
+      "modifications": "Substitute raw pecans or cashews for peanuts.",
+      "memories": "Mom made batches of this brittle every Christmas. She would set the pans outside in the cold garage to set quickly, and the peanut brittle always turned out wonderfully light and crackly!"
+    },
+    {
+      "id": "24",
+      "title": "Classic Original Chex Mix",
+      "description": "The timeless crispy party snack baked with seasoned butter glaze.",
+      "category": "Nuts and Snacks",
+      "prepTime": "15 mins",
+      "cookTime": "1 hour",
+      "ingredients": [
+        "3 cups Corn Chex cereal",
+        "3 cups Rice Chex cereal",
+        "3 cups Wheat Chex cereal",
+        "1 cup mixed nuts",
+        "1 cup bite-sized pretzels",
+        "1 cup garlic-flavored bagel chips or rye chips",
+        "6 tbsp butter, melted",
+        "2 tbsp Worcestershire sauce",
+        "1 1/2 tsp seasoned salt",
+        "3/4 tsp garlic powder",
+        "1/2 tsp onion powder"
+      ],
+      "instructions": [
+        "Preheat oven to 250°F (120°C).",
+        "In a large bowl, combine Corn Chex, Rice Chex, Wheat Chex, mixed nuts, pretzels, and bagel chips.",
+        "In a small bowl, whisk together melted butter, Worcestershire sauce, seasoned salt, garlic powder, and onion powder.",
+        "Pour butter mixture evenly over cereal mixture; stir until thoroughly and evenly coated.",
+        "Spread mixture evenly across two large rimmed baking sheets.",
+        "Bake for 1 hour, stirring thoroughly every 15 minutes.",
+        "Spread onto paper towels or parchment to cool completely before serving."
+      ],
+      "handlingInstructions": "Pro Tip: Stirring every 15 minutes during baking is essential for an evenly crisp, toasted crunch! Store in an airtight container for up to 4 weeks.",
+      "modifications": "Add cheese crackers (like Cheez-Its) or a dash of hot sauce to the butter glaze for extra zesty flavor."
+    },
+    {
+      "id": "25",
+      "title": "Mom's Creamy Baked Macaroni & Cheese",
+      "description": "Rich, velvety baked macaroni and cheese made with sharp cheddar, butter, and a golden toasted breadcrumb crust.",
+      "category": "Side Dishes",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "ingredients": [
+        "8 oz elbow macaroni",
+        "1/4 cup butter",
+        "1/4 cup all-purpose flour",
+        "2 cups milk",
+        "2 cups sharp cheddar cheese, shredded",
+        "1/2 cup Gruyère or Monterey Jack cheese, shredded",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "1/2 cup panko or Ritz cracker crumbs",
+        "2 tbsp melted butter (for crumb topping)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease a 2-quart baking dish.",
+        "Cook elbow macaroni in salted boiling water for 2 minutes less than package directions; drain.",
+        "Melt 1/4 cup butter in a saucepan over medium heat; whisk in flour and cook 1 minute.",
+        "Gradually whisk in milk, salt, and pepper; cook until smooth and thickened.",
+        "Remove from heat and stir in shredded cheddar and Gruyère until completely melted.",
+        "Fold in cooked macaroni and pour into prepared baking dish.",
+        "Toss crumbs with 2 tbsp melted butter and sprinkle over the top.",
+        "Bake for 25 to 30 minutes until bubbling and golden brown on top."
+      ],
+      "handlingInstructions": "Pro Tip: Shred cheese from the block! Pre-shredded bagged cheese contains anti-caking agents that prevent a silky smooth melt.",
+      "modifications": "Add cooked crumbled bacon or diced ham for a savory twist.",
+      "memories": "Mom always baked this side dish for holiday family dinners alongside her savory meatloaf or roast turkey. The crispy golden breadcrumbs on top were always the best part!"
+    },
+    {
+      "id": "26",
+      "title": "Mom's Creamy Homemade Hot Chocolate",
+      "description": "Rich, velvety stovetop hot chocolate made with real chocolate, whole milk, cocoa, and a hint of vanilla.",
+      "category": "Hot Chocolate",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "ingredients": [
+        "4 cups whole milk",
+        "1/2 cup semi-sweet chocolate chips or chopped dark chocolate",
+        "1/4 cup Dutch-process cocoa powder",
+        "1/4 cup granulated sugar",
+        "1 tsp vanilla extract",
+        "1/8 tsp salt",
+        "Mini marshmallows or whipped cream for serving"
+      ],
+      "instructions": [
+        "In a medium saucepan, whisk together whole milk, cocoa powder, sugar, and salt over medium-low heat until warm (do not boil).",
+        "Add chocolate chips and whisk constantly until completely melted, smooth, and creamy.",
+        "Remove from heat and stir in vanilla extract.",
+        "Ladle into cozy mugs and top with marshmallows, whipped cream, or a dash of cinnamon."
+      ],
+      "handlingInstructions": "Pro Tip: Never let the milk boil! Slow medium-low heat keeps the chocolate smooth and prevents scalding.",
+      "modifications": "Add a pinch of cinnamon or a splash of peppermint extract for a festive holiday twist.",
+      "memories": "On snowy winter afternoons, Mom always had a warm pot of homemade hot chocolate ready when we came inside after playing in the snow. Topping it with extra marshmallows was mandatory!"
+    },
+    {
+      "id": "27",
+      "title": "Traditional Herb Butter Roast Turkey",
+      "description": "Classic whole oven-roasted turkey seasoned with garlic herb butter, aromatic root vegetables, and a crisp golden skin.",
+      "category": "Main Dishes",
+      "prepTime": "30 mins",
+      "cookTime": "3.5 hours",
+      "ingredients": [
+        "1 (12 to 14 lb) whole fresh turkey, giblets and neck removed",
+        "1/2 cup (1 stick) unsalted butter, softened",
+        "2 tbsp fresh chopped rosemary",
+        "2 tbsp fresh chopped thyme",
+        "1 tbsp fresh chopped sage",
+        "4 cloves garlic, minced",
+        "1 tbsp kosher salt",
+        "1 tsp black pepper",
+        "1 onion, quartered",
+        "1 lemon, halved",
+        "2 carrots and 2 celery ribs, chopped",
+        "2 cups low-sodium chicken or turkey broth"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C) and position rack in lower third of oven.",
+        "Pat turkey completely dry inside and out with paper towels.",
+        "In a bowl, mix softened butter, rosemary, thyme, sage, minced garlic, salt, and pepper.",
+        "Gently loosen skin over turkey breast and rub half the herb butter directly onto the meat under the skin.",
+        "Rub remaining herb butter all over the outside skin.",
+        "Stuff turkey cavity with quartered onion, lemon, and extra herbs.",
+        "Place chopped carrots and celery in roasting pan and rest turkey breast-side up on roasting rack over veggies; pour broth into bottom of pan.",
+        "Roast 3 to 3.5 hours, basting with pan juices every 45 minutes, until a meat thermometer inserted into thickest part of breast/thigh reaches 155°F (68°C).",
+        "Transfer turkey to carving board, tent loosely with foil, and rest 20 to 30 minutes. Carryover heat will gently raise internal temperature to 165°F (74°C) while locking in all natural juices!"
+      ],
+      "handlingInstructions": "Pro Tip (155°F Carryover Cooking Secret): Pull turkey out of oven at 155°F! Carryover heat during the 20-minute rest will coast the temperature up to the target 165°F, keeping meat ultra-moist instead of overcooking to 175°F+.",
+      "modifications": "Dry brine 24 hours ahead for extra crispy skin and deeply seasoned, tender meat."
+    },
+    {
+      "id": "28",
+      "title": "Crispy Spatchcock Roast Turkey",
+      "description": "Flattened, butterflied roast turkey cooked at high heat for extra crispy skin and juicy, evenly-cooked meat in half the time.",
+      "category": "Main Dishes",
+      "prepTime": "20 mins",
+      "cookTime": "80 mins",
+      "ingredients": [
+        "1 (12 to 14 lb) whole fresh turkey, thawed",
+        "1/4 cup butter, softened (for under the skin)",
+        "2 to 3 tbsp extra-virgin olive oil (for lubricating the outside skin)",
+        "1/2 cup chopped carrots (placed in pan bottom under bird)",
+        "2 to 3 cloves garlic, minced (placed in pan bottom under bird)",
+        "1 tbsp kosher salt",
+        "1 tsp black pepper",
+        "1 tsp garlic powder",
+        "1 tsp onion powder",
+        "1 tbsp fresh chopped thyme and rosemary"
+      ],
+      "instructions": [
+        "Dry Brine (24 Hours Ahead): 24 hours before cooking, coat turkey inside and out with coarse kosher salt and chill uncovered in fridge to dry the skin and season meat throughout.",
+        "Preheat oven to 425°F (220°C). Line a roasting pan with foil, and add 1/2 cup chopped carrots and 2-3 minced garlic cloves to the bottom of the pan.",
+        "Spatchcock Turkey: Place turkey breast-side down on a large cutting board. Using heavy-duty poultry shears, cut along both sides of the backbone to remove it completely.",
+        "Flip turkey breast-side up. Press down firmly on the center breastbone with the palms of your hands until you hear a crack and turkey lies flat.",
+        "Pat turkey skin thoroughly dry inside and out with paper towels.",
+        "Gently loosen the skin over the breast and thighs with your fingers. Rub softened butter directly onto the meat under the skin.",
+        "Coat the outside skin generously with olive oil until thoroughly lubricated.",
+        "Sprinkle salt, pepper, garlic powder, onion powder, and chopped herbs all over the oiled outside skin so the spices cling evenly.",
+        "Place flattened turkey on roasting rack over the carrots and minced garlic. Roast at 425°F for 70 to 80 minutes until breast reaches 155°F (68°C).",
+        "Rest 20 minutes before carving. Carryover heat will gently raise internal temperature to the ideal 165°F target while keeping meat ultra-juicy! Use pan drippings with roasted carrots and garlic to make gravy."
+      ],
+      "handlingInstructions": "Pro Tip (155°F Pull Temp): Pull at 155°F and rest 20 mins to reach 165°F carryover temp. Dry brining 24 hours ahead + butter under skin + olive oil on top produces the ultimate juicy, crackling-crispy turkey!",
+      "modifications": "Spatchcocking cooks the turkey in half the time and produces ultra-crispy skin across the entire bird!"
+    },
+    {
+      "id": "29",
+      "title": "Southern Candied Yams",
+      "description": "Tender sweet potato slices baked in a rich, caramelized glaze of brown sugar, butter, cinnamon, nutmeg, and vanilla.",
+      "category": "Side Dishes",
+      "prepTime": "15 mins",
+      "cookTime": "45 mins",
+      "ingredients": [
+        "4 large sweet potatoes or yams, peeled and sliced into 1/2-inch rounds",
+        "1 cup light brown sugar, packed",
+        "1/2 cup (1 stick) unsalted butter, sliced",
+        "1/4 cup pure maple syrup",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground nutmeg",
+        "1 tsp vanilla extract",
+        "1/4 tsp salt",
+        "1 cup mini marshmallows or pecan halves (optional topping)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease a 9x13-inch baking dish.",
+        "Arrange sliced sweet potatoes in an even layer in the prepared baking dish.",
+        "In a saucepan over medium heat, melt butter with brown sugar, maple syrup, cinnamon, nutmeg, vanilla, and salt, stirring until sugar is completely dissolved into a thick glaze.",
+        "Pour warm brown sugar glaze evenly over the sweet potatoes.",
+        "Cover baking dish tightly with aluminum foil and bake for 30 minutes.",
+        "Remove foil, spoon glaze from bottom of dish back over potatoes, and bake uncovered for another 15 minutes until potatoes are tender and sauce is thick and bubbling.",
+        "Optional: Top with mini marshmallows or pecans and broil for 2–3 minutes until toasted and golden."
+      ],
+      "handlingInstructions": "Refrigerate leftovers in an airtight container for up to 4 days. Reheat gently in oven or microwave.",
+      "modifications": "Top with toasted pecans for a nutty crunch or a splash of orange juice in the glaze for bright citrus flavor.",
+      "memories": "No holiday family dinner was complete without a piping hot dish of sweet, caramelized candied yams right next to the roast turkey!"
+    },
+    {
+      "id": "30",
+      "title": "Classic Green Bean Casserole",
+      "description": "Tender green beans folded into a creamy mushroom sauce and baked until bubbling, topped with crunchy French fried onions.",
+      "category": "Side Dishes",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "ingredients": [
+        "4 cups cooked green beans (trimmed fresh or frozen, drained)",
+        "1 (10.5 oz) can condensed cream of mushroom soup",
+        "1/2 cup whole milk or heavy cream",
+        "1 tsp Worcestershire sauce",
+        "1/2 tsp garlic powder",
+        "1/4 tsp black pepper",
+        "1 1/3 cups French fried onions, divided",
+        "1/2 cup shredded cheddar cheese (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease a 1.5-quart baking dish.",
+        "In a large mixing bowl, whisk together cream of mushroom soup, milk, Worcestershire sauce, garlic powder, and black pepper until smooth.",
+        "Fold in green beans and 2/3 cup of French fried onions (plus optional cheddar cheese).",
+        "Pour green bean mixture into prepared baking dish and spread evenly.",
+        "Bake uncovered for 25 minutes until hot and bubbling around edges.",
+        "Remove from oven, stir gently, and sprinkle remaining 2/3 cup French fried onions across the top.",
+        "Bake for an additional 5 minutes until onions are golden brown and crunchy."
+      ],
+      "handlingInstructions": "Refrigerate leftovers in an airtight container for up to 3–4 days.",
+      "modifications": "Add sautéed sliced mushrooms or crispy bacon bits for extra savory depth.",
+      "memories": "That irresistible golden crunch of fried onions on top of rich, creamy green beans is a timeless holiday tradition!"
+    }
+  ]
+}

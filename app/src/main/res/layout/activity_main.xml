@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_sparkles_bg"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/thegoodiebox_title_bg"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="The Goodie Box Title"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="26dp"
+                    android:paddingEnd="70dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/thegoodiebox_title" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- Page Selector Tabs Bar -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutPages"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/home_bg"
+                app:tabIndicatorColor="@color/candy_cane_red"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/candy_cane_red"
+                app:tabTextColor="@color/title_brown" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Horizontal Swipeable Main Content ViewPager2 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- Side Drawer Custom Content -->
+    <include layout="@layout/drawer_layout_content" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

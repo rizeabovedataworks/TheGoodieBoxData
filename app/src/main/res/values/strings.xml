@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Goodie Box</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="find_something_delicious">Find Something Delicious</string>
+    <string name="search_recipes_hint">Search recipes...</string>
+    <string name="browse_categories">Browse Categories</string>
+    <string name="popular_recipes">Popular Recipes</string>
+    <string name="see_all">See all</string>
+    <string name="view_recipe">View Recipe →</string>
+</resources>

@@ -1,5 +1,5 @@
 {
-  "version": 27,
+  "version": 28,
   "recipes": [
     {
       "id": "1",
@@ -872,6 +872,36 @@
       "handlingInstructions": "Refrigerate leftovers in an airtight container for up to 3–4 days.",
       "modifications": "Add sautéed sliced mushrooms or crispy bacon bits for extra savory depth.",
       "memories": "That irresistible golden crunch of fried onions on top of rich, creamy green beans is a timeless holiday tradition!"
+    },
+    {
+      "id": "31",
+      "title": "Divine Mashed Potatoes",
+      "description": "Ultra-creamy, fluffy mashed potatoes whipped with rich butter, sour cream, garlic, and heavy cream.",
+      "category": "Side Dishes",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "ingredients": [
+        "3 lbs Yukon Gold or Russet potatoes, peeled and cut into 1-inch cubes",
+        "1/2 cup (1 stick) unsalted butter, softened",
+        "1/2 cup sour cream",
+        "1/2 cup heavy cream or whole milk, warm",
+        "3 cloves garlic, minced or roasted",
+        "1 tsp salt (plus 1 tbsp for boiling water)",
+        "1/2 tsp black pepper",
+        "2 tbsp fresh chopped chives or green onions (garnish)"
+      ],
+      "instructions": [
+        "Place cubed potatoes in a large stockpot, cover with cold water by 1 inch, and add 1 tbsp salt.",
+        "Bring to a boil over high heat, then reduce heat to medium-high and simmer for 15 to 20 minutes until potatoes are fork-tender.",
+        "Drain potatoes thoroughly in a colander and return to the warm pot for 1 minute to let residual steam evaporate.",
+        "Mash potatoes with a potato masher or ricer until smooth.",
+        "Add softened butter, sour cream, warm heavy cream, minced garlic, salt, and black pepper.",
+        "Whip gently with a wooden spoon or hand mixer until velvety smooth and fluffy.",
+        "Garnish with fresh chopped chives and an extra pat of butter before serving warm."
+      ],
+      "handlingInstructions": "Pro Tip: Yukon Gold potatoes yield the creamiest texture! Never over-whip or use a food processor, which causes gummy potatoes.",
+      "modifications": "Fold in 1/2 cup shredded sharp cheddar cheese or crispy bacon bits for loaded mashed potatoes.",
+      "memories": "These divine, velvety mashed potatoes are the ultimate holiday crowd-pleaser—rich, buttery, and perfect for soaking up roast turkey gravy!"
     }
   ]
 }

@@ -17,7 +17,7 @@ class RecipeRepository(private val context: Context) {
     private val dao = db.recipeDao()
 
     companion object {
-        const val OTA_URL = "https://raw.githubusercontent.com/rizeabovedataworks/TheGoodieBox/main/recipes.json"
+        const val OTA_URL = "https://raw.githubusercontent.com/rizeabovedataworks/rizeabovedataworks.github.io/main/recipes.json"
     }
 
     suspend fun ensureDatabaseSeeded() = withContext(Dispatchers.IO) {

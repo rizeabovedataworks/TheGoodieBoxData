@@ -45,8 +45,13 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".CreatorLetterActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".AddRecipeActivity"
             android:exported="false"
+            android:windowSoftInputMode="adjustResize"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AboutActivity"

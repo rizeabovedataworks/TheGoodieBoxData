@@ -20,6 +20,10 @@ class ToolsHubFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<View>(R.id.cardHubCreatorLetter)?.setOnClickListener {
+            startActivity(Intent(requireContext(), CreatorLetterActivity::class.java))
+        }
+
         view.findViewById<View>(R.id.cardHubTurkey)?.setOnClickListener {
             startActivity(Intent(requireContext(), TurkeyGuideActivity::class.java))
         }

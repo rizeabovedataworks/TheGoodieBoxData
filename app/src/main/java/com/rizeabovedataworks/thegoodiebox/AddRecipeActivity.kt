@@ -53,6 +53,13 @@ class AddRecipeActivity : AppCompatActivity() {
             finish()
         }
 
+        val scrollView = findViewById<android.widget.ScrollView>(R.id.scrollViewAddRecipe)
+        androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(scrollView) { v, insets ->
+            val imeInsets = insets.getInsets(androidx.core.view.WindowInsetsCompat.Type.ime() or androidx.core.view.WindowInsetsCompat.Type.systemBars())
+            v.setPadding(v.paddingLeft, v.paddingTop, v.paddingRight, imeInsets.bottom + 280)
+            insets
+        }
+
         if (editingRecipeId != null) {
             supportActionBar?.title = "Edit Recipe"
             findViewById<Button>(R.id.btnSaveRecipe).text = "Update Recipe"

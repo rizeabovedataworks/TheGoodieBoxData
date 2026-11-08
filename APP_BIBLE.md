@@ -126,6 +126,9 @@ CREATE TABLE app_metadata (
 
 ## 🧰 Kitchen Tools & Guides Suite
 
+### 0. 💌 A Note from the Creator (`CreatorLetterActivity`)
+- **Greg's Family Letter**: A moving, personal memoir card from creator/developer Greg detailing his devotion as caregiver to his 91-year-old mom with dementia, memories of growing up with his parents, aluminum Christmas trees with spinning color wheels, 3x5 recipe cards, uncles, aunts, cousins, G.I. Joe toys, and holiday family feasts.
+
 ### 1. 🦃 How to Cook a Turkey Master Guide (`TurkeyGuideActivity`)
 - **Safe Thawing & Defrosting**: Refrigerator thawing ratios (24 hrs per 4–5 lbs) and cold-water method. Warnings against counter thawing.
 - **The 24-Hour Dry Brining Secret**: Coating 24 hours ahead with coarse kosher salt and chilling uncovered in the fridge to dry skin and season meat throughout.

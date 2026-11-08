@@ -25,16 +25,19 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
+        android:id="@+id/scrollViewAddRecipe"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:clipToPadding="false"
         android:fillViewport="true"
         android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="280dp">
 
             <TextView
                 android:id="@+id/tvAddRecipeHeader"
@@ -208,7 +211,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="120dp"
                 android:backgroundTint="@color/candy_cane_red"
                 android:text="Save Recipe to Cookbook"
                 android:textSize="16sp" />

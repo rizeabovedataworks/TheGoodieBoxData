@@ -1,6 +1,8 @@
 package com.rizeabovedataworks.thegoodiebox
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -32,10 +34,14 @@ class AboutActivity : AppCompatActivity() {
             insets
         }
 
+        findViewById<View>(R.id.cardAboutCreatorLetter)?.setOnClickListener {
+            startActivity(Intent(this, CreatorLetterActivity::class.java))
+        }
+
         val tvAboutVersion = findViewById<TextView>(R.id.tvAboutVersion)
         lifecycleScope.launch {
             val db = AppDatabase.getDatabase(this@AboutActivity)
-            val version = db.recipeDao().getStoredVersion() ?: 27
+            val version = db.recipeDao().getStoredVersion() ?: 29
             val count = db.recipeDao().getRecipeCount()
             tvAboutVersion.text = "App Version 1.0 • Dataset v$version ($count Recipes)"
         }

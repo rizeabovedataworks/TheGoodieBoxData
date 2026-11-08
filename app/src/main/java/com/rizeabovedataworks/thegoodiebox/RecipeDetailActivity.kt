@@ -281,10 +281,10 @@ class RecipeDetailActivity : AppCompatActivity() {
             "nuts and snacks", "nuts & snacks", "nuts", "snacks" -> R.drawable.nutsandsnacks_fb_img
             "cookies" -> R.drawable.chocolatechipcookie_img
             "candies", "candy" -> R.drawable.candies_fb_img
-            "fudge" -> R.drawable.img_category_fudge
+            "fudge" -> R.drawable.fudges_fb_img
             "bars", "bar" -> R.drawable.bars_fb_img
             "bread", "breads" -> R.drawable.breads_fb_img
-            "frostings" -> R.drawable.img_category_frostings
+            "frostings", "frosting" -> R.drawable.frostings_fb_img
             "main dishes", "main" -> R.drawable.meatloaf_img
             else -> R.drawable.ic_tbg_splash_main
         }

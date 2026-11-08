@@ -280,7 +280,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         return when (category.lowercase().trim()) {
             "nuts and snacks", "nuts & snacks", "nuts", "snacks" -> R.drawable.nutsandsnacks_fb_img
             "cookies" -> R.drawable.chocolatechipcookie_img
-            "candies" -> R.drawable.img_category_candies
+            "candies", "candy" -> R.drawable.candies_fb_img
             "fudge" -> R.drawable.img_category_fudge
             "bars" -> R.drawable.img_category_bars
             "bread", "breads" -> R.drawable.breads_fb_img

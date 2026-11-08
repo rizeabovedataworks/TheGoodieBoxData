@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 29,
   "recipes": [
     {
       "id": "1",
@@ -197,53 +197,56 @@
     },
     {
       "id": "8",
-      "title": "Creamy Peanut Butter Fudge",
-      "description": "Melt-in-your-mouth 4-ingredient peanut butter fudge.",
-      "category": "Fudge",
-      "prepTime": "10 mins",
+      "title": "Mom's Pink Peppermint Bark",
+      "description": "Mom's classic holiday almond bark infused with peppermint oil, a touch of red oil-based food coloring for a pretty pink hue, and crushed candy canes.",
+      "category": "Candies",
+      "prepTime": "15 mins",
       "cookTime": "5 mins",
       "ingredients": [
-        "1 cup (2 sticks) unsalted butter",
-        "1 cup creamy peanut butter",
-        "1 tsp vanilla extract",
-        "3 1/2 cups powdered sugar"
+        "24 oz (12 blocks) White Almond Bark",
+        "1/2 tsp peppermint oil (or peppermint extract)",
+        "1 to 2 drops red oil-based food coloring",
+        "1 cup crushed peppermint candy canes"
       ],
       "instructions": [
-        "Line an 8x8 inch baking dish with foil or parchment.",
-        "Melt butter and peanut butter together in a saucepan over medium heat, stirring until smooth.",
-        "Remove from heat, stir in vanilla.",
-        "Gradually stir in powdered sugar until smooth and thick.",
-        "Spread evenly into prepared dish.",
-        "Chill in refrigerator for at least 1 hour until set.",
-        "Slice into squares and serve."
+        "Melt white almond bark in a heavy saucepan over low heat (or in a microwave-safe bowl in 30-second bursts), stirring until smooth.",
+        "Stir in peppermint oil and 1 to 2 drops of red food coloring until the melted bark turns a lovely soft pink color.",
+        "Fold in most of the crushed candy canes, reserving a handful for the top.",
+        "Pour mixture onto a parchment-lined baking sheet and spread evenly.",
+        "Sprinkle reserved crushed candy canes on top.",
+        "Set baking sheet outside in the cold garage (or in the fridge) until set and firm, then break into rustic pieces."
       ],
-      "handlingInstructions": "Store in refrigerator in a covered container.",
-      "modifications": "Drizzle melted dark chocolate over the top before chilling."
+      "handlingInstructions": "⚠️ SEIZING HAZARD WARNING: NEVER use water-based liquid food coloring or water-based extracts in melted almond bark or chocolate! Even a single drop of water will cause the melted bark to instantly SEIZE into a stiff, grainy, clumping paste and ruin the entire batch! You MUST use oil-based food coloring (or gel/powder) and oil-based peppermint oil or candy oil flavoring.\n\nMom's Secret: Always use real candy canes—starlight mints do not have the same classic holiday flavor! Set outside in the cold garage to cool.",
+      "modifications": "Layer over dark chocolate for Dark Chocolate Peppermint Bark.",
+      "memories": "Mom's pink peppermint bark was always a weakness of mine.\n\nAs a kid, I always knew what she was making when she'd pull out that double boiler and start whacking candy canes in a Ziploc bag with her rolling pin. It wasn't a big recipe, but sometimes she'd let me whack the candy canes a few times myself. It always seemed to take forever for those huge chunks of almond bark to melt. Then she'd add a few drops of peppermint and a little food coloring, and it would be ready for the candy canes.\n\nShe'd let me pour them in, and she'd stir like crazy as she pulled it from the heat. She already had the cookie sheet and parchment paper ready. That ooey-gooey pink mixture would slowly pour out of the pan.\n\nLike her peanut brittle, it would go out on the car, sitting on a towel to cool. She would spend two full days in the kitchen making sweet treats for the holiday season, and Dad and I were the lucky ones who got to reap the rewards.\n\nDad knew it, too. Throughout the season, he would often sneak in for a sweet treat. The fridge was packed full of bags and Tupperware containers filled with all kinds of goodies.\n\nLooking back, some of my best memories are from the time I got to spend with my mom in that kitchen."
     },
     {
       "id": "9",
-      "title": "Old-Fashioned Maple Walnut Fudge",
-      "description": "Rich maple fudge studded with crunchy toasted walnuts.",
-      "category": "Fudge",
+      "title": "Mom's Salted Caramels",
+      "description": "Chewy, buttery homemade caramels sprinkled with coarse sea salt and individually wrapped in wax paper.",
+      "category": "Candies",
       "prepTime": "15 mins",
-      "cookTime": "10 mins",
+      "cookTime": "30 mins",
       "ingredients": [
-        "2 cups white chocolate chips",
-        "1 can (14 oz) sweetened condensed milk",
-        "1/4 cup butter",
-        "1 tsp pure maple extract",
-        "1 cup chopped toasted walnuts"
+        "2 cups granulated sugar",
+        "1 cup light corn syrup",
+        "1 cup heavy cream",
+        "1/2 cup (1 stick) unsalted butter",
+        "1 tsp pure vanilla extract",
+        "1 tbsp flaky sea salt (for garnish)"
       ],
       "instructions": [
-        "Line an 8x8 inch dish with parchment paper.",
-        "Combine white chocolate chips, condensed milk, and butter in saucepan over low heat.",
-        "Stir continuously until melted and velvety smooth.",
-        "Stir in maple extract and toasted walnuts.",
-        "Spread into prepared pan.",
-        "Chill until firm (approx. 2 hours) and slice into squares."
+        "Line an 8x8 inch baking pan with parchment paper and grease lightly.",
+        "In a heavy 3-quart saucepan, combine sugar, corn syrup, heavy cream, and butter over medium heat.",
+        "Stir constantly until sugar dissolves and butter melts.",
+        "Attach a candy thermometer and cook, stirring frequently, until mixture reaches 248°F (firm-ball stage).",
+        "Remove from heat immediately and stir in vanilla extract.",
+        "Pour into prepared baking pan and let cool for 20 minutes.",
+        "Sprinkle flaky sea salt evenly across the top.",
+        "Let cool completely (approx. 2 hours), then cut into squares and wrap in wax paper."
       ],
-      "handlingInstructions": "Store refrigerated in an airtight container for up to 2 weeks.",
-      "modifications": "Substitute pecans for walnuts."
+      "handlingInstructions": "Wrap individually in wax paper to prevent sticking. Store in a cool place for up to 3 weeks.",
+      "modifications": "Dip half of each caramel in melted dark chocolate."
     },
     {
       "id": "10",
@@ -276,208 +279,193 @@
     },
     {
       "id": "11",
-      "title": "Old-Fashioned Peppermint Bark",
-      "description": "Layered dark and white chocolate topped with crushed peppermint candy canes.",
-      "category": "Candies",
-      "prepTime": "20 mins",
+      "title": "Old-Fashioned Peanut Butter Fudge",
+      "description": "Creamy, melt-in-your-mouth homemade peanut butter fudge.",
+      "category": "Fudge",
+      "prepTime": "15 mins",
       "cookTime": "10 mins",
       "ingredients": [
-        "12 oz dark chocolate, chopped",
-        "12 oz white chocolate, chopped",
-        "1/2 tsp peppermint extract, divided",
-        "1 cup crushed candy canes or peppermint candies"
+        "2 cups sugar",
+        "1/2 cup milk",
+        "1/2 cup butter",
+        "3/4 cup creamy peanut butter",
+        "1 tsp vanilla extract"
       ],
       "instructions": [
-        "Line a 9x13 baking sheet with parchment paper.",
-        "Melt dark chocolate in heatproof bowl over simmering water; stir in 1/4 tsp peppermint extract.",
-        "Pour dark chocolate onto parchment and spread into even rectangle. Chill 20 mins.",
-        "Melt white chocolate; stir in remaining 1/4 tsp peppermint extract.",
-        "Pour white chocolate gently over chilled dark layer; spread carefully.",
-        "Immediately sprinkle crushed candy canes evenly over white chocolate, pressing gently.",
-        "Chill 30 mins until solid, then break into rustic bark pieces."
+        "Butter an 8x8 inch baking dish.",
+        "In a saucepan, combine sugar and milk, bringing to a rolling boil.",
+        "Boil for 2.5 minutes while stirring.",
+        "Remove from heat and immediately stir in butter, peanut butter, and vanilla until smooth.",
+        "Pour into the prepared dish and let cool until set.",
+        "Cut into squares."
       ],
-      "handlingInstructions": "Store in a cool place or airtight tin for up to 3 weeks.",
-      "modifications": "Use milk chocolate in place of dark chocolate."
+      "handlingInstructions": "Pro Tip: Do not over-boil or the fudge will become grainy. Store in an airtight container at room temperature.",
+      "modifications": "Swirl with chocolate fudge for a classic combo."
     },
     {
       "id": "12",
-      "title": "Easy Salted Caramel Turtles",
-      "description": "Toasted pecan clusters draped in rich caramel and topped with chocolate.",
-      "category": "Candies",
+      "title": "Banana Nut Bread",
+      "description": "Moist, delicious banana bread loaded with nuts and cozy spices.",
+      "category": "Bread",
       "prepTime": "15 mins",
-      "cookTime": "10 mins",
+      "cookTime": "55 mins",
       "ingredients": [
-        "2 cups toasted pecan halves",
-        "11 oz unwrapped soft caramel candies",
-        "2 tbsp heavy cream",
-        "1 1/2 cups semi-sweet chocolate chips",
-        "Flaky sea salt"
+        "3 ripe bananas, mashed",
+        "1/3 cup melted butter",
+        "3/4 cup sugar",
+        "1 egg, beaten",
+        "1 tsp vanilla extract",
+        "1 tsp baking soda",
+        "Pinch of salt",
+        "1 1/2 cups all-purpose flour",
+        "1/2 cup chopped walnuts or pecans"
       ],
       "instructions": [
-        "Line baking sheet with parchment.",
-        "Arrange pecans in small clusters of 3-4 halves on parchment.",
-        "Melt caramels with heavy cream in saucepan over low heat until smooth.",
-        "Spoon 1 tablespoon melted caramel over each pecan cluster.",
-        "Melt chocolate chips and dollop chocolate over caramel.",
-        "Sprinkle with flaky sea salt.",
-        "Let set at room temperature or chill 15 minutes."
+        "Preheat oven to 350°F (175°C) and grease a 4x8 inch loaf pan.",
+        "In a mixing bowl, mash the ripe bananas with a fork.",
+        "Stir in melted butter, sugar, egg, and vanilla.",
+        "Mix in baking soda and salt.",
+        "Add flour last, mixing just until incorporated. Fold in nuts.",
+        "Pour into loaf pan and bake for 50-60 minutes.",
+        "Cool before slicing."
       ],
-      "handlingInstructions": "Keep in airtight container separated by wax paper.",
-      "modifications": "Substitute cashews or walnuts for pecans."
+      "handlingInstructions": "Wrap tightly in plastic wrap or foil. Banana bread tastes even better and gets extra moist on day two!",
+      "modifications": "Add 1/2 cup chocolate chips or cranberries."
     },
     {
       "id": "13",
-      "title": "Mom's Chewy Chocolate Chip Pecan Bars",
-      "description": "Rich, brown-sugar blondie bars studded with chocolate chips and toasted pecans.",
-      "category": "Bars",
-      "prepTime": "15 mins",
-      "cookTime": "25 mins",
-      "ingredients": [
-        "2 1/8 cups all-purpose flour",
-        "1/2 tsp baking soda",
-        "12 tbsp (1 1/2 sticks) unsalted butter, melted and cooled",
-        "1 cup dark brown sugar, packed",
-        "1/2 cup granulated sugar",
-        "1 large egg + 1 egg yolk",
-        "1 tbsp vanilla extract",
-        "1 cup semi-sweet chocolate chips",
-        "1 cup chopped toasted pecans"
-      ],
-      "instructions": [
-        "Preheat oven to 325°F (165°C). Line 9x13 inch pan with foil and spray with nonstick cooking spray.",
-        "Whisk flour and baking soda together in a bowl.",
-        "In a separate bowl, whisk melted butter, brown sugar, and granulated sugar until smooth.",
-        "Whisk in egg, egg yolk, and vanilla.",
-        "Fold in dry ingredients with spatula until just combined.",
-        "Fold in chocolate chips and pecans.",
-        "Press batter evenly into prepared pan.",
-        "Bake for 22 to 25 minutes until golden brown and center is set. Cool completely before cutting."
-      ],
-      "handlingInstructions": "Store in airtight container at room temperature for up to 5 days.",
-      "modifications": "Add 1/2 cup butterscotch chips for additional richness."
-    },
-    {
-      "id": "14",
-      "title": "Classic Layered Seven-Layer Bars",
-      "description": "Layered graham cracker, coconut, chocolate, butterscotch, and pecan Magic Bars.",
-      "category": "Bars",
-      "prepTime": "10 mins",
-      "cookTime": "25 mins",
-      "ingredients": [
-        "1/2 cup unsalted butter, melted",
-        "1 1/2 cups graham cracker crumbs",
-        "1 cup semi-sweet chocolate chips",
-        "1 cup butterscotch chips",
-        "1 cup sweetened shredded coconut",
-        "1 cup chopped pecans or walnuts",
-        "1 can (14 oz) sweetened condensed milk"
-      ],
-      "instructions": [
-        "Preheat oven to 350°F (175°C).",
-        "Pour melted butter into 9x13 inch baking dish; sprinkle graham cracker crumbs evenly over butter and press firm.",
-        "Layer chocolate chips, butterscotch chips, coconut, and pecans evenly over crust.",
-        "Pour sweetened condensed milk evenly over all layers.",
-        "Bake for 25 minutes until edges are golden brown.",
-        "Cool completely in pan before cutting into squares."
-      ],
-      "handlingInstructions": "Store at room temperature or in fridge for extra chewiest texture.",
-      "modifications": "Substitute white chocolate chips for butterscotch."
-    },
-    {
-      "id": "15",
-      "title": "Decadent Fudge Brownies",
-      "description": "Ultra-fudgy brownies with a shiny crinkle top and dense cocoa center.",
-      "category": "Bars",
-      "prepTime": "15 mins",
-      "cookTime": "30 mins",
-      "ingredients": [
-        "1 cup (2 sticks) unsalted butter, melted",
-        "1 cup granulated sugar",
-        "1 cup dark brown sugar",
-        "4 large eggs, room temperature",
-        "1 tbsp vanilla extract",
-        "1 cup all-purpose flour",
-        "1 cup unsweetened Dutch cocoa powder",
-        "1 tsp salt",
-        "1 cup chocolate chunks"
-      ],
-      "instructions": [
-        "Preheat oven to 350°F (175°C). Line 9x13 inch pan with parchment paper.",
-        "Whisk melted butter, granulated sugar, and brown sugar vigorously in a large bowl.",
-        "Add eggs one at a time, whisking for 1 full minute until glossy and pale.",
-        "Whisk in vanilla extract.",
-        "Sift in flour, cocoa powder, and salt. Fold gently with spatula.",
-        "Fold in chocolate chunks.",
-        "Pour into prepared pan and smooth top.",
-        "Bake 28 to 32 minutes until toothpick inserted in center comes out with moist crumbs."
-      ],
-      "handlingInstructions": "Keep in airtight container at room temperature.",
-      "modifications": "Swirl 1/2 cup warm peanut butter into top of batter before baking."
-    },
-    {
-      "id": "16",
-      "title": "Festive Cranberry Orange Quick Bread",
-      "description": "Moist quick bread packed with tart cranberries and fresh orange zest.",
+      "title": "Pumpkin Bread",
+      "description": "Spiced autumn pumpkin bread that is moist and flavorful.",
       "category": "Bread",
       "prepTime": "20 mins",
       "cookTime": "55 mins",
       "ingredients": [
-        "2 cups all-purpose flour",
-        "1 cup granulated sugar",
+        "1 1/2 cups all-purpose flour",
+        "1 tsp baking soda",
+        "1/2 tsp salt",
+        "1 tsp cinnamon",
+        "1/2 tsp nutmeg",
+        "1 cup canned pumpkin puree",
+        "1/2 cup vegetable oil",
+        "1 cup sugar",
+        "2 eggs"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease a loaf pan.",
+        "Whisk flour, baking soda, salt, cinnamon, and nutmeg in a bowl.",
+        "In another bowl, mix pumpkin puree, oil, sugar, and eggs until smooth.",
+        "Combine wet and dry ingredients just until blended.",
+        "Pour into loaf pan and bake for 50-55 minutes.",
+        "Cool in pan for 10 minutes before removing."
+      ],
+      "handlingInstructions": "Store wrapped at room temperature for up to 4 days.",
+      "modifications": "Top with pepitas (pumpkin seeds) before baking."
+    },
+    {
+      "id": "14",
+      "title": "Classic Brownies",
+      "description": "Rich, chewy chocolate brownies with a crackly top.",
+      "category": "Bars",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "ingredients": [
+        "1/2 cup butter, melted",
+        "1 cup sugar",
+        "2 eggs",
+        "1 tsp vanilla extract",
+        "1/3 cup unsweetened cocoa powder",
+        "1/2 cup all-purpose flour",
+        "1/4 tsp salt",
+        "1/4 tsp baking powder"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and grease an 8x8 inch baking dish.",
+        "In a bowl, mix melted butter, sugar, eggs, and vanilla.",
+        "Whisk in cocoa powder, flour, salt, and baking powder until smooth.",
+        "Spread into baking dish and bake for 25-30 minutes.",
+        "Cool before cutting into squares."
+      ],
+      "handlingInstructions": "Store in an airtight container for up to 5 days.",
+      "modifications": "Add 1/2 cup chopped walnuts or chocolate chips."
+    },
+    {
+      "id": "15",
+      "title": "Lemon Bars",
+      "description": "Tart, sweet lemon filling on a buttery shortbread crust.",
+      "category": "Bars",
+      "prepTime": "20 mins",
+      "cookTime": "35 mins",
+      "ingredients": [
+        "Crust: 1 cup flour, 1/4 cup powdered sugar, 1/2 cup butter, softened",
+        "Filling: 1 cup sugar, 2 tbsp flour, 1/2 tsp baking powder, 2 eggs, 3 tbsp fresh lemon juice, 1 tbsp lemon zest",
+        "Powdered sugar for dusting"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C).",
+        "Combine crust ingredients and press into an 8x8 inch pan. Bake for 15 minutes.",
+        "Whisk filling ingredients together until smooth and pour over hot crust.",
+        "Bake for an additional 20 minutes until set.",
+        "Cool completely and dust with powdered sugar before cutting."
+      ],
+      "handlingInstructions": "Refrigerate for clean cuts. Best served chilled.",
+      "modifications": "Dust with extra powdered sugar right before serving."
+    },
+    {
+      "id": "16",
+      "title": "Festive Cranberry Orange Bread",
+      "description": "Zesty orange loaf dotted with tart fresh cranberries.",
+      "category": "Bread",
+      "prepTime": "20 mins",
+      "cookTime": "50 mins",
+      "ingredients": [
+        "2 cups flour",
+        "1 cup sugar",
         "1 1/2 tsp baking powder",
         "1/2 tsp baking soda",
         "1 tsp salt",
-        "1 tbsp fresh orange zest",
-        "3/4 cup fresh orange juice",
-        "1/4 cup unsalted butter, melted",
-        "1 large egg, beaten",
-        "1 1/2 cups fresh cranberries, coarsely chopped",
-        "1/2 cup chopped walnuts (optional)"
+        "1 egg",
+        "1 tbsp grated orange zest",
+        "3/4 cup orange juice",
+        "2 tbsp vegetable oil",
+        "1 cup cranberries, chopped"
       ],
       "instructions": [
-        "Preheat oven to 350°F (175°C) and grease a 9x5 inch loaf pan.",
-        "In a large bowl, whisk flour, sugar, baking powder, baking soda, salt, and orange zest.",
-        "In a liquid measuring cup, combine orange juice, melted butter, and egg.",
-        "Pour liquid ingredients into dry ingredients and stir gently just until combined.",
-        "Fold in chopped cranberries and walnuts.",
-        "Spoon batter into prepared loaf pan.",
-        "Bake for 55 to 60 minutes until toothpick inserted in center comes out clean.",
-        "Cool 10 mins in pan, then transfer to wire rack."
+        "Preheat oven to 350°F (175°C) and grease loaf pan.",
+        "Mix dry ingredients in a large bowl.",
+        "Whisk egg, orange zest, orange juice, and oil in a small bowl.",
+        "Combine wet and dry, then fold in cranberries.",
+        "Bake for 50 minutes until golden.",
+        "Cool on wire rack."
       ],
-      "handlingInstructions": "Wrap tightly in foil; tastes even better the second day!",
-      "modifications": "Drizzle with orange juice and powdered sugar glaze once cooled."
+      "handlingInstructions": "Store wrapped in foil to keep moist.",
+      "modifications": "Drizzle with orange glaze."
     },
     {
       "id": "17",
-      "title": "Cinnamon Swirl Pumpkin Bread",
-      "description": "Moist pumpkin spice loaf with a cinnamon-sugar swirl inside.",
-      "category": "Bread",
-      "prepTime": "15 mins",
-      "cookTime": "60 mins",
+      "title": "Soft Sugar Cookies",
+      "description": "Pillow-soft sugar cookies perfect for holiday decorating.",
+      "category": "Cookies",
+      "prepTime": "20 mins",
+      "cookTime": "8 mins",
       "ingredients": [
-        "1 3/4 cups all-purpose flour",
+        "2 3/4 cups flour",
         "1 tsp baking soda",
-        "1/2 tsp salt",
-        "1 tsp ground cinnamon",
-        "1/2 tsp ground nutmeg",
-        "1/4 tsp ground cloves",
-        "1 cup pumpkin puree",
-        "1/2 cup vegetable oil",
-        "1 cup granulated sugar",
-        "2 large eggs",
-        "3 tbsp sugar + 1 tbsp cinnamon (for swirl)"
+        "1/2 tsp baking powder",
+        "1 cup butter, softened",
+        "1 1/2 cups sugar",
+        "1 egg",
+        "1 tsp vanilla extract"
       ],
       "instructions": [
-        "Preheat oven to 350°F (175°C) and grease 9x5 loaf pan.",
-        "Whisk flour, baking soda, salt, cinnamon, nutmeg, and cloves.",
-        "In another bowl, whisk pumpkin, oil, 1 cup sugar, and eggs until smooth.",
-        "Mix wet and dry ingredients together until just incorporated.",
-        "Pour half batter into loaf pan, sprinkle with 2 tbsp cinnamon sugar, pour remaining batter, and top with rest of cinnamon sugar.",
-        "Swirl gently with a butter knife.",
-        "Bake 55 to 65 minutes until toothpick comes out clean."
+        "Preheat oven to 375°F (190°C).",
+        "Mix flour, baking soda, and baking powder.",
+        "Cream butter and sugar until smooth. Beat in egg and vanilla.",
+        "Gradually blend in dry ingredients.",
+        "Roll into 1-inch balls, place on baking sheet, and flatten slightly.",
+        "Bake for 8-10 minutes. Cool on wire rack."
       ],
-      "handlingInstructions": "Store at room temperature wrapped tightly in plastic wrap.",
-      "modifications": "Add 1/2 cup dark chocolate chips or pecans to batter."
+      "handlingInstructions": "Decorate with buttercream frosting once cooled.",
+      "modifications": "Roll in colored sanding sugar before baking."
     },
     {
       "id": "18",
@@ -514,35 +502,31 @@
     },
     {
       "id": "19",
-      "title": "Old-Fashioned Gingerbread Cake",
-      "description": "Warmly spiced dark molasses gingerbread cake.",
+      "title": "Vanilla Cupcakes",
+      "description": "Fluffy, tender vanilla cupcakes made from scratch.",
       "category": "Bread",
-      "prepTime": "20 mins",
-      "cookTime": "35 mins",
+      "prepTime": "15 mins",
+      "cookTime": "18 mins",
       "ingredients": [
-        "2 1/2 cups all-purpose flour",
-        "1 1/2 tsp baking soda",
-        "1 tbsp ground ginger",
-        "1 tsp ground cinnamon",
-        "1/2 tsp ground cloves",
-        "1/2 tsp salt",
-        "1/2 cup unsalted butter, softened",
-        "1/2 cup dark brown sugar",
-        "1 large egg",
-        "1 cup dark molasses",
-        "1 cup boiling water"
+        "1 1/2 cups flour",
+        "1 1/2 tsp baking powder",
+        "1/4 tsp salt",
+        "1/2 cup butter, softened",
+        "1 cup sugar",
+        "2 eggs",
+        "2 tsp vanilla extract",
+        "1/2 cup milk"
       ],
       "instructions": [
-        "Preheat oven to 350°F (175°C) and grease 9x9 baking pan.",
-        "Whisk flour, baking soda, ginger, cinnamon, cloves, and salt.",
-        "Beat butter and brown sugar until fluffy.",
-        "Add egg and molasses, mixing well.",
-        "Add dry ingredients alternately with boiling water, stirring until smooth.",
-        "Pour into pan and bake 35 to 40 minutes.",
-        "Serve warm with whipped cream or lemon sauce."
+        "Preheat oven to 350°F (175°C) and line muffin tin with paper liners.",
+        "Whisk flour, baking powder, and salt.",
+        "Cream butter and sugar. Add eggs one at a time, then vanilla.",
+        "Alternate adding dry ingredients and milk until smooth.",
+        "Fill liners 2/3 full and bake for 18-20 minutes.",
+        "Cool before frosting."
       ],
-      "handlingInstructions": "Store covered at room temperature.",
-      "modifications": "Dust top with powdered sugar before serving."
+      "handlingInstructions": "Frost with vanilla or chocolate buttercream.",
+      "modifications": "Add rainbow sprinkles to batter for funfetti cupcakes."
     },
     {
       "id": "20",

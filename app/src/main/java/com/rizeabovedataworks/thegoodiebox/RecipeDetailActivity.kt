@@ -143,6 +143,14 @@ class RecipeDetailActivity : AppCompatActivity() {
                     currentNotes = recipe.userNotes
                     updateNotesUi()
                     updateMenuVisibility()
+
+                    val tvMemoriesTitle = findViewById<TextView>(R.id.tvMemoriesTitle)
+                    val tvMemories = findViewById<TextView>(R.id.tvMemories)
+                    if (recipe.memories.isNotBlank()) {
+                        tvMemoriesTitle.visibility = View.VISIBLE
+                        tvMemories.visibility = View.VISIBLE
+                        tvMemories.text = recipe.memories
+                    }
                 }
             }
         }

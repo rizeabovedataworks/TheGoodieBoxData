@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@color/frosting_cream"
         android:clipToPadding="false"
         android:fillViewport="true">
 
@@ -36,17 +37,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="20dp"
+            android:paddingBottom="120dp">
 
-            <ImageView
-                android:id="@+id/ivRecipeImage"
+            <!-- Dish Image Header -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/frosting_cream"
-                android:contentDescription="Recipe Photo"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_tbg_splash_main" />
+                android:layout_height="220dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp">
 
+                <ImageView
+                    android:id="@+id/ivRecipeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Dish Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_tbg_splash_main" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Recipe Title & Description -->
             <TextView
                 android:id="@+id/tvDetailTitle"
                 android:layout_width="match_parent"
@@ -54,16 +65,20 @@
                 android:layout_marginTop="16dp"
                 android:textColor="@color/title_brown"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="Mom's Chocolate Chip Cookies" />
 
             <TextView
                 android:id="@+id/tvDetailDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textColor="#555555"
-                android:textSize="16sp" />
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/desc_brown"
+                android:textSize="15sp"
+                tools:text="Golden, buttery chocolate chip cookies with crisp edges and soft chewy centers." />
 
+            <!-- Prep & Cook Time Badge Row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,11 +89,11 @@
                     android:id="@+id/tvPrepTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#E8F0FE"
+                    android:background="#EAD9C4"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="6dp"
-                    android:textColor="#1967D2"
-                    android:textSize="14sp"
+                    android:textColor="@color/title_brown"
+                    android:textSize="13.5sp"
                     android:textStyle="bold"
                     tools:text="Prep: 15 mins" />
 
@@ -86,17 +101,24 @@
                     android:id="@+id/tvCookTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="#FEF7E0"
+                    android:layout_marginStart="10dp"
+                    android:background="#EAD9C4"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="6dp"
-                    android:textColor="#B06000"
-                    android:textSize="14sp"
+                    android:textColor="@color/title_brown"
+                    android:textSize="13.5sp"
                     android:textStyle="bold"
-                    tools:text="Cook: 40 mins" />
+                    tools:text="Cook: 10 mins" />
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="18dp"
+                android:background="#E0D2C2" />
+
+            <!-- Ingredients Section -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,6 +137,7 @@
                 android:textColor="#333333"
                 android:textSize="15sp" />
 
+            <!-- Directions Section -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -171,36 +194,11 @@
                 android:textColor="#333333"
                 android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/tvMemoriesTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:text="❤️ Memories from Mom's Kitchen"
-                android:textColor="@color/title_brown"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/tvMemories"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="#FFF9F3"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="5dp"
-                android:padding="16dp"
-                android:textColor="#3E2723"
-                android:textSize="15sp"
-                android:visibility="gone" />
-
             <!-- Personal Kitchen Notes Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="120dp"
                 app:cardBackgroundColor="#FFF9F3"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="1dp"
@@ -253,6 +251,32 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <!-- Memories from Mom's Kitchen Section (Placed AFTER Personal Notes Card) -->
+            <TextView
+                android:id="@+id/tvMemoriesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="❤️ Memories from Mom's Kitchen"
+                android:textColor="@color/title_brown"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMemories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="120dp"
+                android:background="#FFF9F3"
+                android:fontFamily="serif"
+                android:lineSpacingExtra="5dp"
+                android:padding="16dp"
+                android:textColor="#3E2723"
+                android:textSize="15sp"
+                android:visibility="gone" />
 
         </LinearLayout>
 

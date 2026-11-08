@@ -18,6 +18,7 @@ data class RecipeEntity(
     val modifications: String,
     val imageUri: String = "",
     val memories: String = "",
+    val userNotes: String = "",
     val isFavorite: Boolean = false,
     val isCustom: Boolean = false
 ) {
@@ -49,6 +50,7 @@ data class RecipeEntity(
             modifications = modifications,
             imageUri = imageUri,
             memories = memories,
+            userNotes = userNotes,
             isFavorite = isFavorite,
             isCustom = isCustom
         )
@@ -69,6 +71,7 @@ data class RecipeEntity(
                 modifications = recipe.modifications,
                 imageUri = recipe.imageUri,
                 memories = recipe.memories,
+                userNotes = recipe.userNotes,
                 isFavorite = recipe.isFavorite,
                 isCustom = recipe.isCustom
             )

@@ -141,7 +141,7 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Step 4: Adding, Editing & Deleting Recipes (Full CRUD) -->
+        <!-- Step 4: Heirloom Protection, Personal Notes & Custom Recipes -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="✏️ 4. Adding, Editing &amp; Deleting Recipes"
+                    android:text="🛡️ 4. Heirloom Protection &amp; Personal Notes"
                     android:textColor="@color/gingerbread_brown"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:lineSpacingExtra="4dp"
-                    android:text="• Adding Custom Recipes: Open the side drawer menu (tap ☰ at top left) and select '➕ Add New Recipe'. Enter your recipe title, category, description, prep/cook times, ingredients, directions, photo, and family memories!\n\n• Editing Recipes: Open any recipe detail screen and tap the ✏️ Edit icon in the top header action bar. Update any fields, ingredients, or photos and tap 'Update Recipe' to save.\n\n• Deleting Recipes: Open any recipe detail screen and tap the 🗑️ Delete icon in the top header action bar. Confirm deletion to remove it from your cookbook."
+                    android:text="• Protected Heirloom Originals: Mom's original family recipes are 100% protected and read-only so they can never be deleted or accidentally overwritten.\n\n• 📝 Personal Kitchen Notes: Want to add an allergy note, oven tweak, or family variation? Tap '✏️ Edit Note' at the bottom of any recipe card to add your own personal note (e.g. 'Leave out cinnamon for Lizzy'). Mom's original card stays preserved while your personal note stays saved on top!\n\n• ➕ Custom Family Recipes: Tap '➕ Add New Recipe' in the side drawer or Tools Hub to save your own custom creations. Custom recipes you create can be edited or deleted anytime."
                     android:textColor="#333333"
                     android:textSize="14.5sp" />
 

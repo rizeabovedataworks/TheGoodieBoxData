@@ -28,7 +28,8 @@ class RecipeRepository(private val context: Context) {
             for (recipe in localRecipes) {
                 val existing = existingList.find { it.id == recipe.id }
                 val isFav = existing?.isFavorite ?: false
-                val entity = RecipeEntity.fromRecipe(recipe).copy(isFavorite = isFav)
+                val notes = existing?.userNotes ?: ""
+                val entity = RecipeEntity.fromRecipe(recipe).copy(isFavorite = isFav, userNotes = notes)
                 dao.insertRecipe(entity)
             }
             dao.saveVersion(MetadataEntity(datasetVersion = assetVersion))
@@ -52,7 +53,8 @@ class RecipeRepository(private val context: Context) {
                     recipe.description.lowercase().contains(q) ||
                     recipe.category.lowercase().contains(q) ||
                     recipe.ingredients.any { it.lowercase().contains(q) } ||
-                    recipe.instructions.any { it.lowercase().contains(q) }
+                    recipe.instructions.any { it.lowercase().contains(q) } ||
+                    recipe.userNotes.lowercase().contains(q)
                 }
             }
         }
@@ -140,7 +142,8 @@ class RecipeRepository(private val context: Context) {
                     for (remote in remoteRecipes) {
                         val existing = existingList.find { it.id == remote.id }
                         val isFav = existing?.isFavorite ?: false
-                        val entity = RecipeEntity.fromRecipe(remote).copy(isFavorite = isFav)
+                        val notes = existing?.userNotes ?: ""
+                        val entity = RecipeEntity.fromRecipe(remote).copy(isFavorite = isFav, userNotes = notes)
                         dao.insertRecipe(entity)
                     }
                     dao.saveVersion(MetadataEntity(datasetVersion = remoteVersion))
@@ -158,6 +161,10 @@ class RecipeRepository(private val context: Context) {
 
     suspend fun toggleFavorite(recipeId: String, isFavorite: Boolean) = withContext(Dispatchers.IO) {
         dao.updateFavoriteStatus(recipeId, isFavorite)
+    }
+
+    suspend fun updateUserNotes(recipeId: String, userNotes: String) = withContext(Dispatchers.IO) {
+        dao.updateUserNotes(recipeId, userNotes)
     }
 
     suspend fun addCustomRecipe(recipe: Recipe) = withContext(Dispatchers.IO) {
@@ -181,10 +188,11 @@ class RecipeRepository(private val context: Context) {
         val category = obj.optString("category", "Nuts and Snacks")
         val prepTime = obj.optString("prepTime", "15 mins")
         val cookTime = obj.optString("cookTime", "30 mins")
-        val handlingInstructions = obj.optString("handlingInstructions", "Store in an airtight container.")
-        val modifications = obj.optString("modifications", "None.")
+        val handlingInstructions = obj.optString("handlingInstructions", "")
+        val modifications = obj.optString("modifications", "")
         val imageUri = obj.optString("imageUri", "")
         val memories = obj.optString("memories", "")
+        val userNotes = obj.optString("userNotes", "")
 
         val ingredientsArray = obj.optJSONArray("ingredients") ?: org.json.JSONArray()
         val ingredients = mutableListOf<String>()
@@ -198,6 +206,6 @@ class RecipeRepository(private val context: Context) {
             instructions.add(instructionsArray.getString(j))
         }
 
-        return Recipe(id, title, description, category, prepTime, cookTime, ingredients, instructions, handlingInstructions, modifications, imageUri, memories)
+        return Recipe(id, title, description, category, prepTime, cookTime, ingredients, instructions, handlingInstructions, modifications, imageUri, memories, userNotes)
     }
 }

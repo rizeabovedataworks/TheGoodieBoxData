@@ -54,6 +54,9 @@ interface RecipeDao {
     @Query("UPDATE recipes SET isFavorite = :isFavorite WHERE id = :recipeId")
     suspend fun updateFavoriteStatus(recipeId: String, isFavorite: Boolean)
 
+    @Query("UPDATE recipes SET userNotes = :userNotes WHERE id = :recipeId")
+    suspend fun updateUserNotes(recipeId: String, userNotes: String)
+
     @Query("SELECT MAX(datasetVersion) FROM app_metadata")
     suspend fun getStoredVersion(): Int?
 

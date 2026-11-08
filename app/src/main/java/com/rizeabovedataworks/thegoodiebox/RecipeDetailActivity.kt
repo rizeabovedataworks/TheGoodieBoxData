@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
@@ -37,6 +39,11 @@ class RecipeDetailActivity : AppCompatActivity() {
 
     private var recipeId: String = ""
     private var recipeTitle: String = ""
+    private var isCustomRecipe: Boolean = false
+    private var currentNotes: String = ""
+
+    private lateinit var tvUserNotes: TextView
+    private var optionMenu: Menu? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -117,27 +124,109 @@ class RecipeDetailActivity : AppCompatActivity() {
             tvMemoriesTitle.visibility = View.GONE
             tvMemories.visibility = View.GONE
         }
+
+        tvUserNotes = findViewById(R.id.tvUserNotes)
+        findViewById<Button>(R.id.btnEditUserNote).setOnClickListener {
+            showEditNoteDialog()
+        }
+
+        loadRecipeDetailsFromDb()
+    }
+
+    private fun loadRecipeDetailsFromDb() {
+        if (recipeId.isNotBlank()) {
+            lifecycleScope.launch {
+                val repo = RecipeRepository(this@RecipeDetailActivity)
+                val recipe = repo.getRecipeById(recipeId)
+                if (recipe != null) {
+                    isCustomRecipe = recipe.isCustom
+                    currentNotes = recipe.userNotes
+                    updateNotesUi()
+                    updateMenuVisibility()
+                }
+            }
+        }
+    }
+
+    private fun updateNotesUi() {
+        if (currentNotes.isNotBlank()) {
+            tvUserNotes.text = currentNotes
+            tvUserNotes.setTypeface(null, android.graphics.Typeface.NORMAL)
+            tvUserNotes.setTextColor(0xFF3E2723.toInt())
+        } else {
+            tvUserNotes.text = "No personal notes added yet. Tap 'Edit Note' to add allergy notes, oven tweaks, or family variations!"
+            tvUserNotes.setTypeface(null, android.graphics.Typeface.ITALIC)
+            tvUserNotes.setTextColor(0xFF5A4638.toInt())
+        }
+    }
+
+    private fun updateMenuVisibility() {
+        val menu = optionMenu ?: return
+        val editItem = menu.findItem(R.id.action_edit)
+        val deleteItem = menu.findItem(R.id.action_delete)
+
+        if (!isCustomRecipe) {
+            // Original Heirloom Recipe: Lock & Hide Edit/Delete to protect Mom's recipe!
+            editItem?.isVisible = false
+            deleteItem?.isVisible = false
+        } else {
+            // Custom User Recipe: Show Edit and Delete
+            editItem?.isVisible = true
+            deleteItem?.isVisible = true
+        }
+    }
+
+    private fun showEditNoteDialog() {
+        val input = EditText(this).apply {
+            hint = "e.g. Leave out cinnamon as Lizzy is allergic!"
+            setText(currentNotes)
+            inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_FLAG_MULTI_LINE
+            setLines(4)
+            setPadding(32, 32, 32, 32)
+        }
+
+        AlertDialog.Builder(this)
+            .setTitle("📝 Personal Kitchen Notes")
+            .setMessage("Add your own personal notes, allergy warnings, or cooking tweaks to this recipe. Mom's original recipe stays 100% preserved!")
+            .setView(input)
+            .setPositiveButton("Save Note") { _, _ ->
+                val newNote = input.text.toString().trim()
+                currentNotes = newNote
+                updateNotesUi()
+
+                lifecycleScope.launch {
+                    val repo = RecipeRepository(this@RecipeDetailActivity)
+                    repo.updateUserNotes(recipeId, newNote)
+                    Toast.makeText(this@RecipeDetailActivity, "Personal note saved!", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_recipe_detail, menu)
+        optionMenu = menu
+        updateMenuVisibility()
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_edit -> {
-                if (recipeId.isNotBlank()) {
+                if (recipeId.isNotBlank() && isCustomRecipe) {
                     val intent = Intent(this, AddRecipeActivity::class.java).apply {
                         putExtra(AddRecipeActivity.EXTRA_RECIPE_ID, recipeId)
                     }
                     startActivity(intent)
                     finish()
+                } else {
+                    Toast.makeText(this, "Original heirloom recipes are permanently preserved.", Toast.LENGTH_SHORT).show()
                 }
                 return true
             }
             R.id.action_delete -> {
-                if (recipeId.isNotBlank()) {
+                if (recipeId.isNotBlank() && isCustomRecipe) {
                     AlertDialog.Builder(this)
                         .setTitle("Delete Recipe")
                         .setMessage("Are you sure you want to delete '$recipeTitle' from your Goodie Box?")
@@ -151,6 +240,8 @@ class RecipeDetailActivity : AppCompatActivity() {
                         }
                         .setNegativeButton("Cancel", null)
                         .show()
+                } else {
+                    Toast.makeText(this, "Original heirloom recipes cannot be deleted.", Toast.LENGTH_SHORT).show()
                 }
                 return true
             }

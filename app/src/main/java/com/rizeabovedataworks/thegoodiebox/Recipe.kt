@@ -13,6 +13,7 @@ data class Recipe(
     val modifications: String = "",
     val imageUri: String = "",
     val memories: String = "",
+    val userNotes: String = "",
     val isFavorite: Boolean = false,
     val isCustom: Boolean = false
 )

@@ -156,10 +156,9 @@ CREATE TABLE app_metadata (
 
 ## 📝 Full Recipe CRUD & Safety Rules
 
-- **Create**: `AddRecipeActivity` (photo picker, category dropdown, titles, times, ingredients, directions, optional storage notes, optional modifications, memories).
-- **Read**: Home screen cards & `RecipeDetailActivity`.
-- **Update**: Header action bar `✏️ Edit` button opening `AddRecipeActivity` with `EXTRA_RECIPE_ID`.
-- **Delete**: Header action bar `🗑️ Delete` button with confirmation `AlertDialog` calling `repo.deleteRecipe()`.
+- **Heirloom Recipe Protection**: Original family recipes (`isCustom == false`) are permanently locked and read-only. The 🗑️ Delete and ✏️ Edit buttons are hidden for all original recipes.
+- **📝 Personal Kitchen Notes**: Users can tap "✏️ Edit Note" at the bottom of any original or custom recipe card to attach personal notes, family allergy warnings (e.g. *"Leave out cinnamon for Lizzy"*), or cooking tweaks. Personal notes are saved locally (`userNotes` field) and preserved across OTA syncs.
+- **Custom Recipe Management**: Recipes created by the user (`isCustom == true`) retain full Edit and Delete capabilities.
 - **Safe Storage Rule**: Generic default storage text was removed. Storage notes and modifications are optional and automatically hidden when blank, ensuring meat or dairy recipes never show inappropriate room-temperature storage hints.
 
 ---

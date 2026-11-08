@@ -282,7 +282,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             "cookies" -> R.drawable.chocolatechipcookie_img
             "candies", "candy" -> R.drawable.candies_fb_img
             "fudge" -> R.drawable.img_category_fudge
-            "bars" -> R.drawable.img_category_bars
+            "bars", "bar" -> R.drawable.bars_fb_img
             "bread", "breads" -> R.drawable.breads_fb_img
             "frostings" -> R.drawable.img_category_frostings
             "main dishes", "main" -> R.drawable.meatloaf_img

@@ -11,6 +11,12 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 
+/**
+ * Repository layer managing local Room database operations and Over-The-Air (OTA) cloud sync.
+ *
+ * Connects to the public GitHub dataset endpoint:
+ * https://raw.githubusercontent.com/rizeabovedataworks/TheGoodieBoxData/main/recipes.json
+ */
 class RecipeRepository(private val context: Context) {
 
     private val db = AppDatabase.getDatabase(context)
@@ -20,6 +26,9 @@ class RecipeRepository(private val context: Context) {
         const val OTA_URL = "https://raw.githubusercontent.com/rizeabovedataworks/TheGoodieBoxData/main/recipes.json"
     }
 
+    /**
+     * Seeds local database from assets `recipes.json` if empty or if asset version is newer.
+     */
     suspend fun ensureDatabaseSeeded() = withContext(Dispatchers.IO) {
         val storedVersion = dao.getStoredVersion() ?: 0
         val (assetVersion, localRecipes) = loadRecipesFromAssetsWithVersion()
@@ -36,6 +45,9 @@ class RecipeRepository(private val context: Context) {
         }
     }
 
+    /**
+     * Observes filtered recipes by category and search query as a reactive Flow stream.
+     */
     fun getRecipesFlow(category: String, query: String = ""): Flow<List<Recipe>> {
         val entityFlow = when {
             category.equals("Favorites", ignoreCase = true) -> dao.observeFavoriteRecipes()
@@ -60,6 +72,9 @@ class RecipeRepository(private val context: Context) {
         }
     }
 
+    /**
+     * Observes distinct categories present in local database as a reactive Flow stream.
+     */
     fun observeCategories(): Flow<List<String>> {
         return dao.observeDistinctCategories().map { dbCategories ->
             val result = mutableListOf("Favorites")
@@ -72,6 +87,9 @@ class RecipeRepository(private val context: Context) {
         }
     }
 
+    /**
+     * Returns distinct categories present in local database.
+     */
     suspend fun getCategoriesList(): List<String> = withContext(Dispatchers.IO) {
         val dbCategories = dao.getDistinctCategories()
         val result = mutableListOf<String>()
@@ -87,6 +105,9 @@ class RecipeRepository(private val context: Context) {
         }
     }
 
+    /**
+     * Fetches a single recipe by unique ID.
+     */
     suspend fun getRecipeById(recipeId: String): Recipe? = withContext(Dispatchers.IO) {
         dao.getRecipeById(recipeId)?.toRecipe()
     }
@@ -113,6 +134,10 @@ class RecipeRepository(private val context: Context) {
         return Pair(version, recipes)
     }
 
+    /**
+     * Executes Over-The-Air (OTA) sync with public GitHub data repository.
+     * Preserves user favorites and personal notes when remote updates arrive.
+     */
     suspend fun syncOta(): Pair<Boolean, String> = withContext(Dispatchers.IO) {
         try {
             val url = URL(OTA_URL)
@@ -159,24 +184,39 @@ class RecipeRepository(private val context: Context) {
         Pair(false, "OTA Sync failed: Network error.")
     }
 
+    /**
+     * Toggles favorite status for a recipe.
+     */
     suspend fun toggleFavorite(recipeId: String, isFavorite: Boolean) = withContext(Dispatchers.IO) {
         dao.updateFavoriteStatus(recipeId, isFavorite)
     }
 
+    /**
+     * Saves user personal kitchen notes for a recipe.
+     */
     suspend fun updateUserNotes(recipeId: String, userNotes: String) = withContext(Dispatchers.IO) {
         dao.updateUserNotes(recipeId, userNotes)
     }
 
+    /**
+     * Saves a new custom recipe added by the user.
+     */
     suspend fun addCustomRecipe(recipe: Recipe) = withContext(Dispatchers.IO) {
         val entity = RecipeEntity.fromRecipe(recipe.copy(isCustom = true))
         dao.insertRecipe(entity)
     }
 
+    /**
+     * Updates an existing custom recipe in database.
+     */
     suspend fun updateRecipe(recipe: Recipe) = withContext(Dispatchers.IO) {
         val entity = RecipeEntity.fromRecipe(recipe)
         dao.insertRecipe(entity)
     }
 
+    /**
+     * Deletes a custom recipe from database.
+     */
     suspend fun deleteRecipe(recipeId: String) = withContext(Dispatchers.IO) {
         dao.deleteRecipeById(recipeId)
     }

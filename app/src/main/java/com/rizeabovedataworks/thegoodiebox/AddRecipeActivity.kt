@@ -15,6 +15,15 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
 
+/**
+ * Activity for adding new custom recipes or editing existing custom recipes.
+ *
+ * Features:
+ * - Dynamic category dropdown populated from database SSOT categories
+ * - Photo picker via ActivityResultContracts
+ * - Optional storage handling and modification inputs
+ * - Generous 280dp bottom padding and soft keyboard insets for clear visibility while typing
+ */
 class AddRecipeActivity : AppCompatActivity() {
 
     companion object {
@@ -45,6 +54,7 @@ class AddRecipeActivity : AppCompatActivity() {
 
         editingRecipeId = intent.getStringExtra(EXTRA_RECIPE_ID)
 
+        // Setup top action bar toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbarAddRecipe)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -53,6 +63,7 @@ class AddRecipeActivity : AppCompatActivity() {
             finish()
         }
 
+        // Adjust bottom padding when soft keyboard appears
         val scrollView = findViewById<android.widget.ScrollView>(R.id.scrollViewAddRecipe)
         androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(scrollView) { v, insets ->
             val imeInsets = insets.getInsets(androidx.core.view.WindowInsetsCompat.Type.ime() or androidx.core.view.WindowInsetsCompat.Type.systemBars())
@@ -71,6 +82,7 @@ class AddRecipeActivity : AppCompatActivity() {
         spinnerCategory = findViewById(R.id.spinnerCategory)
         spinnerCategory.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, categories)
 
+        // Populate category dropdown dynamically from database SSOT
         lifecycleScope.launch {
             val repo = RecipeRepository(this@AddRecipeActivity)
             val dbCategories = repo.getCategoriesList()
@@ -92,6 +104,9 @@ class AddRecipeActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Pre-fills inputs when editing an existing custom recipe.
+     */
     private fun loadRecipeForEditing(recipeId: String) {
         lifecycleScope.launch {
             val repo = RecipeRepository(this@AddRecipeActivity)
@@ -135,6 +150,9 @@ class AddRecipeActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Saves or updates custom recipe in database.
+     */
     private fun saveRecipe() {
         val title = findViewById<TextInputEditText>(R.id.etTitle).text.toString().trim()
         val desc = findViewById<TextInputEditText>(R.id.etDesc).text.toString().trim()

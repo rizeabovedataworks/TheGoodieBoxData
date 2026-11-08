@@ -32,6 +32,15 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
 
+/**
+ * Main Entry Activity for The Goodie Box.
+ *
+ * Manages the 2-Screen Horizontal Swipe Experience using ViewPager2 and TabLayoutMediator:
+ * - Page 1: MainRecipeBoxFragment (3x5 Recipe Index Cards, search bar, and dynamic category tabs)
+ * - Page 2: ToolsHubFragment (Kitchen Tools & Guides Hub)
+ *
+ * Also handles the side navigation drawer with left-aligned vertical category tabs and secondary tools.
+ */
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private val viewModel: MainViewModel by viewModels()
@@ -44,6 +53,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         "Favorites", "Nuts and Snacks", "Cookies", "Candies", "Fudge", "Bars", "Bread", "Frostings", "Main Dishes"
     )
 
+    /**
+     * Theme token helper mapping category keys to labels and muted vintage accent colors.
+     */
     private data class TabTheme(
         val categoryKey: String,
         val label: String,
@@ -78,16 +90,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        // Adjust for system status bar insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.drawerLayout)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0)
             insets
         }
 
+        // Setup top action bar toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
+        // Setup side navigation drawer toggle
         drawerLayout = findViewById(R.id.drawerLayout)
         val toggle = ActionBarDrawerToggle(
             this, drawerLayout, toolbar,
@@ -96,6 +111,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
+        // Bind ViewPager2 & TabLayout for 2-Screen Swipe UI
         viewPagerMain = findViewById(R.id.viewPagerMain)
         tabLayoutPages = findViewById(R.id.tabLayoutPages)
 
@@ -108,6 +124,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         observeViewModel()
     }
 
+    /**
+     * Observes reactive StateFlow streams for dynamic category discovery and category selection.
+     */
     private fun observeViewModel() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -126,6 +145,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    /**
+     * Populates vertical left-aligned category index tabs inside the side navigation drawer.
+     */
     private fun setupSideDrawerTabs() {
         val drawerCategoryTabContainer = findViewById<LinearLayout>(R.id.drawerCategoryTabContainer) ?: return
         drawerCategoryTabContainer.removeAllViews()
@@ -184,7 +206,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             drawerCategoryTabContainer.addView(actionView)
         }
 
-        // Setup Drawer Tools & Guides Click Listeners
+        // Setup Side Drawer Tools & Guides Click Listeners
         findViewById<View>(R.id.btnDrawerAddRecipe)?.setOnClickListener {
             startActivity(Intent(this, AddRecipeActivity::class.java))
             drawerLayout.closeDrawer(GravityCompat.START)
@@ -224,6 +246,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return true
     }
 
+    /**
+     * Triggers Over-The-Air (OTA) sync with the public GitHub data repository.
+     */
     private fun syncOtaRecipes() {
         Toast.makeText(this, "Checking GitHub OTA for updates...", Toast.LENGTH_SHORT).show()
         viewModel.syncOta { _, message ->
@@ -231,6 +256,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    /**
+     * FragmentStateAdapter powering the 2-Screen ViewPager2 layout.
+     */
     private class MainPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
         override fun getItemCount(): Int = 2
 

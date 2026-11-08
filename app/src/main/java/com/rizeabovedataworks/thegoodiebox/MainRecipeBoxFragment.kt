@@ -27,6 +27,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
 
+/**
+ * Page 1 Fragment: The 3x5 Recipe Index Box.
+ *
+ * Renders the primary recipe collection on vintage 3x5 landscape index cards, featuring:
+ * - Real-time title and ingredient search input bar
+ * - Dynamic horizontal category index tabs (`index_tab_image.png`) with brass rail bar
+ * - Recipe RecyclerView list with star favorites toggle
+ * - Empty state hints
+ */
 class MainRecipeBoxFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
@@ -99,6 +108,9 @@ class MainRecipeBoxFragment : Fragment() {
         observeViewModel()
     }
 
+    /**
+     * Connects search query listener to MainViewModel.
+     */
     private fun setupSearchView() {
         etSearchRecipes.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -109,6 +121,9 @@ class MainRecipeBoxFragment : Fragment() {
         })
     }
 
+    /**
+     * Sets up RecyclerView and RecipeAdapter for 3x5 index cards.
+     */
     private fun setupRecyclerView() {
         recyclerViewRecipes.layoutManager = LinearLayoutManager(requireContext())
 
@@ -138,6 +153,9 @@ class MainRecipeBoxFragment : Fragment() {
         recyclerViewRecipes.adapter = recipeAdapter
     }
 
+    /**
+     * Observes StateFlow streams for recipes and category updates.
+     */
     private fun observeViewModel() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -175,6 +193,9 @@ class MainRecipeBoxFragment : Fragment() {
         }
     }
 
+    /**
+     * Dynamically populates horizontal category index tabs (`index_tab_image.png`) with Casual font labels.
+     */
     private fun setupCategoryChips() {
         val chipContainer = view?.findViewById<LinearLayout>(R.id.categoryChipContainer) ?: return
         chipContainer.removeAllViews()

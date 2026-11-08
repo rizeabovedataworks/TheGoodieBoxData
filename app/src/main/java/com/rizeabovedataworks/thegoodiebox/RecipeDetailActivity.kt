@@ -20,6 +20,16 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
+/**
+ * Recipe Detail Screen.
+ *
+ * Displays full ingredient lists, step-by-step directions, storage handling instructions,
+ * modifications, user personal kitchen notes, and Mom's storybook memories.
+ *
+ * Enforces Heirloom Recipe Protection:
+ * - Original recipes (`isCustom == false`): Edit & Delete buttons are hidden.
+ * - Custom recipes (`isCustom == true`): Full Edit and Delete options enabled.
+ */
 class RecipeDetailActivity : AppCompatActivity() {
 
     companion object {
@@ -62,6 +72,7 @@ class RecipeDetailActivity : AppCompatActivity() {
         val imageUri = intent.getStringExtra(EXTRA_IMAGE_URI) ?: ""
         val memories = intent.getStringExtra(EXTRA_MEMORIES) ?: ""
 
+        // Setup top header toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbarDetail)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -78,20 +89,24 @@ class RecipeDetailActivity : AppCompatActivity() {
             insets
         }
 
+        // Setup dish photo
         val ivRecipeImage = findViewById<ImageView>(R.id.ivRecipeImage)
         setupRecipeImage(ivRecipeImage, imageUri, category)
 
+        // Bind title, description, times
         findViewById<TextView>(R.id.tvDetailTitle).text = recipeTitle
         findViewById<TextView>(R.id.tvDetailDesc).text = desc
         findViewById<TextView>(R.id.tvPrepTime).text = "Prep: $prep"
         findViewById<TextView>(R.id.tvCookTime).text = "Cook: $cook"
 
+        // Bind ingredients and directions
         val ingredientsText = ingredients.joinToString(separator = "\n") { "• $it" }
         findViewById<TextView>(R.id.tvIngredients).text = ingredientsText
 
         val instructionsText = instructions.mapIndexed { index, step -> "${index + 1}. $step" }.joinToString(separator = "\n\n")
         findViewById<TextView>(R.id.tvInstructions).text = instructionsText
 
+        // Handling notes (hidden if blank)
         val tvHandlingTitle = findViewById<TextView>(R.id.tvHandlingTitle)
         val tvHandling = findViewById<TextView>(R.id.tvHandling)
         if (handling.isNotBlank()) {
@@ -103,6 +118,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             tvHandling.visibility = View.GONE
         }
 
+        // Modifications (hidden if blank)
         val tvModificationsTitle = findViewById<TextView>(R.id.tvModificationsTitle)
         val tvModifications = findViewById<TextView>(R.id.tvModifications)
         if (mods.isNotBlank()) {
@@ -114,6 +130,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             tvModifications.visibility = View.GONE
         }
 
+        // Bind Mom's Storybook Memories
         val cardMemories = findViewById<View>(R.id.cardMemories)
         val tvMemories = findViewById<TextView>(R.id.tvMemories)
         if (memories.isNotBlank()) {
@@ -123,6 +140,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             cardMemories.visibility = View.GONE
         }
 
+        // Bind Personal Kitchen Notes
         tvUserNotes = findViewById(R.id.tvUserNotes)
         findViewById<Button>(R.id.btnEditUserNote).setOnClickListener {
             showEditNoteDialog()
@@ -131,6 +149,9 @@ class RecipeDetailActivity : AppCompatActivity() {
         loadRecipeDetailsFromDb()
     }
 
+    /**
+     * Queries database to fetch recipe `isCustom` flag and personal notes (`userNotes`).
+     */
     private fun loadRecipeDetailsFromDb() {
         if (recipeId.isNotBlank()) {
             lifecycleScope.launch {
@@ -155,6 +176,9 @@ class RecipeDetailActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Updates the Personal Kitchen Notes card UI.
+     */
     private fun updateNotesUi() {
         if (currentNotes.isNotBlank()) {
             tvUserNotes.text = currentNotes
@@ -167,13 +191,16 @@ class RecipeDetailActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Enforces Heirloom Recipe Protection by hiding Edit/Delete options for original recipes.
+     */
     private fun updateMenuVisibility() {
         val menu = optionMenu ?: return
         val editItem = menu.findItem(R.id.action_edit)
         val deleteItem = menu.findItem(R.id.action_delete)
 
         if (!isCustomRecipe) {
-            // Original Heirloom Recipe: Lock & Hide Edit/Delete to protect Mom's recipe!
+            // Original Heirloom Recipe: Permanently locked and read-only
             editItem?.isVisible = false
             deleteItem?.isVisible = false
         } else {
@@ -183,6 +210,9 @@ class RecipeDetailActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Shows input dialog for adding/editing personal kitchen notes.
+     */
     private fun showEditNoteDialog() {
         val input = EditText(this).apply {
             hint = "e.g. Leave out cinnamon as Lizzy is allergic!"
@@ -256,6 +286,9 @@ class RecipeDetailActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    /**
+     * Resolves photo URIs in priority order: User URI -> Bundled Drawable -> Category Fallback.
+     */
     private fun setupRecipeImage(imageView: ImageView, imageUri: String, category: String) {
         if (imageUri.isNotBlank()) {
             if (imageUri.startsWith("content://") || imageUri.startsWith("file://")) {
@@ -276,6 +309,9 @@ class RecipeDetailActivity : AppCompatActivity() {
         imageView.setImageResource(getCategoryFallbackImage(category))
     }
 
+    /**
+     * Category fallback image mapping.
+     */
     private fun getCategoryFallbackImage(category: String): Int {
         return when (category.lowercase().trim()) {
             "nuts and snacks", "nuts & snacks", "nuts", "snacks" -> R.drawable.nutsandsnacks_fb_img

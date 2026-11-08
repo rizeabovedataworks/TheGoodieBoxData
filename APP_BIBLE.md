@@ -38,12 +38,13 @@
 
 ---
 
-## 🏗️ Architecture & Technical Stack
+## 🏗️ Architecture & Repositories Structure
 
 ```
                      ┌─────────────────────────────────────────┐
                      │          Single Source of Truth         │
-                     │    recipes.json (GitHub OTA Endpoint)   │
+                     │  TheGoodieBoxData (GitHub Public Repo)  │
+                     │  recipes.json (v29 Live Endpoint)       │
                      └────────────────────┬────────────────────┘
                                           │
                                      OTA Sync Flow
@@ -61,12 +62,14 @@ Fragment            Fragment                                  │   (AppDatabase
                                                               └───────────────────┘
 ```
 
-### Architecture Highlights
-- **Pattern**: MVVM (Model-View-ViewModel) with Android Jetpack Architecture Components.
-- **Concurrency**: Kotlin Coroutines & `StateFlow` reactive streams.
-- **Database**: Room Persistence Library Version `2` with `fallbackToDestructiveMigration(true)` in `AppDatabase.kt`.
-- **Single Source of Truth (SSOT)**: `recipes.json` hosted at `https://raw.githubusercontent.com/rizeabovedataworks/TheGoodieBox/main/recipes.json`.
-- **Dynamic Category Discovery**: `SELECT DISTINCT category FROM recipes` via `RecipeDao` and `RecipeRepository`. When a new category is published to `recipes.json`, the app dynamically generates Home Page chips, Side Drawer tabs, and Add Recipe dropdown items automatically.
+### GitHub Repository Architecture
+- **Private Source Code Backup Repository (`TheGoodieBoxApp`)**:
+  - `https://github.com/rizeabovedataworks/TheGoodieBoxApp`
+  - Houses all Android Studio Kotlin source code, UI layouts, assets, and project files.
+- **Public Cloud Data Repository (`TheGoodieBoxData`)**:
+  - `https://github.com/rizeabovedataworks/TheGoodieBoxData`
+  - Houses public `recipes.json` dataset for worldwide OTA cloud sync.
+  - Raw OTA Endpoint: `https://raw.githubusercontent.com/rizeabovedataworks/TheGoodieBoxData/main/recipes.json`
 
 ---
 
@@ -87,6 +90,7 @@ CREATE TABLE recipes (
     modifications TEXT NOT NULL DEFAULT '',
     imageUri TEXT NOT NULL DEFAULT '',
     memories TEXT NOT NULL DEFAULT '',
+    userNotes TEXT NOT NULL DEFAULT '',
     isFavorite INTEGER NOT NULL DEFAULT 0,
     isCustom INTEGER NOT NULL DEFAULT 0
 );
@@ -115,7 +119,7 @@ CREATE TABLE app_metadata (
   - RecyclerView displaying 3x5 index cards (`item_recipe.xml`).
 - **Page 2 (`ToolsHubFragment`)**:
   - Dedicated Kitchen Tools & Guides Hub.
-  - Large interactive cards for Turkey Guide, Tips & Hacks, Conversions, How to Use, and Add Custom Recipe.
+  - Large interactive cards for Creator Letter, Turkey Guide, Tips & Hacks, Conversions, How to Use, and Add Custom Recipe.
 
 ### 2. Side Navigation Drawer (`drawer_layout_content.xml`)
 - Header banner (`nav_header_onenote.xml`).
@@ -127,10 +131,10 @@ CREATE TABLE app_metadata (
 ## 🧰 Kitchen Tools & Guides Suite
 
 ### 0. 💌 A Note from the Creator (`CreatorLetterActivity`)
-- **Greg's Family Letter**: A moving, personal memoir card from creator/developer Greg detailing his devotion as caregiver to his 91-year-old mom with dementia, memories of growing up with his parents, aluminum Christmas trees with spinning color wheels, 3x5 recipe cards, uncles, aunts, cousins, G.I. Joe toys, and holiday family feasts.
+- **Greg's Family Memoir**: A moving, personal story card from creator/developer Greg detailing his devotion as caregiver to his 91-year-old mom with dementia, memories of growing up with his parents, aluminum Christmas trees with spinning color wheels, 3x5 recipe cards, uncles, aunts, cousins, G.I. Joe toys, and holiday family feasts.
 
 ### 1. 🦃 How to Cook a Turkey Master Guide (`TurkeyGuideActivity`)
-- **Safe Thawing & Defrosting**: Refrigerator thawing ratios (24 hrs per 4–5 lbs) and cold-water method. Warnings against counter thawing.
+- **Safe Thawing & Defrosting**: Refrigerator thawing ratios (24 hrs per 4–5 lbs) and cold-water method.
 - **The 24-Hour Dry Brining Secret**: Coating 24 hours ahead with coarse kosher salt and chilling uncovered in the fridge to dry skin and season meat throughout.
 - **How to Properly Spatchcock a Turkey**: Step-by-step backbone removal and flattening guide.
 - **155°F Pull Temp & Carryover Cooking**: Pull at 155°F; resting 20 mins under foil gently coasts internal temp up to 165°F while locking in moisture.
@@ -150,19 +154,19 @@ CREATE TABLE app_metadata (
 - **🌡️ Quick Oven Temp Reference Table**: 300°F (Slow) to 425°F (High-Heat Roast).
 
 ### 4. 📖 How to Use This App (`HowToUseActivity`)
-- Step-by-step user guide covering browsing, search, favorites, adding custom recipes, editing, and deleting.
+- Step-by-step user guide covering browsing, search, favorites, adding custom recipes, editing, deleting, heirloom recipe protection, and personal kitchen notes.
 
 ### 5. ℹ️ About & Legal (`AboutActivity`)
-- RizeAbove DataWorks legal notice, copyright, version information, and developer specs.
+- RizeAbove DataWorks legal notice, copyright, version information, developer specs, and dynamic dataset version indicator (`App Version 1.0 • Dataset v29`).
 
 ---
 
-## 📝 Full Recipe CRUD & Safety Rules
+## 📝 Full Recipe CRUD, Heirloom Protection & Notes Rules
 
 - **Heirloom Recipe Protection**: Original family recipes (`isCustom == false`) are permanently locked and read-only. The 🗑️ Delete and ✏️ Edit buttons are hidden for all original recipes.
 - **📝 Personal Kitchen Notes**: Users can tap "✏️ Edit Note" at the bottom of any original or custom recipe card to attach personal notes, family allergy warnings (e.g. *"Leave out cinnamon for Lizzy"*), or cooking tweaks. Personal notes are saved locally (`userNotes` field) and preserved across OTA syncs.
-- **Custom Recipe Management**: Recipes created by the user (`isCustom == true`) retain full Edit and Delete capabilities.
-- **Safe Storage Rule**: Generic default storage text was removed. Storage notes and modifications are optional and automatically hidden when blank, ensuring meat or dairy recipes never show inappropriate room-temperature storage hints.
+- **Custom Recipe Management**: Recipes created by the user (`isCustom == true`) retain full Edit and Delete capabilities via `AddRecipeActivity`.
+- **Keyboard Handling & Padding**: `AddRecipeActivity` layout features `280dp` bottom padding and `android:windowSoftInputMode="adjustResize"` to ensure soft keyboards never obscure inputs while typing.
 
 ---
 
@@ -173,32 +177,20 @@ When rendering dish photos in `RecipeDetailActivity` or `RecipeAdapter`, images 
 2. **Bundled Asset Drawables**: Checked via `resources.getIdentifier(imageUri, "drawable", packageName)` (e.g. `chocolatechipcookie_img`, `meatloaf_img`, `devilsnuts_img`).
 3. **Category Fallback Images**: If no photo exists, category fallbacks are dynamically selected:
    - `Cookies` -> `chocolatechipcookie_img`
+   - `Candies` -> `candies_fb_img`
+   - `Fudge` -> `fudges_fb_img`
+   - `Bars` -> `bars_fb_img`
    - `Nuts and Snacks` -> `nutsandsnacks_fb_img`
    - `Bread` -> `breads_fb_img`
+   - `Frostings` -> `frostings_fb_img`
    - `Main Dishes` -> `meatloaf_img`
    - Default -> App Splash Icon (`ic_tbg_splash_main`)
 
 ---
 
-## 📡 OTA (Over-The-Air) Sync Protocol
+## 📖 Master Recipe Dataset Registry (`recipes.json` v29)
 
-```
-1. App Triggers Sync -> HTTP GET Request to GitHub raw recipes.json
-2. Parse JSON -> Read remote "version" integer
-3. Compare -> If remoteVersion > localVersion:
-   - Read JSON "recipes" array
-   - For each recipe: Check if ID exists in Room DB
-   - Preserve existing local `isFavorite` state
-   - Insert / Update recipe in Room DB
-   - Save new remote version to `app_metadata` table
-4. Notify User -> "Successfully updated recipes to version X!"
-```
-
----
-
-## 📖 Master Recipe Dataset Registry (`recipes.json` v26)
-
-Contains **28 heirloom recipes** across **10 dynamic categories**:
+Contains **31 heirloom recipes** across **10 dynamic categories**:
 
 | ID | Title | Category | Special Highlights |
 | :--- | :--- | :--- | :--- |
@@ -209,18 +201,18 @@ Contains **28 heirloom recipes** across **10 dynamic categories**:
 | `5` | Classic Melt-in-Your-Mouth Butter Shortbread | Cookies | Rich butter shortbread |
 | `6` | Cinnamon Sugar Snickerdoodles | Cookies | Cream of tartar tang |
 | `7` | Classic Rich Chocolate Fudge | Fudge | Silky chocolate fudge |
-| `8` | Creamy Peanut Butter Fudge | Fudge | Smooth peanut butter |
-| `9` | Old-Fashioned Maple Walnut Fudge | Fudge | Real maple syrup |
+| `8` | Mom's Pink Peppermint Bark | Candies | ❤️ Memories attached |
+| `9` | Mom's Salted Caramels | Candies | Wax paper wrapped |
 | `10` | Classic Chewy Pecan Pralines | Candies | New Orleans pralines |
-| `11` | Old-Fashioned Peppermint Bark | Candies | Layered dark/white chocolate |
-| `12` | Easy Salted Caramel Turtles | Candies | Pecans & caramel |
-| `13` | Mom's Chewy Chocolate Chip Pecan Bars | Bars | Brown sugar Blondie base |
-| `14` | Classic Layered Seven-Layer Bars | Bars | Coconut & chocolate layers |
-| `15` | Decadent Fudge Brownies | Bars | Fudgy crinkle top |
-| `16` | Festive Cranberry Orange Quick Bread | Bread | Fresh orange zest |
-| `17` | Cinnamon Swirl Pumpkin Bread | Bread | Warm autumn spice |
+| `11` | Old-Fashioned Peanut Butter Fudge | Fudge | Creamy peanut butter |
+| `12` | Banana Nut Bread | Bread | Ripe banana loaf |
+| `13` | Pumpkin Bread | Bread | Autumn pumpkin loaf |
+| `14` | Classic Brownies | Bars | Chewy chocolate bars |
+| `15` | Lemon Bars | Bars | Tart lemon shortbread |
+| `16` | Festive Cranberry Orange Bread | Bread | Fresh orange zest |
+| `17` | Soft Sugar Cookies | Cookies | Holiday decorating cookies |
 | `18` | Mom's Best Classic Chocolate Chip Cookies | Cookies | ❤️ Memories attached |
-| `19` | Old-Fashioned Gingerbread Cake | Bread | Warm molasses cake |
+| `19` | Vanilla Cupcakes | Bread | Fluffy vanilla cupcakes |
 | `20` | Classic Fluffy Vanilla Buttercream | Frostings | Whipped buttercream |
 | `21` | Rich Cream Cheese Frosting | Frostings | Tangy cream cheese |
 | `22` | Mom's Savory Glazed Meatloaf | Main Dishes | Tangy tomato glaze |
@@ -230,16 +222,19 @@ Contains **28 heirloom recipes** across **10 dynamic categories**:
 | `26` | Mom's Creamy Homemade Hot Chocolate | Hot Chocolate | Stovetop cocoa |
 | `27` | Traditional Herb Butter Roast Turkey | Main Dishes | 155°F pull temp & dry brine |
 | `28` | Crispy Spatchcock Roast Turkey | Main Dishes | Butter under skin, olive oil outside, carrots & garlic gravy drippings |
+| `29` | Southern Candied Yams | Side Dishes | Brown sugar & maple glaze |
+| `30` | Classic Green Bean Casserole | Side Dishes | Creamy mushroom & crunchy onions |
+| `31` | Divine Mashed Potatoes | Side Dishes | Yukon Gold, butter & sour cream |
 
 ---
 
 ## 🛠️ Developer & Publisher Playbook
 
 ### Publishing New OTA Recipes & Categories
-1. Edit `app/src/main/assets/recipes.json` or remote `recipes.json` on GitHub.
-2. Increment `"version"` integer (e.g. `26` -> `27`).
+1. Edit `recipes.json` in `TheGoodieBoxData` repository.
+2. Increment `"version"` integer (e.g. `29` -> `30`).
 3. Add new recipe object to `"recipes"` list with new `"category"` string.
-4. Commit and push changes to GitHub `main` branch.
+4. Commit and push changes to `TheGoodieBoxData` `main` branch on GitHub.
 5. In the Android app, open side drawer (☰) and tap **`🔄 Sync OTA Recipes`**.
 
 ### Standard Build Commands
@@ -250,7 +245,7 @@ Contains **28 heirloom recipes** across **10 dynamic categories**:
 ---
 
 ## 🌐 Companion Website Integration
-The app syncs with companion web pages in the `RizeAbove Dataworks Website/` repository directory:
+The app syncs with companion web pages in the `rizeabovedataworks.github.io` repository:
 - `moms_kitchen.html`
 - `goodiebox.html`
 - `thegoodiebox.html`

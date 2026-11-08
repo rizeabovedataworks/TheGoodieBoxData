@@ -7,6 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
+/**
+ * Page 2 Fragment: Kitchen Tools & Guides Hub.
+ *
+ * Renders large interactive cards for quick access to:
+ * - Creator's Memoir Letter (`CreatorLetterActivity`)
+ * - Turkey Master Guide (`TurkeyGuideActivity`)
+ * - Mom's Kitchen Tips & Hacks (`TipsActivity`)
+ * - Measurement Conversions Calculator (`ConversionsActivity`)
+ * - How to Use App Guide (`HowToUseActivity`)
+ * - Add Custom Family Recipe (`AddRecipeActivity`)
+ */
 class ToolsHubFragment : Fragment() {
 
     override fun onCreateView(

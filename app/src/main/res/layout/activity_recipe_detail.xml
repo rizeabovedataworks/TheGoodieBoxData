@@ -252,31 +252,55 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Memories from Mom's Kitchen Section (Placed AFTER Personal Notes Card) -->
-            <TextView
-                android:id="@+id/tvMemoriesTitle"
+            <!-- Memories from Mom's Kitchen Storybook Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMemories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
-                android:text="❤️ Memories from Mom's Kitchen"
-                android:textColor="@color/title_brown"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/tvMemories"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginBottom="120dp"
-                android:background="#FFF9F3"
-                android:fontFamily="serif"
-                android:lineSpacingExtra="5dp"
-                android:padding="16dp"
-                android:textColor="#3E2723"
-                android:textSize="15sp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                app:cardBackgroundColor="#FBE7D4"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="3dp"
+                app:strokeColor="#D9B496"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/tvMemoriesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Memories from Mom's Kitchen"
+                        android:textColor="#3E2010"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="#D9B496" />
+
+                    <TextView
+                        android:id="@+id/tvMemories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="6dp"
+                        android:textColor="#2D170A"
+                        android:textSize="15.5sp"
+                        android:textStyle="italic"
+                        tools:text="Mom's warm chocolate chip cookies straight out of the oven were the legendary after-school treat. The whole kitchen would smell like sweet butter and toasted chocolate!" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
 

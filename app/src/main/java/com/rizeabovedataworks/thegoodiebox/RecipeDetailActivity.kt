@@ -114,15 +114,13 @@ class RecipeDetailActivity : AppCompatActivity() {
             tvModifications.visibility = View.GONE
         }
 
-        val tvMemoriesTitle = findViewById<TextView>(R.id.tvMemoriesTitle)
+        val cardMemories = findViewById<View>(R.id.cardMemories)
         val tvMemories = findViewById<TextView>(R.id.tvMemories)
         if (memories.isNotBlank()) {
-            tvMemoriesTitle.visibility = View.VISIBLE
-            tvMemories.visibility = View.VISIBLE
+            cardMemories.visibility = View.VISIBLE
             tvMemories.text = memories
         } else {
-            tvMemoriesTitle.visibility = View.GONE
-            tvMemories.visibility = View.GONE
+            cardMemories.visibility = View.GONE
         }
 
         tvUserNotes = findViewById(R.id.tvUserNotes)
@@ -144,12 +142,13 @@ class RecipeDetailActivity : AppCompatActivity() {
                     updateNotesUi()
                     updateMenuVisibility()
 
-                    val tvMemoriesTitle = findViewById<TextView>(R.id.tvMemoriesTitle)
+                    val cardMemories = findViewById<View>(R.id.cardMemories)
                     val tvMemories = findViewById<TextView>(R.id.tvMemories)
                     if (recipe.memories.isNotBlank()) {
-                        tvMemoriesTitle.visibility = View.VISIBLE
-                        tvMemories.visibility = View.VISIBLE
+                        cardMemories.visibility = View.VISIBLE
                         tvMemories.text = recipe.memories
+                    } else {
+                        cardMemories.visibility = View.GONE
                     }
                 }
             }

@@ -140,6 +140,13 @@ CREATE TABLE app_metadata (
 - **155°F Pull Temp & Carryover Cooking**: Pull at 155°F; resting 20 mins under foil gently coasts internal temp up to 165°F while locking in moisture.
 - **Roasted Carrots & Garlic Gravy Base**: Placed under the turkey in the pan to combine with drippings for rich gravy.
 
+### 1B. 🍖 How to Cook a Holiday Ham Guide (`HamGuideActivity`)
+- **Ham Types & Buying Guide**: Bone-In Spiral/City Ham vs. Boneless/Formed Ham vs. Fresh Ham.
+- **Low & Slow Reheating Strategy**: Reheating covered with foil at 325°F with 1/2 cup liquid (cider or white wine) to 140°F internal temp.
+- **🍷 To Wine or Not to Wine (Spirits & Glazes)**: Bourbon, Dark Rum, Brandy glazes, White Wine pan liquids, red wine reductions, and non-alcoholic fruit juice substitutes.
+- **Glaze Caramelization Secret**: Applying glaze in the last 25 minutes uncovered at 375°F/400°F so sugars bubble without burning.
+- **Baking Time Charts & Ham Bone Soup**: Time/temp reference tables and saving the ham bone for split pea or potato soup.
+
 ### 2. 💡 Mom's Kitchen Tips & Hacks (`TipsActivity`)
 - **Flax & Chia Seed Egg Substitute**: Mix 1 tbsp ground flaxseed/chia with 3 tbsp water (sit 5 mins) to replace 1 egg in baking.
 - **Room Temperature Rule**: Eggs & butter at room temp for smooth batters.
@@ -225,6 +232,8 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `29` | Southern Candied Yams | Side Dishes | Brown sugar & maple glaze |
 | `30` | Classic Green Bean Casserole | Side Dishes | Creamy mushroom & crunchy onions |
 | `31` | Divine Mashed Potatoes | Side Dishes | Yukon Gold, butter & sour cream |
+| `32` | Classic Brown Sugar Pineapple Baked Ham | Main Dishes | Clove-pinned pineapple & cherries with brown sugar glaze |
+| `33` | Easy Honey Glazed Boneless Ham | Main Dishes | Cinnamon honey mustard glaze for effortless slicing |
 
 ---
 

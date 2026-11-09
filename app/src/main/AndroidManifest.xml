@@ -45,6 +45,10 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".HamGuideActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".CreatorLetterActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />

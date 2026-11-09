@@ -215,6 +215,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(Intent(this, TurkeyGuideActivity::class.java))
             drawerLayout.closeDrawer(GravityCompat.START)
         }
+        findViewById<View>(R.id.btnDrawerHamGuide)?.setOnClickListener {
+            startActivity(Intent(this, HamGuideActivity::class.java))
+            drawerLayout.closeDrawer(GravityCompat.START)
+        }
         findViewById<View>(R.id.btnDrawerHowToUse)?.setOnClickListener {
             startActivity(Intent(this, HowToUseActivity::class.java))
             drawerLayout.closeDrawer(GravityCompat.START)

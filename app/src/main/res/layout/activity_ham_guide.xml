@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HamGuideActivity">
+
+    <!-- Top Action Bar Header with Back Navigation -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHamGuide"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/thegoodiebox_title_bg"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewHamGuide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/frosting_cream"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍖 How to Cook a Holiday Ham Guide"
+                android:textColor="@color/gingerbread_brown"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Complete holiday ham guide: ham types, low-and-slow reheating, wine/spirits glazing secrets, and baking time charts."
+                android:textColor="#5D4037"
+                android:textSize="14sp" />
+
+            <!-- Card 1: Ham Types & Buying Guide -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🍖 1. Ham Types &amp; Buying Guide"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Bone-In Spiral / City Ham (Juiciest &amp; Best Flavor):\n  Pre-cooked cured ham with the bone left in. Yields the richest flavor, juiciest meat, and leaves a ham bone for soup!\n\n• Boneless / Formed Ham (Effortless Slicing):\n  Pre-cooked ham with the bone removed. Easy to slice with zero waste, perfect for smaller gatherings.\n\n• Pre-Cooked vs. Fresh Ham:\n  95% of store-bought holiday hams are already fully cured and pre-cooked. Your goal is simply gentle, low-and-slow reheating to lock in moisture without drying out the meat!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Low & Slow Reheating Strategy -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 2. Low &amp; Slow Reheating Strategy"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• The Steam Lock Method:\n  Place ham cut-side down in roasting pan. Pour 1/2 cup liquid (apple juice, cider, or white wine) into the pan bottom and cover tightly with aluminum foil. Bake at 325°F (165°C).\n\n• The Glaze Caramelization Secret:\n  Keep covered until the last 20 to 30 minutes! Then remove foil, brush generously with warm brown sugar glaze, and increase oven temp to 375°F/400°F uncovered so the glaze bubbles into a sticky, glossy crust without burning."
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: To Wine or Not to Wine (Spirits, Wine & Glazes) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🍷 3. To Wine or Not to Wine (Spirits &amp; Glazes)"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Bourbon, Dark Rum &amp; Brandy Glazes:\n  Adding 2 tbsp dark spirits (Bourbon, Dark Rum, or Apple Brandy) to brown sugar or honey glazes infuses rich oak, vanilla, and caramel notes that complement salty ham.\n\n• White Wine Pan Liquids (Riesling, Pinot Grigio, Prosecco):\n  Adding 1/2 cup dry white wine to the roasting pan bottom creates a fragrant steam bath that keeps ham tender while balancing fruit glazes with bright acidity.\n\n• Does the Alcohol Burn Off?\n  Yes! High-temp baking evaporates the ethanol, concentrating rich grape and wood aromas.\n\n• Non-Alcoholic Substitutes:\n  For alcohol-free kitchens, swap alcohol for equal parts apple cider, tart cherry juice, orange juice, or ginger ale!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4: Baking Schedule & Temperature Chart -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⏱️ 4. Baking Schedule &amp; Temperature Chart"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Pre-Cooked Bone-In Ham (325°F):\n  - 8 to 10 lbs: 1.5 to 2 hours (10-12 mins/lb)\n  - 10 to 14 lbs: 2 to 2.5 hours (12-15 mins/lb)\n\n• Pre-Cooked Boneless Ham (325°F):\n  - 4 to 6 lbs: 1 to 1.5 hours (12-15 mins/lb)\n\n🎯 Target Internal Temperature:\n  Pre-cooked hams only need reheating to 140°F (60°C). Fresh uncooked ham must reach 145°F."
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 5: Resting, Carving & Ham Bone Magic -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🥣 5. Resting, Carving &amp; Ham Bone Magic"
+                        android:textColor="@color/gingerbread_brown"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="• Resting: Rest ham 15 minutes before carving so juices settle.\n\n• Storage Safety: Store leftover ham in airtight containers in fridge for 3 to 4 days or freeze for up to 2 months.\n\n• 🍲 Ham Bone Soup Magic: Save the meaty ham bone! Simmer bone in a pot with dried split peas or potatoes, carrots, onions, and broth for 1.5 hours for the ultimate comforting soup!"
+                        android:textColor="#333333"
+                        android:textSize="14.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

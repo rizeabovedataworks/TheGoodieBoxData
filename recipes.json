@@ -1,5 +1,5 @@
 {
-  "version": 29,
+  "version": 30,
   "recipes": [
     {
       "id": "1",
@@ -886,6 +886,66 @@
       "handlingInstructions": "Pro Tip: Yukon Gold potatoes yield the creamiest texture! Never over-whip or use a food processor, which causes gummy potatoes.",
       "modifications": "Fold in 1/2 cup shredded sharp cheddar cheese or crispy bacon bits for loaded mashed potatoes.",
       "memories": "These divine, velvety mashed potatoes are the ultimate holiday crowd-pleaser—rich, buttery, and perfect for soaking up roast turkey gravy!"
+    },
+    {
+      "id": "32",
+      "title": "Classic Brown Sugar Pineapple Baked Ham",
+      "description": "Showstopping spiral-sliced bone-in city ham studded with clove-pinned pineapple rings and cherries, glazed in brown sugar, maple syrup, and Dijon mustard.",
+      "category": "Main Dishes",
+      "prepTime": "20 mins",
+      "cookTime": "2 hours",
+      "ingredients": [
+        "1 (8 to 10 lb) pre-cooked spiral sliced or bone-in city ham",
+        "1 (20 oz) can pineapple slices in juice (reserve juice)",
+        "1 (6 oz) jar maraschino cherries",
+        "1/2 cup whole cloves",
+        "1 cup dark brown sugar, packed",
+        "1/4 cup pure maple syrup or honey",
+        "2 tbsp Dijon mustard",
+        "1/4 tsp ground cinnamon or cloves",
+        "1/2 cup apple cider or dry white wine (for pan bottom)"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C) and position rack in lower third of oven.",
+        "Place ham cut-side down in a roasting pan. Pour reserved pineapple juice and 1/2 cup apple cider (or white wine) into the bottom of the pan.",
+        "Cover pan tightly with aluminum foil to lock in moisture and bake for 1.5 hours (approx. 10-12 minutes per pound).",
+        "In a saucepan over medium heat, whisk brown sugar, maple syrup, Dijon mustard, and cinnamon until sugar dissolves into a warm caramel glaze.",
+        "Remove ham from oven and discard foil. Score diamond patterns if un-sliced.",
+        "Attach pineapple slices and maraschino cherries to the ham using toothpicks. Insert whole cloves in center diamond intersections.",
+        "Brush half the warm brown sugar glaze generously all over the ham and fruit.",
+        "Return uncovered ham to oven and bake at 375°F (190°C) for 20 to 30 minutes, basting with remaining glaze every 10 minutes, until glaze is bubbling and caramelized and internal temp reaches 140°F (60°C).",
+        "Transfer to carving board, spoon pan juices over top, and rest 15 minutes before serving."
+      ],
+      "handlingInstructions": "Pro Tip: Low and slow reheating covered at 325°F keeps ham juicy! Apply the brown sugar glaze in the last 25 minutes uncovered so sugars caramelize without burning.",
+      "modifications": "Add 2 tbsp Bourbon or Dark Rum to the glaze for rich caramel oak notes!"
+    },
+    {
+      "id": "33",
+      "title": "Easy Honey Glazed Boneless Ham",
+      "description": "Effortless, easy-to-slice boneless ham baked with a sweet, sticky cinnamon honey mustard glaze.",
+      "category": "Main Dishes",
+      "prepTime": "10 mins",
+      "cookTime": "1.5 hours",
+      "ingredients": [
+        "1 (4 to 6 lb) pre-cooked boneless or formed ham",
+        "1/2 cup honey",
+        "1/2 cup light brown sugar, packed",
+        "2 tbsp whole grain or Dijon mustard",
+        "2 tbsp unsalted butter, melted",
+        "1/4 tsp ground cinnamon",
+        "1/2 cup apple juice or Riesling white wine (for pan bottom)"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (165°C) and line baking pan with foil.",
+        "Place boneless ham flat-side down on baking rack in pan. Pour apple juice or white wine into pan bottom.",
+        "Cover tightly with foil and bake for 1 hour (approx. 12-15 minutes per pound).",
+        "In a small bowl, whisk honey, brown sugar, mustard, melted butter, and cinnamon until smooth.",
+        "Remove foil, brush half the honey glaze over ham, and bake uncovered at 375°F (190°C) for 15 minutes.",
+        "Brush with remaining glaze and bake another 10 to 15 minutes until top is bubbly, sticky, and caramelized (140°F internal temp).",
+        "Rest 10 minutes before effortless slicing."
+      ],
+      "handlingInstructions": "Refrigerate leftover ham in airtight containers for 3 to 4 days. Save ham slice trimmings for morning omelets or split pea soup!",
+      "modifications": "Substitute maple syrup for honey for a rich autumn maple glaze."
     }
   ]
 }

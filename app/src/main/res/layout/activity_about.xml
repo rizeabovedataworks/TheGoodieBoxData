@@ -249,7 +249,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:lineSpacingExtra="4dp"
-                        android:text="© 2026 RizeAbove DataWorks. All Rights Reserved.\n\nProvided 'as-is' for personal family use. All family memories, custom recipe contributions, and heirloom content remain the private property of their respective creators.\n\nFor support, questions, or cloud sync updates, visit:\nhttps://github.com/rizeabovedataworks/TheGoodieBox"
+                        android:text="© 2026 RizeAbove DataWorks. All Rights Reserved.\n\nProvided 'as-is' for personal family use. All family memories, custom recipe contributions, and heirloom content remain the private property of their respective creators.\n\nFor support, questions, or updates, visit:\nhttps://rizeabovedataworks.github.io/goodiebox.html"
                         android:textColor="#333333"
                         android:textSize="14.5sp" />
 

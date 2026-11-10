@@ -13,6 +13,10 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
+/**
+ * Main ViewModel managing application state, recipe search filtering, category streams,
+ * and automatic background Over-The-Air (OTA) cloud dataset syncing.
+ */
 @OptIn(ExperimentalCoroutinesApi::class)
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -24,6 +28,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
+    /**
+     * Reactive StateFlow stream of distinct categories discovered in database.
+     */
     val categoriesState: StateFlow<List<String>> = repository.observeCategories()
         .stateIn(
             scope = viewModelScope,
@@ -31,6 +38,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             initialValue = listOf("Favorites", "Nuts and Snacks", "Cookies", "Bars", "Candies", "Fudge", "Bread", "Frostings", "Main Dishes")
         )
 
+    /**
+     * Reactive StateFlow stream of recipes filtered by selected category and search query.
+     */
     val recipesState: StateFlow<List<Recipe>> = combine(_selectedCategory, _searchQuery) { category, query ->
         Pair(category, query)
     }.flatMapLatest { (category, query) ->
@@ -43,7 +53,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         viewModelScope.launch {
+            // Seed local database from assets on first launch or asset version bump
             repository.ensureDatabaseSeeded()
+
+            // Perform silent background OTA auto-sync on app startup
+            try {
+                repository.syncOta()
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
         }
     }
 
@@ -61,6 +79,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    /**
+     * User-triggered manual OTA sync callback.
+     */
     fun syncOta(onResult: (Boolean, String) -> Unit) {
         viewModelScope.launch {
             val result = repository.syncOta()

@@ -9,7 +9,7 @@
     <!-- Fixed Header: Open Recipe Box Lid & Horizontal Category Tabs -->
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="135dp"
         android:background="#3E2010">
 
         <!-- Layer 1: Open Recipe Box Lid Background -->
@@ -56,7 +56,7 @@
 
     </FrameLayout>
 
-    <!-- Scrollable Recipe Box Interior & Front Face -->
+    <!-- Scrollable Recipe Box Interior -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -70,134 +70,129 @@
             android:scaleType="centerCrop"
             android:src="@drawable/backrecipeboxpanel_img" />
 
+        <!-- Recipe Cards Content (Scrolls behind the front wooden face) -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingBottom="70dp">
+            android:paddingBottom="140dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="12dp">
 
-                <!-- Layer 4: Front Face of Wooden Recipe Box (Scrolls away with content) -->
-                <ImageView
-                    android:id="@+id/ivFrontBoxFace"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:contentDescription="Recipe Box Front Face"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/frontfacerecipebox_img" />
-
-                <LinearLayout
+                <!-- Main Header Title -->
+                <TextView
+                    android:id="@+id/tvMainHeaderTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingHorizontal="20dp"
-                    android:paddingTop="12dp">
+                    android:text="@string/find_something_delicious"
+                    android:textColor="@color/title_brown"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-                    <!-- Main Header Title -->
-                    <TextView
-                        android:id="@+id/tvMainHeaderTitle"
+                <!-- Search Input Bar Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/find_something_delicious"
-                        android:textColor="@color/title_brown"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="14dp">
 
-                    <!-- Search Input Bar Card -->
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="12dp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="2dp">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:contentDescription="Search Icon"
+                            android:src="@drawable/ic_search_brown" />
 
-                        <LinearLayout
+                        <EditText
+                            android:id="@+id/etSearchRecipes"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:paddingHorizontal="14dp">
+                            android:layout_marginStart="10dp"
+                            android:background="@null"
+                            android:hint="@string/search_recipes_hint"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/title_brown"
+                            android:textColorHint="#A08B7A"
+                            android:textSize="15sp" />
 
-                            <ImageView
-                                android:layout_width="22dp"
-                                android:layout_height="22dp"
-                                android:contentDescription="Search Icon"
-                                android:src="@drawable/ic_search_brown" />
+                    </LinearLayout>
 
-                            <EditText
-                                android:id="@+id/etSearchRecipes"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="10dp"
-                                android:background="@null"
-                                android:hint="@string/search_recipes_hint"
-                                android:imeOptions="actionSearch"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@color/title_brown"
-                                android:textColorHint="#A08B7A"
-                                android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
 
-                        </LinearLayout>
+                <!-- Popular Recipes Header Row -->
+                <TextView
+                    android:id="@+id/tvSectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/popular_recipes"
+                    android:textColor="@color/title_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    </androidx.cardview.widget.CardView>
+                <!-- Recipes List -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewRecipes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_recipe" />
 
-                    <!-- Popular Recipes Header Row -->
-                    <TextView
-                        android:id="@+id/tvSectionTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/popular_recipes"
-                        android:textColor="@color/title_brown"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <!-- Recipes List -->
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerViewRecipes"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:nestedScrollingEnabled="false"
-                        tools:listitem="@layout/item_recipe" />
-
-                    <!-- Empty State Hint -->
-                    <TextView
-                        android:id="@+id/tvEmptyState"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        android:gravity="center"
-                        android:lineSpacingExtra="3dp"
-                        android:text="No recipes found in this category."
-                        android:textColor="#7A6252"
-                        android:textSize="15sp"
-                        android:visibility="gone" />
-
-                </LinearLayout>
+                <!-- Empty State Hint -->
+                <TextView
+                    android:id="@+id/tvEmptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:text="No recipes found in this category."
+                    android:textColor="#7A6252"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
-        <!-- Floating Scroll Down Affordance Button -->
+        <!-- Layer 4: Front Face of Wooden Recipe Box (Fixed Overlay at Bottom of Viewport, 130dp Taller) -->
+        <ImageView
+            android:id="@+id/ivFrontBoxFace"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="Recipe Box Front Face"
+            android:scaleType="fitXY"
+            android:src="@drawable/frontfacerecipebox_img" />
+
+        <!-- Floating Scroll Down Affordance Button (Positioned above front face) -->
         <ImageView
             android:id="@+id/fabScrollDown"
             android:layout_width="44dp"
             android:layout_height="44dp"
             android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="140dp"
             android:background="@drawable/fab_down_bg"
             android:clickable="true"
             android:contentDescription="Scroll Down"
-            android:elevation="4dp"
+            android:elevation="6dp"
             android:focusable="true"
             android:padding="10dp"
             android:src="@drawable/ic_arrow_down" />

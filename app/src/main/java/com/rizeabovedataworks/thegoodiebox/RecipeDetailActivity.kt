@@ -287,11 +287,31 @@ class RecipeDetailActivity : AppCompatActivity() {
     }
 
     /**
-     * Resolves photo URIs in priority order: User URI -> Bundled Drawable -> Category Fallback.
+     * Resolves photo URIs in priority order: Network URL -> Local User URI -> Bundled Drawable -> Category Fallback.
      */
     private fun setupRecipeImage(imageView: ImageView, imageUri: String, category: String) {
         if (imageUri.isNotBlank()) {
-            if (imageUri.startsWith("content://") || imageUri.startsWith("file://")) {
+            if (imageUri.startsWith("http://") || imageUri.startsWith("https://")) {
+                lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                    try {
+                        val url = java.net.URL(imageUri)
+                        val connection = url.openConnection() as java.net.HttpURLConnection
+                        connection.setRequestProperty("User-Agent", "TheGoodieBox-Android")
+                        connection.connectTimeout = 8000
+                        connection.readTimeout = 8000
+                        val bitmap = android.graphics.BitmapFactory.decodeStream(connection.inputStream)
+                        connection.disconnect()
+                        if (bitmap != null) {
+                            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                                imageView.setImageBitmap(bitmap)
+                            }
+                            return@launch
+                        }
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+            } else if (imageUri.startsWith("content://") || imageUri.startsWith("file://")) {
                 try {
                     imageView.setImageURI(Uri.parse(imageUri))
                     return

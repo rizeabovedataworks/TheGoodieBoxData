@@ -1,5 +1,5 @@
 {
-  "version": 32,
+  "version": 33,
   "recipes": [
     {
       "id": "1",
@@ -1038,6 +1038,36 @@
       "handlingInstructions": "Pro Tip: High-heat baking at 425°F for the first 15 minutes sets the pie crust, while lowering to 350°F bakes the custard filling until silky smooth without cracking!",
       "modifications": "Substitute 1 1/2 tsp pumpkin pie spice for the cinnamon, ginger, and cloves.",
       "memories": "The scent of warm pumpkin, cinnamon, and cloves baking on Thanksgiving morning is the purest scent of home and holiday family traditions!"
+    },
+    {
+      "id": "37",
+      "title": "Old-Fashioned Peanut Butter Pie",
+      "description": "Rich, velvety no-bake peanut butter pie whipped with cream cheese and fluffy topping, set in a crunchy graham cracker crust and topped with hot fudge drizzle and chopped peanuts.",
+      "category": "Pies",
+      "prepTime": "20 mins",
+      "cookTime": "0 mins",
+      "ingredients": [
+        "1 (9-inch) graham cracker or chocolate Oreo pie crust",
+        "1 cup creamy peanut butter (Jif or Skippy)",
+        "1 pkg (8 oz) cream cheese, softened",
+        "1 cup powdered sugar, sifted",
+        "1 tsp pure vanilla extract",
+        "1 (8 oz) tub whipped topping (Cool Whip), thawed, divided",
+        "1/4 cup hot fudge sauce or melted dark chocolate (for drizzle)",
+        "1/4 cup chopped salted peanuts (for garnish)"
+      ],
+      "instructions": [
+        "In a large mixing bowl, beat softened cream cheese and creamy peanut butter together until light and fluffy.",
+        "Gradually add powdered sugar and vanilla extract, beating on low speed until smooth and creamy.",
+        "Gently fold in 2 cups (approx. 6 oz) of thawed whipped topping with a spatula until no white streaks remain.",
+        "Spoon peanut butter filling into the prepared graham cracker pie crust, smoothing the top with a spatula.",
+        "Spread remaining whipped topping over the top of the pie.",
+        "Drizzle generously with warm hot fudge sauce and sprinkle chopped salted peanuts over the top.",
+        "Refrigerate for at least 3 hours (or freeze for 1 hour) until chilled and firm before slicing."
+      ],
+      "handlingInstructions": "Pro Tip: Use regular commercial creamy peanut butter (like Jif or Skippy). Natural oil-separating peanut butter will cause the pie filling to separate!",
+      "modifications": "Use an Oreo or Nutter Butter cookie crust for an extra decadent chocolate peanut butter combo!",
+      "memories": "This rich, creamy peanut butter pie is pure nostalgia—decadent, velvety smooth, and always the first pie to vanish from the holiday dessert table!"
     }
   ]
 }

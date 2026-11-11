@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "recipes": [
     {
       "id": "1",
@@ -504,7 +504,7 @@
       "id": "19",
       "title": "Vanilla Cupcakes",
       "description": "Fluffy, tender vanilla cupcakes made from scratch.",
-      "category": "Bread",
+      "category": "Cakes",
       "prepTime": "15 mins",
       "cookTime": "18 mins",
       "ingredients": [

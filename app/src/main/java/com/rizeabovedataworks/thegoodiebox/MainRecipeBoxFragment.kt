@@ -92,11 +92,6 @@ class MainRecipeBoxFragment : Fragment() {
         nestedScrollView = view.findViewById(R.id.nestedScrollView)
         recyclerViewRecipes = view.findViewById(R.id.recyclerViewRecipes)
 
-        val fabScrollDown = view.findViewById<ImageView>(R.id.fabScrollDown)
-        fabScrollDown.setOnClickListener {
-            nestedScrollView.smoothScrollBy(0, 500)
-        }
-
         setupRecyclerView()
         observeViewModel()
     }

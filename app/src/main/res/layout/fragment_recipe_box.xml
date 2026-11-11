@@ -123,20 +123,7 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <!-- Floating Scroll Down Affordance Button -->
-        <ImageView
-            android:id="@+id/fabScrollDown"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/fab_down_bg"
-            android:clickable="true"
-            android:contentDescription="Scroll Down"
-            android:elevation="4dp"
-            android:focusable="true"
-            android:padding="10dp"
-            android:src="@drawable/ic_arrow_down" />
+
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

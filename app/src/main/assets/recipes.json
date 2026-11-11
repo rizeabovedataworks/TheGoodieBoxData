@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "recipes": [
     {
       "id": "1",
@@ -1133,6 +1133,38 @@
       "handlingInstructions": "Refrigerate leftover rolls wrapped tightly in foil for 3 to 4 days, or freeze baked rolls for up to 3 months. Reheat at 350°F for 5 minutes.",
       "modifications": "Sprinkle with coarse sea salt or garlic butter before serving.",
       "memories": "Golden dinner rolls fresh out of the oven were pure magic. Slathering them with extra butter while piping hot was an absolute holiday ritual!"
+    },
+    {
+      "id": "40",
+      "title": "Mom's Chocolate Wacky Cake",
+      "description": "Iconic Depression-era 'Crazy Cake' baked with cocoa, oil, and vinegar right in the baking pan—no eggs, butter, or milk required for an ultra-moist, fudgy cake!",
+      "category": "Cakes",
+      "prepTime": "10 mins",
+      "cookTime": "35 mins",
+      "ingredients": [
+        "1 1/2 cups all-purpose flour",
+        "1 cup granulated sugar",
+        "3 tbsp unsweetened cocoa powder",
+        "1 tsp baking soda",
+        "1/2 tsp salt",
+        "1 tsp pure vanilla extract",
+        "1 tbsp white vinegar",
+        "1/3 cup vegetable oil",
+        "1 cup cold water",
+        "Powdered sugar or Chocolate Buttercream Frosting for topping"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C).",
+        "Sift flour, sugar, cocoa powder, baking soda, and salt directly into an ungreased 8x8-inch baking pan.",
+        "Make 3 deep wells in the dry flour mixture with a spoon.",
+        "Pour vanilla extract into the first well, white vinegar into the second, and vegetable oil into the third.",
+        "Pour cold water over the entire pan and mix thoroughly with a fork until smooth and well combined.",
+        "Bake for 30 to 35 minutes until a toothpick inserted in the center comes out clean.",
+        "Cool completely in pan. Dust with powdered sugar or spread with classic vanilla or chocolate buttercream frosting!"
+      ],
+      "handlingInstructions": "Pro Tip: The chemical reaction between baking soda and vinegar creates carbon dioxide bubbles that lift the cake to fluffy perfection without needing eggs!",
+      "modifications": "Divide batter into paper liner muffin tins to make 12 Wacky Cupcakes! Bake at 350°F for 18-20 minutes.",
+      "memories": "I so loved Wacky Cake that for years I asked for it to be my birthday cake! The dark, rich flavor was always one of my favorites as a kid and even now. Due to the oil, it is ALWAYS ultra-moist, rich, and wonderful. Later, Mom turned the cake into cupcakes topped with her rich, straightforward vanilla frosting. Such a treat!"
     }
   ]
 }

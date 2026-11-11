@@ -97,15 +97,6 @@ class MainRecipeBoxFragment : Fragment() {
             nestedScrollView.smoothScrollBy(0, 500)
         }
 
-        // Connect interactive tilt-open scroll animation for the front wooden box panel
-        val ivFrontBoxFace = view.findViewById<ImageView>(R.id.ivFrontBoxFace)
-        nestedScrollView.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
-            val maxScrollPx = 280f
-            val fraction = (scrollY.toFloat() / maxScrollPx).coerceIn(0f, 1f)
-            ivFrontBoxFace.translationY = fraction * 350f
-            ivFrontBoxFace.alpha = 1.0f - (fraction * 0.9f)
-        })
-
         setupRecyclerView()
         observeViewModel()
     }
@@ -190,8 +181,8 @@ class MainRecipeBoxFragment : Fragment() {
         chipContainer.removeAllViews()
 
         val currentCat = viewModel.selectedCategory.value
-        val fixedTabWidthPx = dpToPx(110)
-        val tabHeightPx = dpToPx(34)
+        val fixedTabWidthPx = dpToPx(118)
+        val tabHeightPx = dpToPx(38)
         val casualTypeface = Typeface.create("casual", Typeface.BOLD)
 
         for (categoryKey in currentCategoriesList) {

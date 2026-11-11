@@ -9,11 +9,11 @@
     <!-- Fixed Header: Open Recipe Box Lid & Horizontal Category Tabs -->
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="165dp"
         android:background="#3E2010"
         android:elevation="4dp">
 
-        <!-- Layer 1: Open Recipe Box Lid Background -->
+        <!-- Layer 1: Taller Open Recipe Box Lid Background -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
+                android:paddingVertical="8dp"
                 android:scrollbars="none">
 
                 <LinearLayout
@@ -42,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="bottom"
                     android:orientation="horizontal"
-                    android:paddingHorizontal="4dp"
+                    android:paddingHorizontal="6dp"
                     android:paddingTop="4dp" />
 
             </HorizontalScrollView>
@@ -57,13 +58,13 @@
 
     </FrameLayout>
 
-    <!-- Interactive Recipe Box Viewport -->
-    <FrameLayout
+    <!-- Scrollable Recipe Box Interior & Cards -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <!-- Layer 3: Inside Wooden Recipe Box Panel Background -->
+        <!-- Inside Wooden Recipe Box Panel Background -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,13 +72,13 @@
             android:scaleType="centerCrop"
             android:src="@drawable/backrecipeboxpanel_img" />
 
-        <!-- Recipe Cards Content (Scrolls inside the box) -->
+        <!-- Recipe Cards Content -->
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingBottom="90dp">
+            android:paddingBottom="70dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -122,16 +123,6 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <!-- Layer 4: Front Face of Wooden Recipe Box (Tilts/Slides open on touch scroll) -->
-        <ImageView
-            android:id="@+id/ivFrontBoxFace"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="Recipe Box Front Face"
-            android:elevation="3dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/frontfacerecipebox_img" />
-
         <!-- Floating Scroll Down Affordance Button -->
         <ImageView
             android:id="@+id/fabScrollDown"
@@ -142,11 +133,11 @@
             android:background="@drawable/fab_down_bg"
             android:clickable="true"
             android:contentDescription="Scroll Down"
-            android:elevation="6dp"
+            android:elevation="4dp"
             android:focusable="true"
             android:padding="10dp"
             android:src="@drawable/ic_arrow_down" />
 
-    </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>

@@ -242,6 +242,8 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `39` | Classic Fluffy Dinner Rolls | Bread | Golden feather-light yeast dinner rolls |
 | `40` | Mom's Chocolate Wacky Cake | Cakes | Moist Depression-era crazy cake baked with cocoa, oil & vinegar |
 | `41` | Greg's Spiced Dry Hot Chocolate Mix | Hot Chocolate | Homemade dry spiced cocoa mix in gift pint Mason jars |
+| `42` | 50/50 White Bread | Bread | Classic 50/50 bread flour and all-purpose flour sandwich loaf |
+| `43` | Classic Soft Milk Bread | Bread | Cloud-soft white milk bread with warm milk, butter & honey |
 
 ---
 

@@ -219,6 +219,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(Intent(this, HamGuideActivity::class.java))
             drawerLayout.closeDrawer(GravityCompat.START)
         }
+        findViewById<View>(R.id.btnDrawerTipJar)?.setOnClickListener {
+            startActivity(Intent(this, TipJarActivity::class.java))
+            drawerLayout.closeDrawer(GravityCompat.START)
+        }
         findViewById<View>(R.id.btnDrawerHowToUse)?.setOnClickListener {
             startActivity(Intent(this, HowToUseActivity::class.java))
             drawerLayout.closeDrawer(GravityCompat.START)

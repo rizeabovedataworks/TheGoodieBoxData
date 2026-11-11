@@ -54,6 +54,10 @@ class ToolsHubFragment : Fragment() {
             startActivity(Intent(requireContext(), CreatorLetterActivity::class.java))
         }
 
+        view.findViewById<View>(R.id.cardHubTipJar)?.setOnClickListener {
+            startActivity(Intent(requireContext(), TipJarActivity::class.java))
+        }
+
         view.findViewById<View>(R.id.cardHubTurkey)?.setOnClickListener {
             startActivity(Intent(requireContext(), TurkeyGuideActivity::class.java))
         }

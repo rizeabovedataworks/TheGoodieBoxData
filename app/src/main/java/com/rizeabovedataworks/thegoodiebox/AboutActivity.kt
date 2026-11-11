@@ -38,6 +38,10 @@ class AboutActivity : AppCompatActivity() {
             startActivity(Intent(this, CreatorLetterActivity::class.java))
         }
 
+        findViewById<View>(R.id.cardAboutTipJar)?.setOnClickListener {
+            startActivity(Intent(this, TipJarActivity::class.java))
+        }
+
         val tvAboutVersion = findViewById<TextView>(R.id.tvAboutVersion)
         lifecycleScope.launch {
             val db = AppDatabase.getDatabase(this@AboutActivity)

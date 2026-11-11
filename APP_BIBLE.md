@@ -237,6 +237,9 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `34` | Mom's Classic Baked Scalloped Corn | Side Dishes | Creamed corn, whole sweet corn & Ritz cracker crust |
 | `35` | Greg's Skillet Scalloped Corn | Side Dishes | Fast 15-minute stovetop skillet corn seared in butter |
 | `36` | Traditional Pumpkin Pie | Pies | Classic custard pumpkin pie baked in flaky crust |
+| `37` | Old-Fashioned Peanut Butter Pie | Pies | No-bake velvety peanut butter pie with hot fudge drizzle |
+| `38` | King's Hawaiian Sweet Dinner Rolls | Bread | Cloud-soft sweet Hawaiian rolls with honey butter glaze |
+| `39` | Classic Fluffy Dinner Rolls | Bread | Golden feather-light yeast dinner rolls |
 
 ---
 

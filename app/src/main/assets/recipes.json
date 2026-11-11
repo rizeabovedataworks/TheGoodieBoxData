@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "recipes": [
     {
       "id": "1",
@@ -1165,6 +1165,33 @@
       "handlingInstructions": "Pro Tip: The chemical reaction between baking soda and vinegar creates carbon dioxide bubbles that lift the cake to fluffy perfection without needing eggs!",
       "modifications": "Divide batter into paper liner muffin tins to make 12 Wacky Cupcakes! Bake at 350°F for 18-20 minutes.",
       "memories": "I so loved Wacky Cake that for years I asked for it to be my birthday cake! The dark, rich flavor was always one of my favorites as a kid and even now. Due to the oil, it is ALWAYS ultra-moist, rich, and wonderful. Later, Mom turned the cake into cupcakes topped with her rich, straightforward vanilla frosting. Such a treat!"
+    },
+    {
+      "id": "41",
+      "title": "Greg's Spiced Dry Hot Chocolate Mix",
+      "description": "Greg's famous homemade dry hot chocolate mix made with dry milk, cocoa, powdered sugar, and warm cinnamon—packaged in gift pint jars!",
+      "category": "Hot Chocolate",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "ingredients": [
+        "4 cups dry non-fat instant milk powder",
+        "2 cups powdered sugar, sifted",
+        "1 cup unsweetened Dutch-process cocoa powder",
+        "1 cup non-dairy creamer powder (or French vanilla creamer powder)",
+        "1 1/2 tsp ground cinnamon",
+        "1/2 tsp salt",
+        "1/2 cup mini marshmallows or semi-sweet mini chocolate chips (optional jar layer)",
+        "Hot water or warm milk (for serving)"
+      ],
+      "instructions": [
+        "In a large mixing bowl, sift together dry milk powder, powdered sugar, cocoa powder, non-dairy creamer powder, ground cinnamon, and salt.",
+        "Whisk vigorously until all ingredients are completely combined and uniform in color.",
+        "Spoon mix into clean, dry pint Mason jars (or airtight glass jars), layering top with mini marshmallows or mini chocolate chips.",
+        "To Serve: Add 1/3 cup of hot chocolate mix to a cozy mug. Pour in 8 oz (1 cup) of boiling water or hot milk and stir thoroughly until rich and creamy!"
+      ],
+      "handlingInstructions": "Gift Pint Jar Secret: Tie a festive plaid ribbon around the neck of each pint Mason jar with a handwritten gift tag instructing: 'Add 1/3 cup mix to 1 cup hot milk or water. Enjoy!' Store jars in a cool, dry pantry for up to 6 months.",
+      "modifications": "Use French vanilla or hazelnut powdered creamer for flavored hot cocoa mixes!",
+      "memories": "I made this dry spiced hot chocolate mix on multiple occasions and gave it out in pint jars as Christmas gifts to friends and family. I still have friends asking if I'm handing it back out again this year because they loved it so much!"
     }
   ]
 }

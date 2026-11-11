@@ -240,6 +240,8 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `37` | Old-Fashioned Peanut Butter Pie | Pies | No-bake velvety peanut butter pie with hot fudge drizzle |
 | `38` | King's Hawaiian Sweet Dinner Rolls | Bread | Cloud-soft sweet Hawaiian rolls with honey butter glaze |
 | `39` | Classic Fluffy Dinner Rolls | Bread | Golden feather-light yeast dinner rolls |
+| `40` | Mom's Chocolate Wacky Cake | Cakes | Moist Depression-era crazy cake baked with cocoa, oil & vinegar |
+| `41` | Greg's Spiced Dry Hot Chocolate Mix | Hot Chocolate | Homemade dry spiced cocoa mix in gift pint Mason jars |
 
 ---
 

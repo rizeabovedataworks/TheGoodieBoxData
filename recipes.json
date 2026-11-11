@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "recipes": [
     {
       "id": "1",
@@ -946,6 +946,66 @@
       ],
       "handlingInstructions": "Refrigerate leftover ham in airtight containers for 3 to 4 days. Save ham slice trimmings for morning omelets or split pea soup!",
       "modifications": "Substitute maple syrup for honey for a rich autumn maple glaze."
+    },
+    {
+      "id": "34",
+      "title": "Mom's Classic Baked Scalloped Corn",
+      "description": "Comforting holiday corn casserole baked with sweet corn, creamed corn, butter, Ritz cracker crumbs, and a golden bubbly top.",
+      "category": "Side Dishes",
+      "prepTime": "15 mins",
+      "cookTime": "45 mins",
+      "ingredients": [
+        "1 (15 oz) can whole kernel sweet corn, drained",
+        "1 (15 oz) can cream-style corn",
+        "1 cup crushed Ritz crackers (approx. 1 sleeve), divided",
+        "1/2 cup (1 stick) unsalted butter, melted",
+        "2 large eggs, beaten",
+        "1/2 cup whole milk or heavy cream",
+        "1 tbsp granulated sugar",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "1/2 cup shredded cheddar cheese (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C) and butter a 2-quart baking dish.",
+        "In a large bowl, whisk together beaten eggs, melted butter, milk, sugar, salt, and black pepper until smooth.",
+        "Stir in whole kernel corn, cream-style corn, and 3/4 cup of crushed Ritz crackers (and optional cheddar cheese).",
+        "Pour corn mixture into prepared baking dish and smooth the top.",
+        "Sprinkle remaining 1/4 cup crushed Ritz crackers over the top.",
+        "Bake for 40 to 45 minutes until set in the center and golden brown and bubbling around the edges.",
+        "Rest 10 minutes before serving warm."
+      ],
+      "handlingInstructions": "Refrigerate leftovers in an airtight container for up to 3–4 days. Reheat in oven or microwave.",
+      "modifications": "Add 1/4 cup diced bell pepper or pimientos for a festive splash of red and green color!",
+      "memories": "Mom's baked scalloped corn was a constant star on our holiday table. The sweet creamed corn mixed with buttery Ritz crackers made it everyone's favorite side dish!"
+    },
+    {
+      "id": "35",
+      "title": "Greg's Skillet Scalloped Corn",
+      "description": "Fast, 15-minute stovetop skillet scalloped corn seared in sweet butter with crushed crackers—saves oven space on holidays and makes an easy year-round side dish!",
+      "category": "Side Dishes",
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "ingredients": [
+        "2 (15 oz) cans whole kernel sweet corn, drained (or 3 cups fresh/frozen corn)",
+        "1/2 cup (1 stick) unsalted butter",
+        "1 cup crushed Ritz crackers or saltine crackers",
+        "1/2 cup heavy cream or whole milk",
+        "1 tbsp sugar",
+        "1/2 tsp salt",
+        "1/4 tsp black pepper",
+        "2 tbsp chopped fresh chives or parsley (garnish)"
+      ],
+      "instructions": [
+        "Melt butter in a large skillet (cast iron or heavy skillet) over medium heat.",
+        "Add crushed crackers to the hot melted butter and stir for 2 minutes until light golden and fragrant.",
+        "Add drained sweet corn, heavy cream, sugar, salt, and black pepper to the skillet.",
+        "Stir continuously and simmer over medium-low heat for 8 to 10 minutes until cream thickens and coats the corn in a rich, buttery sauce.",
+        "Garnish with fresh chives and serve piping hot straight from the skillet!"
+      ],
+      "handlingInstructions": "Pro Tip: Making scalloped corn in a skillet on the stovetop frees up valuable oven space during busy Thanksgiving dinners, and takes under 15 minutes for any weeknight meal!",
+      "modifications": "Stir in 1/2 cup shredded Monterey Jack or cheddar cheese in the last minute for cheesy skillet corn.",
+      "memories": "Greg's quick skillet method is a lifesaver when the holiday oven is packed full with turkey and ham. It delivers all the rich, buttery cracker goodness of baked scalloped corn in a fraction of the time!"
     }
   ]
 }

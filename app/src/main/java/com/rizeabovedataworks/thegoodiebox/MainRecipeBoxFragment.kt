@@ -3,17 +3,14 @@ package com.rizeabovedataworks.thegoodiebox
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
-import android.text.Editable
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.TextUtils
-import android.text.TextWatcher
 import android.text.style.ForegroundColorSpan
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -31,7 +28,6 @@ import kotlinx.coroutines.launch
  * Page 1 Fragment: The 3x5 Recipe Index Box.
  *
  * Renders the primary recipe collection on vintage 3x5 landscape index cards, featuring:
- * - Real-time title and ingredient search input bar
  * - Dynamic horizontal category index tabs (`index_tab_image.png`) with brass rail bar
  * - Recipe RecyclerView list with star favorites toggle
  * - Empty state hints
@@ -42,7 +38,6 @@ class MainRecipeBoxFragment : Fragment() {
     private lateinit var recipeAdapter: RecipeAdapter
     private lateinit var tvSectionTitle: TextView
     private lateinit var tvEmptyState: TextView
-    private lateinit var etSearchRecipes: EditText
     private lateinit var nestedScrollView: NestedScrollView
     private lateinit var recyclerViewRecipes: RecyclerView
 
@@ -94,7 +89,6 @@ class MainRecipeBoxFragment : Fragment() {
 
         tvSectionTitle = view.findViewById(R.id.tvSectionTitle)
         tvEmptyState = view.findViewById(R.id.tvEmptyState)
-        etSearchRecipes = view.findViewById(R.id.etSearchRecipes)
         nestedScrollView = view.findViewById(R.id.nestedScrollView)
         recyclerViewRecipes = view.findViewById(R.id.recyclerViewRecipes)
 
@@ -103,22 +97,8 @@ class MainRecipeBoxFragment : Fragment() {
             nestedScrollView.smoothScrollBy(0, 500)
         }
 
-        setupSearchView()
         setupRecyclerView()
         observeViewModel()
-    }
-
-    /**
-     * Connects search query listener to MainViewModel.
-     */
-    private fun setupSearchView() {
-        etSearchRecipes.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                viewModel.setSearchQuery(s?.toString() ?: "")
-            }
-            override fun afterTextChanged(s: Editable?) {}
-        })
     }
 
     /**

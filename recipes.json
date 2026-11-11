@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "recipes": [
     {
       "id": "1",
@@ -1006,6 +1006,38 @@
       "handlingInstructions": "Pro Tip: Making scalloped corn in a skillet on the stovetop frees up valuable oven space during busy Thanksgiving dinners, and takes under 15 minutes for any weeknight meal!",
       "modifications": "Stir in 1/2 cup shredded Monterey Jack or cheddar cheese in the last minute for cheesy skillet corn.",
       "memories": "Greg's quick skillet method is a lifesaver when the holiday oven is packed full with turkey and ham. It delivers all the rich, buttery cracker goodness of baked scalloped corn in a fraction of the time!"
+    },
+    {
+      "id": "36",
+      "title": "Traditional Pumpkin Pie",
+      "description": "The classic, velvet-smooth holiday pumpkin pie baked in a flaky crust with warm cinnamon, ginger, cloves, and evaporated milk.",
+      "category": "Pies",
+      "prepTime": "15 mins",
+      "cookTime": "55 mins",
+      "ingredients": [
+        "1 (15 oz) can pumpkin puree (100% pure pumpkin)",
+        "1 (12 fl oz) can evaporated milk",
+        "3/4 cup granulated sugar",
+        "1/2 tsp salt",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground ginger",
+        "1/4 tsp ground cloves",
+        "2 large eggs, beaten",
+        "1 (9-inch) unbaked deep-dish pie crust",
+        "Whipped cream (for serving)"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "In a small bowl, whisk together sugar, salt, cinnamon, ginger, and cloves.",
+        "In a large mixing bowl, beat eggs. Stir in pumpkin puree and the sugar-spice mixture until smooth.",
+        "Gradually stir in evaporated milk until thoroughly combined into a smooth liquid filling.",
+        "Pour filling into the unbaked deep-dish pie crust.",
+        "Bake at 425°F for 15 minutes. Reduce oven temperature to 350°F (175°C) and bake for an additional 40 to 50 minutes until a knife inserted near the center comes out clean.",
+        "Cool on a wire rack for 2 hours. Serve immediately or refrigerate until ready to serve with a generous dollop of whipped cream."
+      ],
+      "handlingInstructions": "Pro Tip: High-heat baking at 425°F for the first 15 minutes sets the pie crust, while lowering to 350°F bakes the custard filling until silky smooth without cracking!",
+      "modifications": "Substitute 1 1/2 tsp pumpkin pie spice for the cinnamon, ginger, and cloves.",
+      "memories": "The scent of warm pumpkin, cinnamon, and cloves baking on Thanksgiving morning is the purest scent of home and holiday family traditions!"
     }
   ]
 }

@@ -234,6 +234,9 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `31` | Divine Mashed Potatoes | Side Dishes | Yukon Gold, butter & sour cream |
 | `32` | Classic Brown Sugar Pineapple Baked Ham | Main Dishes | Clove-pinned pineapple & cherries with brown sugar glaze |
 | `33` | Easy Honey Glazed Boneless Ham | Main Dishes | Cinnamon honey mustard glaze for effortless slicing |
+| `34` | Mom's Classic Baked Scalloped Corn | Side Dishes | Creamed corn, whole sweet corn & Ritz cracker crust |
+| `35` | Greg's Skillet Scalloped Corn | Side Dishes | Fast 15-minute stovetop skillet corn seared in butter |
+| `36` | Traditional Pumpkin Pie | Pies | Classic custard pumpkin pie baked in flaky crust |
 
 ---
 

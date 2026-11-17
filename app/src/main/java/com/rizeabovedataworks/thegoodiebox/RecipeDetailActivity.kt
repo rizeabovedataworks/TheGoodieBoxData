@@ -341,7 +341,7 @@ class RecipeDetailActivity : AppCompatActivity() {
             "bars", "bar" -> R.drawable.bars_fb_img
             "bread", "breads" -> R.drawable.breads_fb_img
             "frostings", "frosting" -> R.drawable.frostings_fb_img
-            "main dishes", "main" -> R.drawable.meatloaf_img
+            "main dishes", "main" -> R.drawable.maindish_fb_img
             "side dishes", "sides", "side" -> R.drawable.sidedishes_fb_img
             "hot chocolate", "cocoa" -> R.drawable.hotchocolate_fb_img
             "pies", "pie" -> R.drawable.pies_fb_img

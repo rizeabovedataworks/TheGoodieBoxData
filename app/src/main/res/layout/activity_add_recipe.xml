@@ -206,11 +206,49 @@
                     android:lines="3" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Local Storage Warning Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="#FFF9F3"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:strokeColor="#D9B496"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔒 Privacy &amp; Local Device Storage Note"
+                        android:textColor="#3E2010"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="2dp"
+                        android:text="Custom recipes are saved 100% locally on your phone for privacy. Changing phones, uninstalling the app, or clearing app data will erase local custom recipes."
+                        android:textColor="#7A5032"
+                        android:textSize="12.5sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
             <Button
                 android:id="@+id/btnSaveRecipe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="120dp"
                 android:backgroundTint="@color/candy_cane_red"
                 android:text="Save Recipe to Cookbook"

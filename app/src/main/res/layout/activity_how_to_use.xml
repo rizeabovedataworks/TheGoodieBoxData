@@ -182,7 +182,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="32dp"
             app:cardBackgroundColor="@android:color/white"
             app:cardCornerRadius="12dp"
             app:cardElevation="2dp">
@@ -207,6 +206,45 @@
                     android:layout_marginTop="8dp"
                     android:lineSpacingExtra="4dp"
                     android:text="• 💡 Tips &amp; Tricks: Universal baking secrets, egg/dairy swaps, and cookie freshness hacks.\n\n• 📏 Measurement Conversions: Convert cups to tablespoons, grams, and °F to °C.\n\n• 🔄 Sync OTA Recipes: Fetch newly updated recipes from the cloud with one tap."
+                    android:textColor="#333333"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Step 6: Local Storage & Uninstall Warning -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="#FFF9F3"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#D9B496"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 6. Local Storage &amp; Device Switching"
+                    android:textColor="#3E2010"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="• Privacy First: The Goodie Box requires no account, login, or tracking. All custom recipes you type in and personal kitchen notes are stored 100% locally on your phone.\n\n• ⚠️ Important Backup Note: Changing phones, uninstalling the app, or tapping 'Clear App Data' in Android Settings will erase your local custom recipes and personal notes. We recommend keeping a paper or digital copy of your custom recipes when switching devices!"
                     android:textColor="#333333"
                     android:textSize="14.5sp" />
 

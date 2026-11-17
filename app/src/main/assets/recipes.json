@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "recipes": [
     {
       "id": "1",
@@ -474,6 +474,7 @@
       "category": "Cookies",
       "prepTime": "15 mins",
       "cookTime": "10 mins",
+      "imageUri": "moms_cookiejar_img",
       "ingredients": [
         "2 1/4 cups all-purpose flour",
         "1 tsp baking soda",

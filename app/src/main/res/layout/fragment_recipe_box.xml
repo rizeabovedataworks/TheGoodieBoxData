@@ -21,20 +21,21 @@
             android:scaleType="fitXY"
             android:src="@drawable/recipeboxlid_image" />
 
-        <!-- Layer 2: Horizontal Category Index Tabs -->
+        <!-- Layer 2: Horizontal Category Index Tabs (Grounded Flush on Box Rim) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:orientation="vertical"
-            android:paddingBottom="4dp">
+            android:paddingBottom="0dp">
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
-                android:paddingVertical="8dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="0dp"
                 android:scrollbars="none">
 
                 <LinearLayout
@@ -44,14 +45,15 @@
                     android:gravity="bottom"
                     android:orientation="horizontal"
                     android:paddingHorizontal="6dp"
-                    android:paddingTop="4dp" />
+                    android:paddingTop="2dp"
+                    android:paddingBottom="0dp" />
 
             </HorizontalScrollView>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="1dp"
+                android:layout_height="2.5dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/recipe_box_rail_bg" />
 
         </LinearLayout>
@@ -122,8 +124,6 @@
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
-
-
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

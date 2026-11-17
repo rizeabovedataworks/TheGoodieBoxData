@@ -27,7 +27,8 @@
 | `candy_cane_red` | `#C23B22` | Crimson red star (`★`) & primary save buttons |
 | `cocoa_shadow` | `#3E2723` | Dark cocoa outline stars & input labels |
 | `muted_teal` | `#2A8C82` | Muted vintage accent for new categories |
-| `frosting_cream` | `#FFF9F3` | Memories card & guide card background |
+- **Batch Scaler Toggle (`[ ½x | 1x | 2x ]`)**: 1-tap real-time batch scaler on `RecipeDetailActivity` that automatically recalculates fractions (e.g. `1 1/2` -> `3`, `3/4` -> `3/8 (6 tbsp)`), whole numbers, and mixed fractions while preserving original database values.
+- **`frosting_cream`**: `#FFF9F3` — Memories card & guide card background
 
 ### Watermarks & Asset Motifs
 - **`home_sparkles_bg.xml`**: Solid warm cream overlaid with `sparkles_sprinkles_bg.xml` watermark.

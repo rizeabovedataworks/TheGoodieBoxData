@@ -335,7 +335,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     private fun getCategoryFallbackImage(category: String): Int {
         return when (category.lowercase().trim()) {
             "nuts and snacks", "nuts & snacks", "nuts", "snacks" -> R.drawable.nutsandsnacks_fb_img
-            "cookies" -> R.drawable.chocolatechipcookie_img
+            "cookies", "cookie" -> R.drawable.cookies_fb_img
             "candies", "candy" -> R.drawable.candies_fb_img
             "fudge" -> R.drawable.fudges_fb_img
             "bars", "bar" -> R.drawable.bars_fb_img

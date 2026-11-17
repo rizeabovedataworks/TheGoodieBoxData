@@ -118,15 +118,68 @@
                 android:layout_marginTop="18dp"
                 android:background="#E0D2C2" />
 
-            <!-- Ingredients Section -->
-            <TextView
+            <!-- Ingredients Section Header with Batch Scaler Toggle -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Ingredients"
-                android:textColor="@color/title_brown"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ingredients"
+                    android:textColor="@color/title_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Batch Scaler Toggle Group -->
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggleGroupBatchScale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    app:checkedButton="@id/btnScaleOne"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <Button
+                        android:id="@+id/btnScaleHalf"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:padding="0dp"
+                        android:text="½x"
+                        android:textColor="@color/title_brown"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnScaleOne"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:padding="0dp"
+                        android:text="1x"
+                        android:textColor="@color/title_brown"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnScaleDouble"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:padding="0dp"
+                        android:text="2x"
+                        android:textColor="@color/title_brown"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tvIngredients"

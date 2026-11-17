@@ -99,9 +99,20 @@ class RecipeDetailActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvPrepTime).text = "Prep: $prep"
         findViewById<TextView>(R.id.tvCookTime).text = "Cook: $cook"
 
-        // Bind ingredients and directions
-        val ingredientsText = ingredients.joinToString(separator = "\n") { "• $it" }
-        findViewById<TextView>(R.id.tvIngredients).text = ingredientsText
+        // Bind ingredients with Batch Scaler Toggle Group (½x | 1x | 2x)
+        renderIngredients(ingredients, 1.0f)
+
+        val toggleGroupBatchScale = findViewById<com.google.android.material.button.MaterialButtonToggleGroup>(R.id.toggleGroupBatchScale)
+        toggleGroupBatchScale?.addOnButtonCheckedListener { _, checkedId, isChecked ->
+            if (isChecked) {
+                val multiplier = when (checkedId) {
+                    R.id.btnScaleHalf -> 0.5f
+                    R.id.btnScaleDouble -> 2.0f
+                    else -> 1.0f
+                }
+                renderIngredients(ingredients, multiplier)
+            }
+        }
 
         val instructionsText = instructions.mapIndexed { index, step -> "${index + 1}. $step" }.joinToString(separator = "\n\n")
         findViewById<TextView>(R.id.tvInstructions).text = instructionsText
@@ -347,6 +358,78 @@ class RecipeDetailActivity : AppCompatActivity() {
             "pies", "pie" -> R.drawable.pies_fb_img
             "cakes", "cake" -> R.drawable.cakes_fb_img
             else -> R.drawable.ic_tbg_splash_main
+        }
+    }
+
+    /**
+     * Batch Scaler renderer & fraction math parser (½x | 1x | 2x).
+     */
+    private fun renderIngredients(rawIngredients: List<String>, multiplier: Float) {
+        val tvIngredients = findViewById<TextView>(R.id.tvIngredients) ?: return
+        if (multiplier == 1.0f) {
+            tvIngredients.text = rawIngredients.joinToString(separator = "\n") { "• $it" }
+        } else {
+            tvIngredients.text = rawIngredients.joinToString(separator = "\n") { line ->
+                "• ${scaleIngredientLine(line, multiplier)}"
+            }
+        }
+    }
+
+    private fun scaleIngredientLine(line: String, multiplier: Float): String {
+        val regex = Regex("""^(\d+\s+\d+/\d+|\d+/\d+|\d+\.\d+|\d+)""")
+        val match = regex.find(line) ?: return line
+        val numStr = match.value
+        val numericVal = parseQuantity(numStr) ?: return line
+        val scaledVal = numericVal * multiplier
+        val formattedScaledStr = formatQuantity(scaledVal)
+        return line.replaceFirst(numStr, formattedScaledStr)
+    }
+
+    private fun parseQuantity(str: String): Double? {
+        val trimmed = str.trim()
+        return try {
+            if (trimmed.contains(" ")) {
+                val parts = trimmed.split(Regex("""\s+"""))
+                val whole = parts[0].toDouble()
+                val fracParts = parts[1].split("/")
+                whole + (fracParts[0].toDouble() / fracParts[1].toDouble())
+            } else if (trimmed.contains("/")) {
+                val parts = trimmed.split("/")
+                parts[0].toDouble() / parts[1].toDouble()
+            } else {
+                trimmed.toDouble()
+            }
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+    private fun formatQuantity(valDouble: Double): String {
+        val whole = valDouble.toInt()
+        val frac = valDouble - whole
+        val eps = 0.045
+
+        fun fracToString(f: Double): String {
+            return when {
+                Math.abs(f - 0.125) < eps -> "1/8"
+                Math.abs(f - 0.25) < eps -> "1/4"
+                Math.abs(f - 0.333) < eps -> "1/3"
+                Math.abs(f - 0.375) < eps -> "3/8 (6 tbsp)"
+                Math.abs(f - 0.5) < eps -> "1/2"
+                Math.abs(f - 0.625) < eps -> "5/8"
+                Math.abs(f - 0.666) < eps -> "2/3"
+                Math.abs(f - 0.75) < eps -> "3/4"
+                Math.abs(f - 0.875) < eps -> "7/8"
+                else -> ""
+            }
+        }
+
+        val fracStr = fracToString(frac)
+        return when {
+            Math.abs(frac) < eps -> whole.toString()
+            whole == 0 && fracStr.isNotBlank() -> fracStr
+            whole > 0 && fracStr.isNotBlank() -> "$whole $fracStr"
+            else -> String.format(java.util.Locale.US, "%.1f", valDouble).removeSuffix(".0")
         }
     }
 

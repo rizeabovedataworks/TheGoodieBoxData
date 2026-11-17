@@ -1,5 +1,5 @@
 {
-  "version": 46,
+  "version": 47,
   "recipes": [
     {
       "id": "1",
@@ -396,9 +396,19 @@
       "prepTime": "20 mins",
       "cookTime": "35 mins",
       "ingredients": [
-        "Crust: 1 cup flour, 1/4 cup powdered sugar, 1/2 cup butter, softened",
-        "Filling: 1 cup sugar, 2 tbsp flour, 1/2 tsp baking powder, 2 eggs, 3 tbsp fresh lemon juice, 1 tbsp lemon zest",
-        "Powdered sugar for dusting"
+        "--- SHORTBREAD CRUST ---",
+        "1 cup all-purpose flour",
+        "1/4 cup powdered sugar",
+        "1/2 cup (1 stick) unsalted butter, softened",
+        "--- TART LEMON FILLING ---",
+        "1 cup granulated sugar",
+        "2 tbsp all-purpose flour",
+        "1/2 tsp baking powder",
+        "2 large eggs, beaten",
+        "3 tbsp fresh lemon juice",
+        "1 tbsp fresh lemon zest",
+        "--- GARNISH ---",
+        "2 tbsp powdered sugar (for dusting)"
       ],
       "instructions": [
         "Preheat oven to 350°F (175°C).",

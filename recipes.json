@@ -1,5 +1,5 @@
 {
-  "version": 50,
+  "version": 51,
   "recipes": [
     {
       "id": "1",
@@ -330,7 +330,8 @@
         "Cool before slicing."
       ],
       "handlingInstructions": "Wrap tightly in plastic wrap or foil. Banana bread tastes even better and gets extra moist on day two!",
-      "modifications": "Add 1/2 cup chocolate chips or cranberries."
+      "modifications": "Add 1/2 cup chocolate chips or cranberries.",
+      "memories": "Mom loved making banana nut bread—this was one of her favorite recipes! Yes, she loved making all the candies, cookies, and holiday baked goods, but banana nut bread we had throughout the year, not just for special occasions.\n\nThere is nothing even now to a warmed-up slice with butter on top, so soft that you almost need a fork to eat it with. The smell of that baking in the house to this day makes me want to run to the kitchen to wait for it to come out of the oven.\n\nThis recipe will always stay near and dear to my heart. Unfortunately, it never stays long in my household!"
     },
     {
       "id": "13",
@@ -803,7 +804,7 @@
         "Place flattened turkey on roasting rack over the carrots and minced garlic. Roast at 425°F for 70 to 80 minutes until breast reaches 155°F (68°C).",
         "Rest 20 minutes before carving. Carryover heat will gently raise internal temperature to the ideal 165°F target while keeping meat ultra-juicy! Use pan drippings with roasted carrots and garlic to make gravy."
       ],
-      "handlingInstructions": "Pro Tip (155°F Pull Temp): Pull at 155°F and rest 20 mins to reach 165°F carryover temp. Dry brining 24 hours ahead + butter under skin + olive oil on top produces the ultimate juicy, crackling-crispy turkey!",
+      "handlingInstructions": "Pro Tip (155°F Carryover Cooking Secret): Pull turkey out of oven at 155°F! Carryover heat during the 20-minute rest will coast the temperature up to the target 165°F, keeping meat ultra-moist instead of overcooking to 175°F+.",
       "modifications": "Spatchcocking cooks the turkey in half the time and produces ultra-crispy skin across the entire bird!"
     },
     {
@@ -1113,6 +1114,38 @@
       "handlingInstructions": "Pro Tip: Warm pineapple juice gives these rolls their iconic tropical sweetness! Never heat juice above 115°F or it will kill the yeast.",
       "modifications": "Slice rolls horizontally to make iconic Hawaiian slider sandwiches with ham, Swiss cheese, and poppyseed butter glaze!",
       "memories": "These irresistibly sweet, cloud-soft Hawaiian rolls are always the first bread to disappear from the Thanksgiving table!"
+    },
+    {
+      "id": "39",
+      "title": "Classic Fluffy Dinner Rolls",
+      "description": "Golden, feather-light homemade yeast dinner rolls brushed with salted butter right out of the oven.",
+      "category": "Bread",
+      "prepTime": "20 mins",
+      "cookTime": "18 mins",
+      "ingredients": [
+        "4 cups all-purpose or bread flour",
+        "1 (0.25 oz) packet instant yeast",
+        "1 cup warm milk (110°F)",
+        "1/3 cup unsalted butter, melted",
+        "1/4 cup granulated sugar or honey",
+        "1 large egg, beaten",
+        "1 tsp salt",
+        "3 tbsp melted butter (for brushing tops)"
+      ],
+      "instructions": [
+        "In a stand mixer or large bowl, combine warm milk, melted butter, sugar, egg, and instant yeast.",
+        "Add salt and 2 cups of flour; beat on medium speed for 2 minutes.",
+        "Gradually add remaining flour until dough pulls away from the sides of the bowl.",
+        "Knead for 5 minutes until smooth and elastic.",
+        "Divide dough into 12 equal balls and place in a greased 9x13 inch baking dish.",
+        "Cover with a towel and let rise in a warm place for 45 minutes to 1 hour until doubled.",
+        "Preheat oven to 375°F (190°C).",
+        "Bake rolls for 15 to 18 minutes until golden brown on top.",
+        "Brush generously with melted salted butter immediately upon pulling from the oven."
+      ],
+      "handlingInstructions": "Refrigerate leftover rolls wrapped tightly in foil for 3 to 4 days, or freeze baked rolls for up to 3 months. Reheat at 350°F for 5 minutes.",
+      "modifications": "Sprinkle with coarse sea salt or garlic butter before serving.",
+      "memories": "Golden dinner rolls fresh out of the oven were pure magic. Slathering them with extra butter while piping hot was an absolute holiday ritual!"
     },
     {
       "id": "40",

@@ -273,7 +273,10 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 "There is something truly cathartic about making bread for me. The smell of the yeast, watching the dough rise, the rhythmic kneading, the aroma while baking, and finally slicing that warm loaf—I find a deep sense of peace there. Bread has always been the ultimate comfort food for me, from simple buttered toast to lunchtime sandwiches, it always brings me right back home."
 
 ### 8. Classic Chocolate Almond Bark Haystacks (Recipe #44)
-"These crunchy, sweet-and-salty chocolate haystacks were an absolute staple on Mom's holiday candy trays. Watching the chocolate mounds set quickly in the cold garage was pure holiday magic!"
+"This was one of the few candies Mom let me help with or 'almost' do on my own! This to me seemed like the older version of a Krackle or a Crunch bar. They really were a favorite of mine and my dad's as I grew up. Mom helped me with the measurements and I stirred in the chow mein noodles and the peanuts, then spooned them onto the parchment paper (or sometimes foil). It always seemed the toughest part was waiting to eat them!"
+
+### 9. Banana Nut Bread (Recipe #12)
+"Mom loved making banana nut bread—this was one of her favorite recipes! Yes, she loved making all the candies, cookies, and holiday baked goods, but banana nut bread we had throughout the year, not just for special occasions. There is nothing even now to a warmed-up slice with butter on top, so soft that you almost need a fork to eat it with. The smell of that baking in the house to this day makes me want to run to the kitchen to wait for it to come out of the oven. This recipe will always stay near and dear to my heart. Unfortunately, it never stays long in my household!"
 
 ---
 

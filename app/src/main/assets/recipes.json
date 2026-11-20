@@ -1,5 +1,5 @@
 {
-  "version": 50,
+  "version": 51,
   "recipes": [
     {
       "id": "1",
@@ -330,7 +330,8 @@
         "Cool before slicing."
       ],
       "handlingInstructions": "Wrap tightly in plastic wrap or foil. Banana bread tastes even better and gets extra moist on day two!",
-      "modifications": "Add 1/2 cup chocolate chips or cranberries."
+      "modifications": "Add 1/2 cup chocolate chips or cranberries.",
+      "memories": "Mom loved making banana nut bread—this was one of her favorite recipes! Yes, she loved making all the candies, cookies, and holiday baked goods, but banana nut bread we had throughout the year, not just for special occasions.\n\nThere is nothing even now to a warmed-up slice with butter on top, so soft that you almost need a fork to eat it with. The smell of that baking in the house to this day makes me want to run to the kitchen to wait for it to come out of the oven.\n\nThis recipe will always stay near and dear to my heart. Unfortunately, it never stays long in my household!"
     },
     {
       "id": "13",

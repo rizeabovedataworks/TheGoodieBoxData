@@ -245,6 +245,35 @@ Contains **31 heirloom recipes** across **10 dynamic categories**:
 | `41` | Greg's Spiced Dry Hot Chocolate Mix | Hot Chocolate | Homemade dry spiced cocoa mix in gift pint Mason jars |
 | `42` | 50/50 White Bread | Bread | Classic 50/50 bread flour and all-purpose flour sandwich loaf |
 | `43` | Classic Soft Milk Bread | Bread | Cloud-soft white milk bread with warm milk, butter & honey |
+| `44` | Classic Chocolate Almond Bark Haystacks | Candies | Crunchy 4-ingredient haystacks with 2:1 chocolate bark ratio |
+
+---
+
+## 📜 Master Storybook Memory Registry (Permanent Backup)
+
+### 1. Mom's Pink Peppermint Bark (Recipe #8)
+"Mom's pink peppermint bark was always a weakness of mine. As a kid, I always knew what she was making when she'd pull out that double boiler and start whacking candy canes in a Ziploc bag with her rolling pin. It wasn't a big recipe, but sometimes she'd let me whack the candy canes a few times myself..."
+
+### 2. Mom's Best Classic Peanut Brittle (Recipe #23)
+"I remember Mom making peanut brittle. She always seemed to make it on the coldest day of the year. I'd watch her carefully follow the thermometer, waiting for it to reach just the right temperature. Then came the baking soda, added just before she poured it out. She'd take the cookie sheet out to the garage and set it on a towel on the hood of the car to cool..."
+
+### 3. Mom's Best Classic Chocolate Chip Cookies (Recipe #18)
+"For a time doing ceramics was extremely popular and my folks were really crafty people. One of the most popular cookie jars was the elf jar. We had one with a red hat and one with a green one. What I remember was that it was NEVER without cookies—usually chocolate chip ones! Whenever it got low Mom would make a new batch..."
+
+### 4. Mom's Chocolate Wacky Cake (Recipe #40)
+"I so loved Wacky Cake that for years I asked for it to be my birthday cake! The dark, rich flavor was always one of my favorites as a kid and even now. Due to the oil, it is ALWAYS ultra-moist, rich, and wonderful. Later, Mom turned the cake into cupcakes topped with her rich, straightforward vanilla frosting. Such a treat!"
+
+### 5. Old-Fashioned Peanut Butter Pie (Recipe #37)
+"The first time I had this pie was down on vacation in the Lake of the Ozarks Bagnell Dam area at the Millstone Lodge when I was about 8 years old. Ever since, I've been obsessed with that pie! Mom made them over the years for special occasions, but that first magical bite in the Ozarks will forever be burned in my memory."
+
+### 6. Greg's Spiced Dry Hot Chocolate Mix (Recipe #41)
+"I made this dry spiced hot chocolate mix on multiple occasions and gave it out in pint jars as Christmas gifts to friends and family. I still have friends asking if I'm handing it back out again this year because they loved it so much!"
+
+### 7. Classic Soft Milk Bread (Recipe #43)
+"There is something truly cathartic about making bread for me. The smell of the yeast, watching the dough rise, the rhythmic kneading, the aroma while baking, and finally slicing that warm loaf—I find a deep sense of peace there. Bread has always been the ultimate comfort food for me, from simple buttered toast to lunchtime sandwiches, it always brings me right back home."
+
+### 8. Classic Chocolate Almond Bark Haystacks (Recipe #44)
+"These crunchy, sweet-and-salty chocolate haystacks were an absolute staple on Mom's holiday candy trays. Watching the chocolate mounds set quickly in the cold garage was pure holiday magic!"
 
 ---
 

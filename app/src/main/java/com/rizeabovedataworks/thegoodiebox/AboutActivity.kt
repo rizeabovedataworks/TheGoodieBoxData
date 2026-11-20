@@ -45,9 +45,14 @@ class AboutActivity : AppCompatActivity() {
         val tvAboutVersion = findViewById<TextView>(R.id.tvAboutVersion)
         lifecycleScope.launch {
             val db = AppDatabase.getDatabase(this@AboutActivity)
-            val version = db.recipeDao().getStoredVersion() ?: 29
+            val version = db.recipeDao().getStoredVersion() ?: 48
             val count = db.recipeDao().getRecipeCount()
-            tvAboutVersion.text = "App Version 1.0 • Dataset v$version ($count Recipes)"
+            val versionName = try {
+                packageManager.getPackageInfo(packageName, 0).versionName ?: "1.1"
+            } catch (e: Exception) {
+                "1.1"
+            }
+            tvAboutVersion.text = "App Version $versionName • Dataset v$version ($count Recipes)"
         }
     }
 
